@@ -1,0 +1,42 @@
+
+%Q tsuutina2017
+%A Antti Arppe
+%A Christopher Cox
+%A Mans Hulden
+%A Jordan Lachler
+%A Sjur N. Moshagen
+%A Miikka Silfverberg
+%A Trond Trosterud
+%D 2017
+%T Computational modeling of the verb in Dene languages. The case of Tsuut'ina
+%J Working papers in Athabascan Linguistics {\rm Red Book}
+%P 51-68
+
+%Q corpus
+%A James A. Crippen
+%T Tlingit text corpus
+%I GitHub repository, {\tt https://github.com/jcrippen/tlingit-corpus}
+%Y 2015
+
+%Q prefixes
+%A James A. Crippen
+%Y 2020
+%T Tlingit verb prefixes
+%I GitHub repository, {\tt https://github.com/jcrippen/tlingit-verb-prefixes}
+
+%Q navajo2008
+%A Mans Hulden
+%A Sharon T. Bischoff
+%D 2008
+%T An experiment in computational parsing of the Navajo verb
+%J Coyote Papers
+%V 16
+%P 110-118
+
+%Q viterbi
+%A Andrew J. Viterbi
+%D 1967
+%T Error bounds for convolutional codes and an asymptotically optimum decoding algorithm
+%J IEEE Transactions on Information Theory
+%V 13
+%P 260-269

@@ -1,0 +1,1400 @@
+as {'a-s', 'a-d-s'}
+tudzi {'u-tu-d-s-i', 'tu-d-s-i'}
+tudi {'tu-d-i', 'u-tu-d-i'}
+tusi {'u-tu-s-i', 'tu-s-i'}
+tuda {'u-tu-d', 'tu-d'}
+tusa {'u-tu-s', 'tu-s'}
+tuwa {'tu-i', 'u-tu-i'}
+ax̱dzi {'a-g̱-d-s-i', 'a-x̱-d-s-i'}
+ax̱di {'a-g̱-d-i', 'a-x̱-d-i'}
+ax̱si {'a-x̱-s-i', 'a-g̱-s-i'}
+ax̱da {'a-x̱-d', 'a-g̱-d'}
+ax̱sa {'a-g̱-s', 'a-x̱-s'}
+kax̱dzi {'ka-g̱-d-s-i', 'ka-x̱-d-s-i'}
+kax̱di {'ka-x̱-d-i', 'ka-g̱-d-i'}
+kax̱si {'ka-x̱-s-i', 'ka-g̱-s-i'}
+kax̱da {'ka-x̱-d', 'ka-g̱-d'}
+kax̱sa {'ka-g̱-s', 'ka-x̱-s'}
+x̱ʼax̱dzi {'x̱ʼe-x̱-d-s-i', 'x̱ʼe-g̱-d-s-i'}
+x̱ʼax̱di {'x̱ʼe-g̱-d-i', 'x̱ʼe-x̱-d-i'}
+x̱ʼax̱si {'x̱ʼe-x̱-s-i', 'x̱ʼe-g̱-s-i'}
+x̱ʼax̱da {'x̱ʼe-x̱-d', 'x̱ʼe-g̱-d'}
+x̱ʼax̱sa {'x̱ʼe-g̱-s', 'x̱ʼe-x̱-s'}
+jix̱dzi {'ji-x̱-d-s-i', 'ji-g̱-d-s-i'}
+jix̱di {'ji-x̱-d-i', 'ji-g̱-d-i'}
+jix̱si {'ji-g̱-s-i', 'ji-x̱-s-i'}
+jix̱da {'ji-x̱-d', 'ji-g̱-d'}
+jix̱sa {'ji-x̱-s', 'ji-g̱-s'}
+tux̱dzi {'tu-g̱-d-s-i', 'tu-x̱-d-s-i'}
+tux̱di {'tu-x̱-d-i', 'tu-g̱-d-i'}
+tux̱si {'tu-g̱-s-i', 'tu-x̱-s-i'}
+tux̱da {'tu-x̱-d', 'tu-g̱-d'}
+tux̱sa {'tu-g̱-s', 'tu-x̱-s'}
+toos {'u-tu-d-s', 'tu-d-s', 'tu-u-d-s', 'tu-u-s'}
+too {'tu-u', 'tu', 'u-tu'}
+atudzi {'a-u-tu-d-s-i', 'a-tu-d-s-i'}
+atudi {'a-tu-d-i', 'a-u-tu-d-i'}
+atusi {'a-u-tu-s-i', 'a-tu-s-i'}
+atuda {'a-u-tu-d', 'a-tu-d'}
+atoos {'a-tu-d-s', 'a-u-tu-d-s'}
+atusa {'a-u-tu-s', 'a-tu-s'}
+atuwa {'a-tu-i', 'a-u-tu-i'}
+atoo {'a-u-tu', 'a-tu'}
+katudzi {'ka-tu-d-s-i', 'ka-u-tu-d-s-i'}
+katudi {'ka-tu-d-i', 'ka-u-tu-d-i'}
+katusi {'ka-tu-s-i', 'ka-u-tu-s-i'}
+katuda {'ka-tu-d', 'ka-u-tu-d'}
+katoos {'ka-tu-d-s', 'ka-u-tu-d-s'}
+katusa {'ka-u-tu-s', 'ka-tu-s'}
+katuwa {'ka-u-tu-i', 'ka-tu-i'}
+katoo {'ka-tu', 'ka-u-tu'}
+x̱ʼatudzi {'x̱ʼe-u-tu-d-s-i', 'x̱ʼe-tu-d-s-i'}
+x̱ʼatudi {'x̱ʼe-u-tu-d-i', 'x̱ʼe-tu-d-i'}
+x̱ʼatusi {'x̱ʼe-tu-s-i', 'x̱ʼe-u-tu-s-i'}
+x̱ʼatuda {'x̱ʼe-tu-d', 'x̱ʼe-u-tu-d'}
+x̱ʼatoos {'x̱ʼe-u-tu-d-s', 'x̱ʼe-tu-d-s'}
+x̱ʼatusa {'x̱ʼe-u-tu-s', 'x̱ʼe-tu-s'}
+x̱ʼatuwa {'x̱ʼe-u-tu-i', 'x̱ʼe-tu-i'}
+x̱ʼatoo {'x̱ʼe-u-tu', 'x̱ʼe-tu'}
+jitudzi {'ji-u-tu-d-s-i', 'ji-tu-d-s-i'}
+jitudi {'ji-u-tu-d-i', 'ji-tu-d-i'}
+jitusi {'ji-tu-s-i', 'ji-u-tu-s-i'}
+jituda {'ji-u-tu-d', 'ji-tu-d'}
+jitoos {'ji-u-tu-d-s', 'ji-tu-d-s'}
+jitusa {'ji-u-tu-s', 'ji-tu-s'}
+jituwa {'ji-tu-i', 'ji-u-tu-i'}
+jitoo {'ji-u-tu', 'ji-tu'}
+tutudzi {'tu-tu-d-s-i', 'tu-u-tu-d-s-i'}
+tutudi {'tu-u-tu-d-i', 'tu-tu-d-i'}
+tutusi {'tu-u-tu-s-i', 'tu-tu-s-i'}
+tutuda {'tu-u-tu-d', 'tu-tu-d'}
+tutoos {'tu-tu-d-s', 'tu-u-tu-d-s'}
+tutusa {'tu-tu-s', 'tu-u-tu-s'}
+tutuwa {'tu-u-tu-i', 'tu-tu-i'}
+tutoo {'tu-tu', 'tu-u-tu'}
+idzi {'u-i-d-s-i', 'i-d-s-i'}
+idi {'u-i-d-i', 'i-d-i'}
+isi {'i-s-i', 'u-i-s-i'}
+ida {'i-d', 'u-i-d'}
+ees {'a-i-d-s', 'u-i-d-s', 'i-d-s', 'a-u-i-d-s'}
+isa {'i-s', 'u-i-s'}
+iya {'i-i', 'u-i-i'}
+ee {'u-i', 'a-u-i', 'a-i', 'i'}
+eedzi {'a-u-i-d-s-i', 'a-i-d-s-i'}
+eedi {'a-i-d-i', 'a-u-i-d-i'}
+eesi {'a-u-i-s-i', 'a-i-s-i'}
+eeda {'a-u-i-d', 'a-i-d'}
+eesa {'a-u-i-s', 'a-i-s'}
+eeya {'a-u-i-i', 'a-i-i', 'a-wu-i-i'}
+keedzi {'ka-i-d-s-i', 'ka-u-i-d-s-i'}
+keedi {'ka-i-d-i', 'ka-u-i-d-i'}
+keesi {'ka-i-s-i', 'ka-u-i-s-i'}
+keeda {'ka-i-d', 'ka-u-i-d'}
+kees {'ka-u-i-d-s', 'ka-i-d-s'}
+keesa {'ka-u-i-s', 'ka-i-s'}
+keeya {'ka-i-i', 'ka-wu-i-i', 'ka-u-i-i'}
+kee {'ka-u-i', 'ka-i'}
+x̱ʼeedzi {'x̱ʼe-i-d-s-i', 'x̱ʼe-u-i-d-s-i'}
+x̱ʼeedi {'x̱ʼe-u-i-d-i', 'x̱ʼe-i-d-i'}
+x̱ʼeesi {'x̱ʼe-u-i-s-i', 'x̱ʼe-i-s-i'}
+x̱ʼeeda {'x̱ʼe-i-d', 'x̱ʼe-u-i-d'}
+x̱ʼees {'x̱ʼe-u-i-d-s', 'x̱ʼe-i-d-s'}
+x̱ʼeesa {'x̱ʼe-i-s', 'x̱ʼe-u-i-s'}
+x̱ʼeeya {'x̱ʼe-u-i-i', 'x̱ʼe-i-i', 'x̱ʼe-wu-i-i'}
+x̱ʼee {'x̱ʼe-i', 'x̱ʼe-u-i'}
+jeedzi {'ji-u-d-s-i', 'ji-i-d-s-i', 'ji-u-i-d-s-i'}
+jeedi {'ji-i-d-i', 'ji-u-d-i', 'ji-u-i-d-i'}
+jeesi {'ji-u-s-i', 'ji-u-i-s-i', 'ji-i-s-i'}
+jeeda {'ji-u-i-d', 'ji-u-d', 'ji-i-d'}
+jees {'ji-i-d-s', 'ji-u-i-d-s', 'ji-u-d-s', 'ji-u-s'}
+jeesa {'ji-u-i-s', 'ji-i-s'}
+jeeya {'ji-u-i', 'ji-wu-i-i', 'ji-u-i-i', 'ji-i-i'}
+jee {'ji-u-i', 'ji-u', 'ji-i'}
+teedzi {'tu-u-i-d-s-i', 'tu-i-d-s-i'}
+teedi {'tu-u-i-d-i', 'tu-i-d-i'}
+teesi {'tu-u-i-s-i', 'tu-i-s-i'}
+teeda {'tu-i-d', 'tu-u-i-d'}
+tees {'tu-u-i-d-s', 'tu-i-d-s'}
+teesa {'tu-i-s', 'tu-u-i-s'}
+teeya {'tu-wu-i-i', 'tu-i-i', 'tu-u-i-i'}
+tee {'tu-i', 'tu-u-i'}
+yeeydzi {'u-yi-d-s-i', 'yi-d-s-i', 'wu-yi-d-s-i'}
+yeeydi {'wu-yi-d-i', 'u-yi-d-i', 'yi-d-i'}
+yeeysi {'wu-yi-s-i', 'u-yi-s-i', 'yi-s-i'}
+yida {'u-yi-d', 'wu-i-d', 'yi-d'}
+yis {'wu-i-d-s', 'yi-d-s', 'u-yi-d-s'}
+yisa {'wu-i-s', 'yi-s', 'u-yi-s'}
+yeey {'u-yi-i', 'yi-i', 'wu-yi', 'wu-yi-i'}
+yi {'wu-i', 'u-yi', 'yi'}
+aydzi {'a-u-yi-d-s-i', 'a-yi-d-s-i', 'a-wu-i-d-s-i'}
+aydi {'a-u-yi-d-i', 'a-wu-i-d-i', 'a-yi-d-i'}
+aysi {'a-yi-s-i', 'a-u-yi-s-i', 'a-wu-i-s-i'}
+ayda {'a-yi-d', 'a-u-yi-d', 'a-wu-i-d'}
+ayis {'a-wu-i-d-s', 'a-u-yi-d-s', 'a-yi-d-s'}
+aysa {'a-yi-s', 'a-u-yi-s', 'a-wu-i-s'}
+ayeey {'a-u-yi-i', 'a-wu-yi-i', 'a-yi-i', 'a-wu-yi'}
+ay {'a-u-yi', 'a-yi'}
+kaydzi {'ka-u-yi-d-s-i', 'ka-wu-i-d-s-i', 'ka-yi-d-s-i'}
+kaydi {'ka-u-yi-d-i', 'ka-yi-d-i', 'ka-wu-i-d-i'}
+kaysi {'ka-wu-i-s-i', 'ka-yi-s-i', 'ka-u-yi-s-i'}
+kayda {'ka-wu-i-d', 'ka-yi-d', 'ka-u-yi-d'}
+kayis {'ka-u-yi-d-s', 'ka-yi-d-s', 'ka-wu-i-d-s'}
+kaysa {'ka-u-yi-s', 'ka-yi-s', 'ka-wu-i-s'}
+kayeey {'ka-u-yi-i', 'ka-yi-i', 'ka-wu-yi-i', 'ka-wu-yi'}
+kay {'ka-yi', 'ka-u-yi'}
+x̱ʼaydzi {'x̱ʼe-wu-i-d-s-i', 'x̱ʼe-yi-d-s-i', 'x̱ʼe-u-yi-d-s-i'}
+x̱ʼaydi {'x̱ʼe-yi-d-i', 'x̱ʼe-u-yi-d-i', 'x̱ʼe-wu-i-d-i'}
+x̱ʼaysi {'x̱ʼe-yi-s-i', 'x̱ʼe-u-yi-s-i', 'x̱ʼe-wu-i-s-i'}
+x̱ʼayda {'x̱ʼe-yi-d', 'x̱ʼe-wu-i-d', 'x̱ʼe-u-yi-d'}
+x̱ʼayis {'x̱ʼe-u-yi-d-s', 'x̱ʼe-yi-d-s', 'x̱ʼe-wu-i-d-s'}
+x̱ʼaysa {'x̱ʼe-yi-s', 'x̱ʼe-wu-i-s', 'x̱ʼe-u-yi-s'}
+x̱ʼayeey {'x̱ʼe-u-yi-i', 'x̱ʼe-yi-i', 'x̱ʼe-wu-yi', 'x̱ʼe-wu-yi-i'}
+x̱ʼay {'x̱ʼe-yi', 'x̱ʼe-u-yi'}
+jiydzi {'ji-wu-i-d-s-i', 'ji-u-yi-d-s-i', 'ji-yi-d-s-i'}
+jiydi {'ji-yi-d-i', 'ji-wu-i-d-i', 'ji-u-yi-d-i'}
+jiysi {'ji-wu-i-s-i', 'ji-yi-s-i', 'ji-u-yi-s-i'}
+jiyda {'ji-yi-d', 'ji-wu-i-d', 'ji-u-yi-d'}
+jiyis {'ji-wu-i-d-s', 'ji-yi-d-s', 'ji-u-yi-d-s'}
+jiysa {'ji-u-yi-s', 'ji-wu-i-s', 'ji-yi-s'}
+jiyeey {'ji-wu-yi', 'ji-wu-yi-i', 'ji-yi-i', 'ji-u-yi-i'}
+jiy {'ji-yi', 'ji-u-yi'}
+tuydzi {'tu-yi-d-s-i', 'tu-wu-i-d-s-i', 'tu-u-yi-d-s-i'}
+tuydi {'tu-wu-i-d-i', 'tu-u-yi-d-i', 'tu-yi-d-i'}
+tuysi {'tu-u-yi-s-i', 'tu-wu-i-s-i', 'tu-yi-s-i'}
+tuyda {'tu-u-yi-d', 'tu-wu-i-d', 'tu-yi-d'}
+tuyis {'tu-u-yi-d-s', 'tu-wu-i-d-s', 'tu-yi-d-s'}
+tuysa {'tu-u-yi-s', 'tu-wu-i-s', 'tu-yi-s'}
+tuyeey {'tu-wu-yi-i', 'tu-yi-i', 'tu-u-yi-i', 'tu-wu-yi'}
+tuy {'tu-u-yi', 'tu-yi'}
+dudzi {'u-du-d-s-i', 'du-d-s-i'}
+dus {'du-d-s', 'u-du-d-s'}
+duwa {'du-i', 'u-du-i'}
+du {'du', 'u-du'}
+adudzi {'a-du-d-s-i', 'a-u-du-d-s-i'}
+adus {'a-du-d-s', 'a-u-du-d-s'}
+aduwa {'a-du-i', 'a-u-du-i'}
+adu {'a-du', 'a-u-du'}
+x̱ʼadudzi {'x̱ʼe-u-du-d-s-i', 'x̱ʼe-du-d-s-i'}
+x̱ʼadus {'x̱ʼe-u-du-d-s', 'x̱ʼe-du-d-s'}
+x̱ʼaduwa {'x̱ʼe-du-i', 'x̱ʼe-u-du-i'}
+x̱ʼadu {'x̱ʼe-du', 'x̱ʼe-u-du'}
+tududzi {'tu-du-d-s-i', 'tu-u-du-d-s-i'}
+tudus {'tu-du-d-s', 'tu-u-du-d-s'}
+tuduwa {'tu-u-du-i', 'tu-du-i'}
+tudu {'tu-u-du', 'tu-du'}
+us {'u-s', 'u-d-s'}
+oos {'a-u-d-s', 'a-u-s'}
+koos {'ka-u-d-s', 'ka-u-s'}
+x̱ʼeis {'x̱ʼe-u-d-s', 'x̱ʼe-u-s'}
+x̱ʼeiwa {'x̱ʼe-u-i', 'x̱ʼe-wu-i'}
+toowa {'tu-wu-i', 'tu-u-i'}
+x̱wadzi {'wu-x̱-d-s-i', 'u-x̱-d-s-i'}
+x̱wadi {'wu-x̱-d-i', 'u-x̱-d-i'}
+x̱wasi {'wu-x̱-s-i', 'u-x̱-s-i'}
+x̱wada {'u-x̱-d', 'wu-x̱-d'}
+x̱was {'wu-x̱-d-s', 'u-x̱-d-s'}
+x̱wasa {'u-x̱-s', 'wu-x̱-s'}
+x̱waa {'u-x̱-i', 'wu-x̱-i'}
+x̱wa {'u-x̱', 'wu-x̱'}
+ax̱wdzi {'a-u-x̱-d-s-i', 'a-wu-x̱-d-s-i'}
+ax̱wdi {'a-wu-x̱-d-i', 'a-u-x̱-d-i'}
+ax̱wsi {'a-u-x̱-s-i', 'a-wu-x̱-s-i'}
+ax̱wda {'a-wu-x̱-d', 'a-u-x̱-d'}
+ax̱was {'a-wu-x̱-d-s', 'a-u-x̱-d-s'}
+ax̱wsa {'a-u-x̱-s', 'a-wu-x̱-s'}
+ax̱waa {'a-wu-x̱-i', 'a-u-x̱-i'}
+ax̱wa {'a-u-x̱', 'a-wu-x̱'}
+koox̱dzi {'ka-u-g̱-d-s-i', 'ka-u-x̱-d-s-i'}
+koox̱di {'ka-u-g̱-d-i', 'ka-u-x̱-d-i'}
+koox̱si {'ka-u-x̱-s-i', 'ka-u-g̱-s-i'}
+koox̱da {'ka-u-g̱-d', 'ka-u-x̱-d'}
+koox̱sa {'ka-u-g̱-s', 'ka-u-x̱-s'}
+x̱ʼeix̱dzi {'x̱ʼe-u-g̱-d-s-i', 'x̱ʼe-u-x̱-d-s-i'}
+x̱ʼeix̱di {'x̱ʼe-u-g̱-d-i', 'x̱ʼe-u-x̱-d-i'}
+x̱ʼeix̱si {'x̱ʼe-u-g̱-s-i', 'x̱ʼe-u-x̱-s-i'}
+x̱ʼeix̱da {'x̱ʼe-u-g̱-d', 'x̱ʼe-u-x̱-d'}
+x̱ʼeix̱sa {'x̱ʼe-u-x̱-s', 'x̱ʼe-u-g̱-s'}
+jeex̱dzi {'ji-u-x̱-d-s-i', 'ji-u-g̱-d-s-i'}
+jeex̱di {'ji-u-g̱-d-i', 'ji-u-x̱-d-i'}
+jeex̱si {'ji-u-g̱-s-i', 'ji-u-x̱-s-i'}
+jeex̱da {'ji-u-x̱-d', 'ji-u-g̱-d'}
+jeex̱sa {'ji-u-x̱-s', 'ji-u-g̱-s'}
+toox̱dzi {'tu-u-g̱-d-s-i', 'tu-u-x̱-d-s-i'}
+toox̱di {'tu-u-x̱-d-i', 'tu-u-g̱-d-i'}
+toox̱si {'tu-u-x̱-s-i', 'tu-u-g̱-s-i'}
+toox̱da {'tu-u-x̱-d', 'tu-u-g̱-d'}
+toox̱sa {'tu-u-g̱-s', 'tu-u-x̱-s'}
+g̱atuda {'g̱-tu-d', 'u-g̱-tu-d'}
+g̱atoos {'g̱-tu-d-s', 'u-g̱-tu-d-s'}
+g̱atusa {'u-g̱-tu-s', 'g̱-tu-s'}
+g̱atoo {'u-g̱-tu', 'g̱-tu'}
+ax̱tuda {'a-g̱-tu-d', 'a-u-g̱-tu-d'}
+ax̱toos {'a-u-g̱-tu-d-s', 'a-g̱-tu-d-s'}
+ax̱tusa {'a-g̱-tu-s', 'a-u-g̱-tu-s'}
+ax̱too {'a-g̱-tu', 'a-u-g̱-tu'}
+kax̱tuda {'ka-g̱-tu-d', 'ka-u-g̱-tu-d'}
+kax̱toos {'ka-g̱-tu-d-s', 'ka-u-g̱-tu-d-s'}
+kax̱tusa {'ka-g̱-tu-s', 'ka-u-g̱-tu-s'}
+kax̱too {'ka-u-g̱-tu', 'ka-g̱-tu'}
+x̱ʼax̱tuda {'x̱ʼe-u-g̱-tu-d', 'x̱ʼe-g̱-tu-d'}
+x̱ʼax̱toos {'x̱ʼe-g̱-tu-d-s', 'x̱ʼe-u-g̱-tu-d-s'}
+x̱ʼax̱tusa {'x̱ʼe-u-g̱-tu-s', 'x̱ʼe-g̱-tu-s'}
+x̱ʼax̱too {'x̱ʼe-g̱-tu', 'x̱ʼe-u-g̱-tu'}
+jix̱tuda {'ji-u-g̱-tu-d', 'ji-g̱-tu-d'}
+jix̱toos {'ji-u-g̱-tu-d-s', 'ji-g̱-tu-d-s'}
+jix̱tusa {'ji-g̱-tu-s', 'ji-u-g̱-tu-s'}
+jix̱too {'ji-g̱-tu', 'ji-u-g̱-tu'}
+tux̱tuda {'tu-g̱-tu-d', 'tu-u-g̱-tu-d'}
+tux̱toos {'tu-g̱-tu-d-s', 'tu-u-g̱-tu-d-s'}
+tux̱tusa {'tu-g̱-tu-s', 'tu-u-g̱-tu-s'}
+tux̱too {'tu-g̱-tu', 'tu-u-g̱-tu'}
+g̱ida {'g̱-i-d', 'u-g̱-i-d'}
+g̱ees {'u-g̱-i-d-s', 'g̱-i-d-s'}
+g̱isa {'g̱-i-s', 'u-g̱-i-s'}
+g̱ee {'u-g̱-i', 'g̱-i'}
+ag̱ida {'a-g̱-i-d', 'a-u-g̱-i-d'}
+ag̱ees {'a-u-g̱-i-d-s', 'a-g̱-i-d-s'}
+ag̱isa {'a-g̱-i-s', 'a-u-g̱-i-s'}
+ag̱ee {'a-g̱-i', 'a-u-g̱-i'}
+kag̱ida {'ka-u-g̱-i-d', 'ka-g̱-i-d'}
+kag̱ees {'ka-g̱-i-d-s', 'ka-u-g̱-i-d-s'}
+kag̱isa {'ka-u-g̱-i-s', 'ka-g̱-i-s'}
+kag̱ee {'ka-u-g̱-i', 'ka-g̱-i'}
+x̱ʼag̱ida {'x̱ʼe-g̱-i-d', 'x̱ʼe-u-g̱-i-d'}
+x̱ʼag̱ees {'x̱ʼe-u-g̱-i-d-s', 'x̱ʼe-g̱-i-d-s'}
+x̱ʼag̱isa {'x̱ʼe-g̱-i-s', 'x̱ʼe-u-g̱-i-s'}
+x̱ʼag̱ee {'x̱ʼe-g̱-i', 'x̱ʼe-u-g̱-i'}
+jig̱ida {'ji-g̱-i-d', 'ji-u-g̱-i-d'}
+jig̱ees {'ji-u-g̱-i-d-s', 'ji-g̱-i-d-s'}
+jig̱isa {'ji-u-g̱-i-s', 'ji-g̱-i-s'}
+jig̱ee {'ji-u-g̱-i', 'ji-g̱-i'}
+tug̱ida {'tu-u-g̱-i-d', 'tu-g̱-i-d'}
+tug̱ees {'tu-g̱-i-d-s', 'tu-u-g̱-i-d-s'}
+tug̱isa {'tu-g̱-i-s', 'tu-u-g̱-i-s'}
+tug̱ee {'tu-g̱-i', 'tu-u-g̱-i'}
+g̱ayda {'g̱-yi-d', 'u-g̱-yi-d'}
+g̱ayis {'u-g̱-yi-d-s', 'g̱-yi-d-s'}
+g̱aysa {'u-g̱-yi-s', 'g̱-yi-s'}
+g̱ay {'g̱-yi', 'u-g̱-yi'}
+ax̱yida {'a-u-g̱-yi-d', 'a-g̱-yi-d'}
+ax̱yis {'a-g̱-yi-d-s', 'a-u-g̱-yi-d-s'}
+ax̱yisa {'a-g̱-yi-s', 'a-u-g̱-yi-s'}
+ax̱yi {'a-g̱-yi', 'a-u-g̱-yi'}
+kax̱yida {'ka-g̱-yi-d', 'ka-u-g̱-yi-d'}
+kax̱yis {'ka-g̱-yi-d-s', 'ka-u-g̱-yi-d-s'}
+kax̱yisa {'ka-u-g̱-yi-s', 'ka-g̱-yi-s'}
+kax̱yi {'ka-g̱-yi', 'ka-u-g̱-yi'}
+x̱ʼax̱yida {'x̱ʼe-g̱-yi-d', 'x̱ʼe-u-g̱-yi-d'}
+x̱ʼax̱yis {'x̱ʼe-g̱-yi-d-s', 'x̱ʼe-u-g̱-yi-d-s'}
+x̱ʼax̱yisa {'x̱ʼe-g̱-yi-s', 'x̱ʼe-u-g̱-yi-s'}
+x̱ʼax̱yi {'x̱ʼe-g̱-yi', 'x̱ʼe-u-g̱-yi'}
+jix̱yida {'ji-g̱-yi-d', 'ji-u-g̱-yi-d'}
+jix̱yis {'ji-u-g̱-yi-d-s', 'ji-g̱-yi-d-s'}
+jix̱yisa {'ji-g̱-yi-s', 'ji-u-g̱-yi-s'}
+jix̱yi {'ji-u-g̱-yi', 'ji-g̱-yi'}
+tux̱yida {'tu-u-g̱-yi-d', 'tu-g̱-yi-d'}
+tux̱yis {'tu-u-g̱-yi-d-s', 'tu-g̱-yi-d-s'}
+tux̱yisa {'tu-g̱-yi-s', 'tu-u-g̱-yi-s'}
+tux̱yi {'tu-u-g̱-yi', 'tu-g̱-yi'}
+g̱adus {'u-g̱-du-d-s', 'g̱-du-d-s'}
+g̱adu {'g̱-du', 'u-g̱-du'}
+ax̱dus {'a-g̱-du-d-s', 'a-u-g̱-du-d-s'}
+ax̱du {'a-g̱-du', 'a-u-g̱-du'}
+kax̱dus {'ka-u-g̱-du-d-s', 'ka-g̱-du-d-s'}
+kax̱du {'ka-u-g̱-du', 'ka-g̱-du'}
+x̱ʼax̱dus {'x̱ʼe-u-g̱-du-d-s', 'x̱ʼe-g̱-du-d-s'}
+x̱ʼax̱du {'x̱ʼe-g̱-du', 'x̱ʼe-u-g̱-du'}
+jix̱dus {'ji-g̱-du-d-s', 'ji-u-g̱-du-d-s'}
+jix̱du {'ji-u-g̱-du', 'ji-g̱-du'}
+tux̱dus {'tu-g̱-du-d-s', 'tu-u-g̱-du-d-s'}
+tux̱du {'tu-g̱-du', 'tu-u-g̱-du'}
+g̱atudzi {'u-g̱-tu-d-s-i', 'g̱-tu-d-s-i'}
+g̱atudi {'g̱-tu-d-i', 'u-g̱-tu-d-i'}
+g̱atusi {'g̱-tu-s-i', 'u-g̱-tu-s-i'}
+g̱atuwa {'u-g̱-tu-i', 'g̱-tu-i'}
+ax̱tudzi {'a-g̱-tu-d-s-i', 'a-u-g̱-tu-d-s-i'}
+ax̱tudi {'a-g̱-tu-d-i', 'a-u-g̱-tu-d-i'}
+ax̱tusi {'a-g̱-tu-s-i', 'a-u-g̱-tu-s-i'}
+ax̱tuwa {'a-u-g̱-tu-i', 'a-g̱-tu-i'}
+kax̱tudzi {'ka-g̱-tu-d-s-i', 'ka-u-g̱-tu-d-s-i'}
+kax̱tudi {'ka-u-g̱-tu-d-i', 'ka-g̱-tu-d-i'}
+kax̱tusi {'ka-g̱-tu-s-i', 'ka-u-g̱-tu-s-i'}
+kax̱tuwa {'ka-u-g̱-tu-i', 'ka-g̱-tu-i'}
+x̱ʼax̱tudzi {'x̱ʼe-g̱-tu-d-s-i', 'x̱ʼe-u-g̱-tu-d-s-i'}
+x̱ʼax̱tudi {'x̱ʼe-u-g̱-tu-d-i', 'x̱ʼe-g̱-tu-d-i'}
+x̱ʼax̱tusi {'x̱ʼe-u-g̱-tu-s-i', 'x̱ʼe-g̱-tu-s-i'}
+x̱ʼax̱tuwa {'x̱ʼe-g̱-tu-i', 'x̱ʼe-u-g̱-tu-i'}
+jix̱tudzi {'ji-g̱-tu-d-s-i', 'ji-u-g̱-tu-d-s-i'}
+jix̱tudi {'ji-u-g̱-tu-d-i', 'ji-g̱-tu-d-i'}
+jix̱tusi {'ji-u-g̱-tu-s-i', 'ji-g̱-tu-s-i'}
+jix̱tuwa {'ji-g̱-tu-i', 'ji-u-g̱-tu-i'}
+tux̱tudzi {'tu-g̱-tu-d-s-i', 'tu-u-g̱-tu-d-s-i'}
+tux̱tudi {'tu-u-g̱-tu-d-i', 'tu-g̱-tu-d-i'}
+tux̱tusi {'tu-g̱-tu-s-i', 'tu-u-g̱-tu-s-i'}
+tux̱tuwa {'tu-u-g̱-tu-i', 'tu-g̱-tu-i'}
+g̱idzi {'g̱-i-d-s-i', 'u-g̱-i-d-s-i'}
+g̱idi {'u-g̱-i-d-i', 'g̱-i-d-i'}
+g̱isi {'g̱-i-s-i', 'u-g̱-i-s-i'}
+g̱iya {'u-g̱-i-i', 'g̱-i-i'}
+ag̱idzi {'a-u-g̱-i-d-s-i', 'a-g̱-i-d-s-i'}
+ag̱idi {'a-u-g̱-i-d-i', 'a-g̱-i-d-i'}
+ag̱isi {'a-g̱-i-s-i', 'a-u-g̱-i-s-i'}
+ag̱iya {'a-u-g̱-i-i', 'a-g̱-i-i'}
+kag̱idzi {'ka-u-g̱-i-d-s-i', 'ka-g̱-i-d-s-i'}
+kag̱idi {'ka-g̱-i-d-i', 'ka-u-g̱-i-d-i'}
+kag̱isi {'ka-u-g̱-i-s-i', 'ka-g̱-i-s-i'}
+kag̱iya {'ka-g̱-i-i', 'ka-u-g̱-i-i'}
+x̱ʼag̱idzi {'x̱ʼe-u-g̱-i-d-s-i', 'x̱ʼe-g̱-i-d-s-i'}
+x̱ʼag̱idi {'x̱ʼe-g̱-i-d-i', 'x̱ʼe-u-g̱-i-d-i'}
+x̱ʼag̱isi {'x̱ʼe-u-g̱-i-s-i', 'x̱ʼe-g̱-i-s-i'}
+x̱ʼag̱iya {'x̱ʼe-u-g̱-i-i', 'x̱ʼe-g̱-i-i'}
+jig̱idzi {'ji-u-g̱-i-d-s-i', 'ji-g̱-i-d-s-i'}
+jig̱idi {'ji-u-g̱-i-d-i', 'ji-g̱-i-d-i'}
+jig̱isi {'ji-g̱-i-s-i', 'ji-u-g̱-i-s-i'}
+jig̱iya {'ji-u-g̱-i-i', 'ji-g̱-i-i'}
+tug̱idzi {'tu-g̱-i-d-s-i', 'tu-u-g̱-i-d-s-i'}
+tug̱idi {'tu-g̱-i-d-i', 'tu-u-g̱-i-d-i'}
+tug̱isi {'tu-u-g̱-i-s-i', 'tu-g̱-i-s-i'}
+tug̱iya {'tu-u-g̱-i-i', 'tu-g̱-i-i'}
+g̱aydzi {'u-g̱-yi-d-s-i', 'g̱-yi-d-s-i'}
+g̱aydi {'u-g̱-yi-d-i', 'g̱-yi-d-i'}
+g̱aysi {'g̱-yi-s-i', 'u-g̱-yi-s-i'}
+g̱ayeey {'g̱-yi-i', 'u-g̱-yi-i'}
+ax̱yidzi {'a-u-g̱-yi-d-s-i', 'a-g̱-yi-d-s-i'}
+ax̱yidi {'a-g̱-yi-d-i', 'a-u-g̱-yi-d-i'}
+ax̱yisi {'a-g̱-yi-s-i', 'a-u-g̱-yi-s-i'}
+ax̱yeey {'a-u-g̱-yi-i', 'a-g̱-yi-i'}
+kax̱yidzi {'ka-u-g̱-yi-d-s-i', 'ka-g̱-yi-d-s-i'}
+kax̱yidi {'ka-u-g̱-yi-d-i', 'ka-g̱-yi-d-i'}
+kax̱yisi {'ka-g̱-yi-s-i', 'ka-u-g̱-yi-s-i'}
+kax̱yeey {'ka-u-g̱-yi-i', 'ka-g̱-yi-i'}
+x̱ʼax̱yidzi {'x̱ʼe-u-g̱-yi-d-s-i', 'x̱ʼe-g̱-yi-d-s-i'}
+x̱ʼax̱yidi {'x̱ʼe-u-g̱-yi-d-i', 'x̱ʼe-g̱-yi-d-i'}
+x̱ʼax̱yisi {'x̱ʼe-u-g̱-yi-s-i', 'x̱ʼe-g̱-yi-s-i'}
+x̱ʼax̱yeey {'x̱ʼe-u-g̱-yi-i', 'x̱ʼe-g̱-yi-i'}
+jix̱yidzi {'ji-g̱-yi-d-s-i', 'ji-u-g̱-yi-d-s-i'}
+jix̱yidi {'ji-u-g̱-yi-d-i', 'ji-g̱-yi-d-i'}
+jix̱yisi {'ji-u-g̱-yi-s-i', 'ji-g̱-yi-s-i'}
+jix̱yeey {'ji-u-g̱-yi-i', 'ji-g̱-yi-i'}
+tux̱yidzi {'tu-g̱-yi-d-s-i', 'tu-u-g̱-yi-d-s-i'}
+tux̱yidi {'tu-u-g̱-yi-d-i', 'tu-g̱-yi-d-i'}
+tux̱yisi {'tu-g̱-yi-s-i', 'tu-u-g̱-yi-s-i'}
+tux̱yeey {'tu-g̱-yi-i', 'tu-u-g̱-yi-i'}
+g̱adudzi {'u-g̱-du-d-s-i', 'g̱-du-d-s-i'}
+g̱aduwa {'u-g̱-du-i', 'g̱-du-i'}
+ax̱dudzi {'a-g̱-du-d-s-i', 'a-u-g̱-du-d-s-i'}
+ax̱duwa {'a-g̱-du-i', 'a-u-g̱-du-i'}
+kax̱dudzi {'ka-u-g̱-du-d-s-i', 'ka-g̱-du-d-s-i'}
+kax̱duwa {'ka-u-g̱-du-i', 'ka-g̱-du-i'}
+x̱ʼax̱dudzi {'x̱ʼe-g̱-du-d-s-i', 'x̱ʼe-u-g̱-du-d-s-i'}
+x̱ʼax̱duwa {'x̱ʼe-u-g̱-du-i', 'x̱ʼe-g̱-du-i'}
+jix̱dudzi {'ji-u-g̱-du-d-s-i', 'ji-g̱-du-d-s-i'}
+jix̱duwa {'ji-g̱-du-i', 'ji-u-g̱-du-i'}
+tux̱dudzi {'tu-u-g̱-du-d-s-i', 'tu-g̱-du-d-s-i'}
+tux̱duwa {'tu-g̱-du-i', 'tu-u-g̱-du-i'}
+nas {'n-s', 'n-d-s'}
+anas {'a-n-s', 'a-n-d-s'}
+kanas {'ka-n-s', 'ka-n-d-s'}
+x̱ʼanas {'x̱ʼe-n-d-s', 'x̱ʼe-n-s'}
+jinas {'ji-n-s', 'ji-n-d-s'}
+tunas {'tu-n-d-s', 'tu-n-s'}
+nax̱dzi {'n-g̱-d-s-i', 'n-x̱-d-s-i'}
+nax̱di {'n-x̱-d-i', 'n-g̱-d-i'}
+nax̱si {'n-x̱-s-i', 'n-g̱-s-i'}
+nax̱da {'n-x̱-d', 'n-g̱-d'}
+nax̱sa {'n-g̱-s', 'n-x̱-s'}
+anax̱dzi {'a-n-g̱-d-s-i', 'a-n-x̱-d-s-i'}
+anax̱di {'a-n-x̱-d-i', 'a-n-g̱-d-i'}
+anax̱si {'a-n-x̱-s-i', 'a-n-g̱-s-i'}
+anax̱da {'a-n-x̱-d', 'a-n-g̱-d'}
+anax̱sa {'a-n-x̱-s', 'a-n-g̱-s'}
+kanax̱dzi {'ka-n-x̱-d-s-i', 'ka-n-g̱-d-s-i'}
+kanax̱di {'ka-n-g̱-d-i', 'ka-n-x̱-d-i'}
+kanax̱si {'ka-n-x̱-s-i', 'ka-n-g̱-s-i'}
+kanax̱da {'ka-n-x̱-d', 'ka-n-g̱-d'}
+kanax̱sa {'ka-n-x̱-s', 'ka-n-g̱-s'}
+x̱ʼanax̱dzi {'x̱ʼe-n-x̱-d-s-i', 'x̱ʼe-n-g̱-d-s-i'}
+x̱ʼanax̱di {'x̱ʼe-n-x̱-d-i', 'x̱ʼe-n-g̱-d-i'}
+x̱ʼanax̱si {'x̱ʼe-n-x̱-s-i', 'x̱ʼe-n-g̱-s-i'}
+x̱ʼanax̱da {'x̱ʼe-n-x̱-d', 'x̱ʼe-n-g̱-d'}
+x̱ʼanax̱sa {'x̱ʼe-n-g̱-s', 'x̱ʼe-n-x̱-s'}
+jinax̱dzi {'ji-n-g̱-d-s-i', 'ji-n-x̱-d-s-i'}
+jinax̱di {'ji-n-x̱-d-i', 'ji-n-g̱-d-i'}
+jinax̱si {'ji-n-g̱-s-i', 'ji-n-x̱-s-i'}
+jinax̱da {'ji-n-g̱-d', 'ji-n-x̱-d'}
+jinax̱sa {'ji-n-g̱-s', 'ji-n-x̱-s'}
+tunax̱dzi {'tu-n-g̱-d-s-i', 'tu-n-x̱-d-s-i'}
+tunax̱di {'tu-n-x̱-d-i', 'tu-n-g̱-d-i'}
+tunax̱si {'tu-n-x̱-s-i', 'tu-n-g̱-s-i'}
+tunax̱da {'tu-n-x̱-d', 'tu-n-g̱-d'}
+tunax̱sa {'tu-n-x̱-s', 'tu-n-g̱-s'}
+natudzi {'u-n-tu-d-s-i', 'n-tu-d-s-i'}
+natudi {'u-n-tu-d-i', 'n-tu-d-i'}
+natusi {'u-n-tu-s-i', 'n-tu-s-i'}
+natuda {'u-n-tu-d', 'n-tu-d'}
+natoos {'n-tu-d-s', 'u-n-tu-d-s'}
+natusa {'u-n-tu-s', 'n-tu-s'}
+natuwa {'n-tu-i', 'u-n-tu-i'}
+natoo {'u-n-tu', 'n-tu'}
+antudzi {'a-n-tu-d-s-i', 'a-u-n-tu-d-s-i'}
+antudi {'a-n-tu-d-i', 'a-u-n-tu-d-i'}
+antusi {'a-n-tu-s-i', 'a-u-n-tu-s-i'}
+antuda {'a-u-n-tu-d', 'a-n-tu-d'}
+antoos {'a-u-n-tu-d-s', 'a-n-tu-d-s'}
+antusa {'a-u-n-tu-s', 'a-n-tu-s'}
+antuwa {'a-n-tu-i', 'a-u-n-tu-i'}
+antoo {'a-n-tu', 'a-u-n-tu'}
+kantudzi {'ka-n-tu-d-s-i', 'ka-u-n-tu-d-s-i'}
+kantudi {'ka-n-tu-d-i', 'ka-u-n-tu-d-i'}
+kantusi {'ka-u-n-tu-s-i', 'ka-n-tu-s-i'}
+kantuda {'ka-u-n-tu-d', 'ka-n-tu-d'}
+kantoos {'ka-u-n-tu-d-s', 'ka-n-tu-d-s'}
+kantusa {'ka-n-tu-s', 'ka-u-n-tu-s'}
+kantuwa {'ka-n-tu-i', 'ka-u-n-tu-i'}
+kantoo {'ka-u-n-tu', 'ka-n-tu'}
+x̱ʼantudzi {'x̱ʼe-u-n-tu-d-s-i', 'x̱ʼe-n-tu-d-s-i'}
+x̱ʼantudi {'x̱ʼe-n-tu-d-i', 'x̱ʼe-u-n-tu-d-i'}
+x̱ʼantusi {'x̱ʼe-u-n-tu-s-i', 'x̱ʼe-n-tu-s-i'}
+x̱ʼantuda {'x̱ʼe-n-tu-d', 'x̱ʼe-u-n-tu-d'}
+x̱ʼantoos {'x̱ʼe-u-n-tu-d-s', 'x̱ʼe-n-tu-d-s'}
+x̱ʼantusa {'x̱ʼe-u-n-tu-s', 'x̱ʼe-n-tu-s'}
+x̱ʼantuwa {'x̱ʼe-u-n-tu-i', 'x̱ʼe-n-tu-i'}
+x̱ʼantoo {'x̱ʼe-n-tu', 'x̱ʼe-u-n-tu'}
+jintudzi {'ji-u-n-tu-d-s-i', 'ji-n-tu-d-s-i'}
+jintudi {'ji-u-n-tu-d-i', 'ji-n-tu-d-i'}
+jintusi {'ji-n-tu-s-i', 'ji-u-n-tu-s-i'}
+jintuda {'ji-u-n-tu-d', 'ji-n-tu-d'}
+jintoos {'ji-u-n-tu-d-s', 'ji-n-tu-d-s'}
+jintusa {'ji-n-tu-s', 'ji-u-n-tu-s'}
+jintuwa {'ji-u-n-tu-i', 'ji-n-tu-i'}
+jintoo {'ji-u-n-tu', 'ji-n-tu'}
+tuntudzi {'tu-u-n-tu-d-s-i', 'tu-n-tu-d-s-i'}
+tuntudi {'tu-u-n-tu-d-i', 'tu-n-tu-d-i'}
+tuntusi {'tu-n-tu-s-i', 'tu-u-n-tu-s-i'}
+tuntuda {'tu-n-tu-d', 'tu-u-n-tu-d'}
+tuntoos {'tu-u-n-tu-d-s', 'tu-n-tu-d-s'}
+tuntusa {'tu-u-n-tu-s', 'tu-n-tu-s'}
+tuntuwa {'tu-u-n-tu-i', 'tu-n-tu-i'}
+tuntoo {'tu-u-n-tu', 'tu-n-tu'}
+nidzi {'n-i-d-s-i', 'u-n-i-d-s-i'}
+nidi {'n-i-d-i', 'u-n-i-d-i'}
+nisi {'n-i-s-i', 'u-n-i-s-i'}
+nida {'u-n-i-d', 'n-i-d'}
+nees {'u-n-i-d-s', 'n-i-d-s'}
+nisa {'n-i-s', 'u-n-i-s'}
+niya {'u-n-i-i', 'n-i-i'}
+nee {'n-i', 'u-n-i'}
+anidzi {'a-n-i-d-s-i', 'a-u-n-i-d-s-i'}
+anidi {'a-u-n-i-d-i', 'a-n-i-d-i'}
+anisi {'a-u-n-i-s-i', 'a-n-i-s-i'}
+anida {'a-n-i-d', 'a-u-n-i-d'}
+anees {'a-u-n-i-d-s', 'a-n-i-d-s'}
+anisa {'a-n-i-s', 'a-u-n-i-s'}
+aniya {'a-n-i-i', 'a-u-n-i-i'}
+anee {'a-n-i', 'a-u-n-i'}
+kanidzi {'ka-u-n-i-d-s-i', 'ka-n-i-d-s-i'}
+kanidi {'ka-n-i-d-i', 'ka-u-n-i-d-i'}
+kanisi {'ka-n-i-s-i', 'ka-u-n-i-s-i'}
+kanida {'ka-n-i-d', 'ka-u-n-i-d'}
+kanees {'ka-u-n-i-d-s', 'ka-n-i-d-s'}
+kanisa {'ka-u-n-i-s', 'ka-n-i-s'}
+kaniya {'ka-u-n-i-i', 'ka-n-i-i'}
+kanee {'ka-u-n-i', 'ka-n-i'}
+x̱ʼanidzi {'x̱ʼe-n-i-d-s-i', 'x̱ʼe-u-n-i-d-s-i'}
+x̱ʼanidi {'x̱ʼe-u-n-i-d-i', 'x̱ʼe-n-i-d-i'}
+x̱ʼanisi {'x̱ʼe-u-n-i-s-i', 'x̱ʼe-n-i-s-i'}
+x̱ʼanida {'x̱ʼe-u-n-i-d', 'x̱ʼe-n-i-d'}
+x̱ʼanees {'x̱ʼe-u-n-i-d-s', 'x̱ʼe-n-i-d-s'}
+x̱ʼanisa {'x̱ʼe-u-n-i-s', 'x̱ʼe-n-i-s'}
+x̱ʼaniya {'x̱ʼe-u-n-i-i', 'x̱ʼe-n-i-i'}
+x̱ʼanee {'x̱ʼe-u-n-i', 'x̱ʼe-n-i'}
+jinidzi {'ji-u-n-i-d-s-i', 'ji-n-i-d-s-i'}
+jinidi {'ji-n-i-d-i', 'ji-u-n-i-d-i'}
+jinisi {'ji-u-n-i-s-i', 'ji-n-i-s-i'}
+jinida {'ji-u-n-i-d', 'ji-n-i-d'}
+jinees {'ji-u-n-i-d-s', 'ji-n-i-d-s'}
+jinisa {'ji-n-i-s', 'ji-u-n-i-s'}
+jiniya {'ji-u-n-i-i', 'ji-n-i-i'}
+jinee {'ji-u-n-i', 'ji-n-i'}
+tunidzi {'tu-n-i-d-s-i', 'tu-u-n-i-d-s-i'}
+tunidi {'tu-u-n-i-d-i', 'tu-n-i-d-i'}
+tunisi {'tu-n-i-s-i', 'tu-u-n-i-s-i'}
+tunida {'tu-n-i-d', 'tu-u-n-i-d'}
+tunees {'tu-n-i-d-s', 'tu-u-n-i-d-s'}
+tunisa {'tu-u-n-i-s', 'tu-n-i-s'}
+tuniya {'tu-n-i-i', 'tu-u-n-i-i'}
+tunee {'tu-u-n-i', 'tu-n-i'}
+naydzi {'u-n-yi-d-s-i', 'n-yi-d-s-i'}
+naydi {'u-n-yi-d-i', 'n-yi-d-i'}
+naysi {'n-yi-s-i', 'u-n-yi-s-i'}
+nayda {'n-yi-d', 'u-n-yi-d'}
+nayis {'n-yi-d-s', 'n-g̱-yi-d-s', 'u-n-g̱-yi-d-s', 'u-n-yi-d-s'}
+naysa {'u-n-yi-s', 'n-yi-s'}
+nayeey {'u-n-yi-i', 'n-yi-i'}
+nay {'n-yi', 'u-n-yi'}
+anaydzi {'a-n-yi-d-s-i', 'a-u-n-yi-d-s-i'}
+anaydi {'a-u-n-yi-d-i', 'a-n-yi-d-i'}
+anaysi {'a-n-yi-s-i', 'a-u-n-yi-s-i'}
+anayda {'a-n-yi-d', 'a-u-n-yi-d'}
+anayis {'a-u-n-g̱-yi-d-s', 'a-n-yi-d-s', 'a-u-n-yi-d-s', 'a-n-g̱-yi-d-s'}
+anaysa {'a-n-yi-s', 'a-u-n-yi-s'}
+anayeey {'a-u-n-yi-i', 'a-n-yi-i'}
+anay {'a-n-yi', 'a-u-n-yi'}
+kanaydzi {'ka-u-n-yi-d-s-i', 'ka-n-yi-d-s-i'}
+kanaydi {'ka-n-yi-d-i', 'ka-u-n-yi-d-i'}
+kanaysi {'ka-n-yi-s-i', 'ka-u-n-yi-s-i'}
+kanayda {'ka-u-n-yi-d', 'ka-n-yi-d'}
+kanayis {'ka-n-yi-d-s', 'ka-u-n-yi-d-s', 'ka-n-g̱-yi-d-s', 'ka-u-n-g̱-yi-d-s'}
+kanaysa {'ka-n-yi-s', 'ka-u-n-yi-s'}
+kanayeey {'ka-u-n-yi-i', 'ka-n-yi-i'}
+kanay {'ka-n-yi', 'ka-u-n-yi'}
+x̱ʼanaydzi {'x̱ʼe-u-n-yi-d-s-i', 'x̱ʼe-n-yi-d-s-i'}
+x̱ʼanaydi {'x̱ʼe-n-yi-d-i', 'x̱ʼe-u-n-yi-d-i'}
+x̱ʼanaysi {'x̱ʼe-n-yi-s-i', 'x̱ʼe-u-n-yi-s-i'}
+x̱ʼanayda {'x̱ʼe-n-yi-d', 'x̱ʼe-u-n-yi-d'}
+x̱ʼanayis {'x̱ʼe-u-n-g̱-yi-d-s', 'x̱ʼe-u-n-yi-d-s', 'x̱ʼe-n-yi-d-s', 'x̱ʼe-n-g̱-yi-d-s'}
+x̱ʼanaysa {'x̱ʼe-u-n-yi-s', 'x̱ʼe-n-yi-s'}
+x̱ʼanayeey {'x̱ʼe-n-yi-i', 'x̱ʼe-u-n-yi-i'}
+x̱ʼanay {'x̱ʼe-u-n-yi', 'x̱ʼe-n-yi'}
+jinaydzi {'ji-u-n-yi-d-s-i', 'ji-n-yi-d-s-i'}
+jinaydi {'ji-n-yi-d-i', 'ji-u-n-yi-d-i'}
+jinaysi {'ji-u-n-yi-s-i', 'ji-n-yi-s-i'}
+jinayda {'ji-u-n-yi-d', 'ji-n-yi-d'}
+jinayis {'ji-u-n-g̱-yi-d-s', 'ji-u-n-yi-d-s', 'ji-n-g̱-yi-d-s', 'ji-n-yi-d-s'}
+jinaysa {'ji-n-yi-s', 'ji-u-n-yi-s'}
+jinayeey {'ji-n-yi-i', 'ji-u-n-yi-i'}
+jinay {'ji-n-yi', 'ji-u-n-yi'}
+tunaydzi {'tu-u-n-yi-d-s-i', 'tu-n-yi-d-s-i'}
+tunaydi {'tu-n-yi-d-i', 'tu-u-n-yi-d-i'}
+tunaysi {'tu-u-n-yi-s-i', 'tu-n-yi-s-i'}
+tunayda {'tu-n-yi-d', 'tu-u-n-yi-d'}
+tunayis {'tu-u-n-yi-d-s', 'tu-u-n-g̱-yi-d-s', 'tu-n-yi-d-s', 'tu-n-g̱-yi-d-s'}
+tunaysa {'tu-u-n-yi-s', 'tu-n-yi-s'}
+tunayeey {'tu-u-n-yi-i', 'tu-n-yi-i'}
+tunay {'tu-n-yi', 'tu-u-n-yi'}
+nadudzi {'n-du-d-s-i', 'u-n-du-d-s-i'}
+nadus {'u-n-du-d-s', 'n-du-d-s'}
+naduwa {'n-du-i', 'u-n-du-i'}
+nadu {'u-n-du', 'n-du'}
+andudzi {'a-u-n-du-d-s-i', 'a-n-du-d-s-i'}
+andus {'a-u-n-du-d-s', 'a-n-du-d-s'}
+anduwa {'a-u-n-du-i', 'a-n-du-i'}
+andu {'a-u-n-du', 'a-n-du'}
+kandudzi {'ka-n-du-d-s-i', 'ka-u-n-du-d-s-i'}
+kandus {'ka-u-n-du-d-s', 'ka-n-du-d-s'}
+kanduwa {'ka-n-du-i', 'ka-u-n-du-i'}
+kandu {'ka-n-du', 'ka-u-n-du'}
+x̱ʼandudzi {'x̱ʼe-n-du-d-s-i', 'x̱ʼe-u-n-du-d-s-i'}
+x̱ʼandus {'x̱ʼe-n-du-d-s', 'x̱ʼe-u-n-du-d-s'}
+x̱ʼanduwa {'x̱ʼe-n-du-i', 'x̱ʼe-u-n-du-i'}
+x̱ʼandu {'x̱ʼe-n-du', 'x̱ʼe-u-n-du'}
+jindudzi {'ji-n-du-d-s-i', 'ji-u-n-du-d-s-i'}
+jindus {'ji-n-du-d-s', 'ji-u-n-du-d-s'}
+jinduwa {'ji-u-n-du-i', 'ji-n-du-i'}
+jindu {'ji-u-n-du', 'ji-n-du'}
+tundudzi {'tu-n-du-d-s-i', 'tu-u-n-du-d-s-i'}
+tundus {'tu-u-n-du-d-s', 'tu-n-du-d-s'}
+tunduwa {'tu-n-du-i', 'tu-u-n-du-i'}
+tundu {'tu-n-du', 'tu-u-n-du'}
+unas {'u-n-s', 'u-n-d-s'}
+oonas {'a-u-n-d-s', 'a-u-n-s'}
+koonas {'ka-u-n-d-s', 'ka-u-n-s'}
+x̱ʼeinas {'x̱ʼe-u-n-s', 'x̱ʼe-u-n-d-s'}
+jeenas {'ji-u-n-s', 'ji-u-n-d-s'}
+toonas {'tu-u-n-s', 'tu-u-n-d-s'}
+unax̱dzi {'u-n-x̱-d-s-i', 'u-n-g̱-d-s-i'}
+unax̱di {'u-n-x̱-d-i', 'u-n-g̱-d-i'}
+unax̱si {'u-n-g̱-s-i', 'u-n-x̱-s-i'}
+unax̱da {'u-n-x̱-d', 'u-n-g̱-d'}
+unax̱sa {'u-n-x̱-s', 'u-n-g̱-s'}
+oonax̱dzi {'a-u-n-g̱-d-s-i', 'a-u-n-x̱-d-s-i'}
+oonax̱di {'a-u-n-g̱-d-i', 'a-u-n-x̱-d-i'}
+oonax̱si {'a-u-n-x̱-s-i', 'a-u-n-g̱-s-i'}
+oonax̱da {'a-u-n-x̱-d', 'a-u-n-g̱-d'}
+oonax̱sa {'a-u-n-g̱-s', 'a-u-n-x̱-s'}
+koonax̱dzi {'ka-u-n-x̱-d-s-i', 'ka-u-n-g̱-d-s-i'}
+koonax̱di {'ka-u-n-x̱-d-i', 'ka-u-n-g̱-d-i'}
+koonax̱si {'ka-u-n-g̱-s-i', 'ka-u-n-x̱-s-i'}
+koonax̱da {'ka-u-n-x̱-d', 'ka-u-n-g̱-d'}
+koonax̱sa {'ka-u-n-g̱-s', 'ka-u-n-x̱-s'}
+x̱ʼeinax̱dzi {'x̱ʼe-u-n-g̱-d-s-i', 'x̱ʼe-u-n-x̱-d-s-i'}
+x̱ʼeinax̱di {'x̱ʼe-u-n-g̱-d-i', 'x̱ʼe-u-n-x̱-d-i'}
+x̱ʼeinax̱si {'x̱ʼe-u-n-g̱-s-i', 'x̱ʼe-u-n-x̱-s-i'}
+x̱ʼeinax̱da {'x̱ʼe-u-n-x̱-d', 'x̱ʼe-u-n-g̱-d'}
+x̱ʼeinax̱sa {'x̱ʼe-u-n-g̱-s', 'x̱ʼe-u-n-x̱-s'}
+jeenax̱dzi {'ji-u-n-x̱-d-s-i', 'ji-u-n-g̱-d-s-i'}
+jeenax̱di {'ji-u-n-g̱-d-i', 'ji-u-n-x̱-d-i'}
+jeenax̱si {'ji-u-n-x̱-s-i', 'ji-u-n-g̱-s-i'}
+jeenax̱da {'ji-u-n-g̱-d', 'ji-u-n-x̱-d'}
+jeenax̱sa {'ji-u-n-g̱-s', 'ji-u-n-x̱-s'}
+toonax̱dzi {'tu-u-n-x̱-d-s-i', 'tu-u-n-g̱-d-s-i'}
+toonax̱di {'tu-u-n-x̱-d-i', 'tu-u-n-g̱-d-i'}
+toonax̱si {'tu-u-n-x̱-s-i', 'tu-u-n-g̱-s-i'}
+toonax̱da {'tu-u-n-x̱-d', 'tu-u-n-g̱-d'}
+toonax̱sa {'tu-u-n-g̱-s', 'tu-u-n-x̱-s'}
+nax̱tudzi {'n-g̱-tu-d-s-i', 'u-n-g̱-tu-d-s-i'}
+nax̱tudi {'n-g̱-tu-d-i', 'u-n-g̱-tu-d-i'}
+nax̱tusi {'u-n-g̱-tu-s-i', 'n-g̱-tu-s-i'}
+nax̱tuda {'n-g̱-tu-d', 'u-n-g̱-tu-d'}
+nax̱toos {'n-g̱-tu-d-s', 'u-n-g̱-tu-d-s'}
+nax̱tusa {'n-g̱-tu-s', 'u-n-g̱-tu-s'}
+nax̱tuwa {'n-g̱-tu-i', 'u-n-g̱-tu-i'}
+nax̱too {'n-g̱-tu', 'u-n-g̱-tu'}
+anax̱tudzi {'a-n-g̱-tu-d-s-i', 'a-u-n-g̱-tu-d-s-i'}
+anax̱tudi {'a-u-n-g̱-tu-d-i', 'a-n-g̱-tu-d-i'}
+anax̱tusi {'a-n-g̱-tu-s-i', 'a-u-n-g̱-tu-s-i'}
+anax̱tuda {'a-u-n-g̱-tu-d', 'a-n-g̱-tu-d'}
+anax̱toos {'a-n-g̱-tu-d-s', 'a-u-n-g̱-tu-d-s'}
+anax̱tusa {'a-n-g̱-tu-s', 'a-u-n-g̱-tu-s'}
+anax̱tuwa {'a-u-n-g̱-tu-i', 'a-n-g̱-tu-i'}
+anax̱too {'a-u-n-g̱-tu', 'a-n-g̱-tu'}
+kanax̱tudzi {'ka-n-g̱-tu-d-s-i', 'ka-u-n-g̱-tu-d-s-i'}
+kanax̱tudi {'ka-u-n-g̱-tu-d-i', 'ka-n-g̱-tu-d-i'}
+kanax̱tusi {'ka-n-g̱-tu-s-i', 'ka-u-n-g̱-tu-s-i'}
+kanax̱tuda {'ka-n-g̱-tu-d', 'ka-u-n-g̱-tu-d'}
+kanax̱toos {'ka-u-n-g̱-tu-d-s', 'ka-n-g̱-tu-d-s'}
+kanax̱tusa {'ka-n-g̱-tu-s', 'ka-u-n-g̱-tu-s'}
+kanax̱tuwa {'ka-u-n-g̱-tu-i', 'ka-n-g̱-tu-i'}
+kanax̱too {'ka-n-g̱-tu', 'ka-u-n-g̱-tu'}
+x̱ʼanax̱tudzi {'x̱ʼe-u-n-g̱-tu-d-s-i', 'x̱ʼe-n-g̱-tu-d-s-i'}
+x̱ʼanax̱tudi {'x̱ʼe-u-n-g̱-tu-d-i', 'x̱ʼe-n-g̱-tu-d-i'}
+x̱ʼanax̱tusi {'x̱ʼe-u-n-g̱-tu-s-i', 'x̱ʼe-n-g̱-tu-s-i'}
+x̱ʼanax̱tuda {'x̱ʼe-n-g̱-tu-d', 'x̱ʼe-u-n-g̱-tu-d'}
+x̱ʼanax̱toos {'x̱ʼe-u-n-g̱-tu-d-s', 'x̱ʼe-n-g̱-tu-d-s'}
+x̱ʼanax̱tusa {'x̱ʼe-u-n-g̱-tu-s', 'x̱ʼe-n-g̱-tu-s'}
+x̱ʼanax̱tuwa {'x̱ʼe-n-g̱-tu-i', 'x̱ʼe-u-n-g̱-tu-i'}
+x̱ʼanax̱too {'x̱ʼe-u-n-g̱-tu', 'x̱ʼe-n-g̱-tu'}
+jinax̱tudzi {'ji-u-n-g̱-tu-d-s-i', 'ji-n-g̱-tu-d-s-i'}
+jinax̱tudi {'ji-n-g̱-tu-d-i', 'ji-u-n-g̱-tu-d-i'}
+jinax̱tusi {'ji-n-g̱-tu-s-i', 'ji-u-n-g̱-tu-s-i'}
+jinax̱tuda {'ji-u-n-g̱-tu-d', 'ji-n-g̱-tu-d'}
+jinax̱toos {'ji-u-n-g̱-tu-d-s', 'ji-n-g̱-tu-d-s'}
+jinax̱tusa {'ji-u-n-g̱-tu-s', 'ji-n-g̱-tu-s'}
+jinax̱tuwa {'ji-u-n-g̱-tu-i', 'ji-n-g̱-tu-i'}
+jinax̱too {'ji-u-n-g̱-tu', 'ji-n-g̱-tu'}
+tunax̱tudzi {'tu-n-g̱-tu-d-s-i', 'tu-u-n-g̱-tu-d-s-i'}
+tunax̱tudi {'tu-u-n-g̱-tu-d-i', 'tu-n-g̱-tu-d-i'}
+tunax̱tusi {'tu-u-n-g̱-tu-s-i', 'tu-n-g̱-tu-s-i'}
+tunax̱tuda {'tu-n-g̱-tu-d', 'tu-u-n-g̱-tu-d'}
+tunax̱toos {'tu-u-n-g̱-tu-d-s', 'tu-n-g̱-tu-d-s'}
+tunax̱tusa {'tu-n-g̱-tu-s', 'tu-u-n-g̱-tu-s'}
+tunax̱tuwa {'tu-n-g̱-tu-i', 'tu-u-n-g̱-tu-i'}
+tunax̱too {'tu-n-g̱-tu', 'tu-u-n-g̱-tu'}
+nag̱idzi {'n-g̱-i-d-s-i', 'u-n-g̱-i-d-s-i'}
+nag̱idi {'n-g̱-i-d-i', 'u-n-g̱-i-d-i'}
+nag̱isi {'u-n-g̱-i-s-i', 'n-g̱-i-s-i'}
+nag̱ida {'n-g̱-i-d', 'u-n-g̱-i-d'}
+nag̱ees {'u-n-g̱-i-d-s', 'n-g̱-i-d-s'}
+nag̱isa {'u-n-g̱-i-s', 'n-g̱-i-s'}
+nag̱iya {'n-g̱-i-i', 'u-n-g̱-i-i'}
+nag̱ee {'u-n-g̱-i', 'n-g̱-i'}
+ang̱idzi {'a-u-n-g̱-i-d-s-i', 'a-n-g̱-i-d-s-i'}
+ang̱idi {'a-u-n-g̱-i-d-i', 'a-n-g̱-i-d-i'}
+ang̱isi {'a-n-g̱-i-s-i', 'a-u-n-g̱-i-s-i'}
+ang̱ida {'a-n-g̱-i-d', 'a-u-n-g̱-i-d'}
+ang̱ees {'a-n-g̱-i-d-s', 'a-u-n-g̱-i-d-s'}
+ang̱isa {'a-u-n-g̱-i-s', 'a-n-g̱-i-s'}
+ang̱iya {'a-u-n-g̱-i-i', 'a-n-g̱-i-i'}
+ang̱ee {'a-u-n-g̱-i', 'a-n-g̱-i'}
+kang̱idzi {'ka-u-n-g̱-i-d-s-i', 'ka-n-g̱-i-d-s-i'}
+kang̱idi {'ka-n-g̱-i-d-i', 'ka-u-n-g̱-i-d-i'}
+kang̱isi {'ka-n-g̱-i-s-i', 'ka-u-n-g̱-i-s-i'}
+kang̱ida {'ka-u-n-g̱-i-d', 'ka-n-g̱-i-d'}
+kang̱ees {'ka-n-g̱-i-d-s', 'ka-u-n-g̱-i-d-s'}
+kang̱isa {'ka-u-n-g̱-i-s', 'ka-n-g̱-i-s'}
+kang̱iya {'ka-n-g̱-i-i', 'ka-u-n-g̱-i-i'}
+kang̱ee {'ka-u-n-g̱-i', 'ka-n-g̱-i'}
+x̱ʼang̱idzi {'x̱ʼe-u-n-g̱-i-d-s-i', 'x̱ʼe-n-g̱-i-d-s-i'}
+x̱ʼang̱idi {'x̱ʼe-n-g̱-i-d-i', 'x̱ʼe-u-n-g̱-i-d-i'}
+x̱ʼang̱isi {'x̱ʼe-n-g̱-i-s-i', 'x̱ʼe-u-n-g̱-i-s-i'}
+x̱ʼang̱ida {'x̱ʼe-n-g̱-i-d', 'x̱ʼe-u-n-g̱-i-d'}
+x̱ʼang̱ees {'x̱ʼe-u-n-g̱-i-d-s', 'x̱ʼe-n-g̱-i-d-s'}
+x̱ʼang̱isa {'x̱ʼe-u-n-g̱-i-s', 'x̱ʼe-n-g̱-i-s'}
+x̱ʼang̱iya {'x̱ʼe-n-g̱-i-i', 'x̱ʼe-u-n-g̱-i-i'}
+x̱ʼang̱ee {'x̱ʼe-u-n-g̱-i', 'x̱ʼe-n-g̱-i'}
+jing̱idzi {'ji-n-g̱-i-d-s-i', 'ji-u-n-g̱-i-d-s-i'}
+jing̱idi {'ji-n-g̱-i-d-i', 'ji-u-n-g̱-i-d-i'}
+jing̱isi {'ji-u-n-g̱-i-s-i', 'ji-n-g̱-i-s-i'}
+jing̱ida {'ji-n-g̱-i-d', 'ji-u-n-g̱-i-d'}
+jing̱ees {'ji-u-n-g̱-i-d-s', 'ji-n-g̱-i-d-s'}
+jing̱isa {'ji-n-g̱-i-s', 'ji-u-n-g̱-i-s'}
+jing̱iya {'ji-u-n-g̱-i-i', 'ji-n-g̱-i-i'}
+jing̱ee {'ji-n-g̱-i', 'ji-u-n-g̱-i'}
+tung̱idzi {'tu-u-n-g̱-i-d-s-i', 'tu-n-g̱-i-d-s-i'}
+tung̱idi {'tu-u-n-g̱-i-d-i', 'tu-n-g̱-i-d-i'}
+tung̱isi {'tu-u-n-g̱-i-s-i', 'tu-n-g̱-i-s-i'}
+tung̱ida {'tu-u-n-g̱-i-d', 'tu-n-g̱-i-d'}
+tung̱ees {'tu-n-g̱-i-d-s', 'tu-u-n-g̱-i-d-s'}
+tung̱isa {'tu-n-g̱-i-s', 'tu-u-n-g̱-i-s'}
+tung̱iya {'tu-n-g̱-i-i', 'tu-u-n-g̱-i-i'}
+tung̱ee {'tu-n-g̱-i', 'tu-u-n-g̱-i'}
+nax̱yidzi {'n-g̱-yi-d-s-i', 'u-n-g̱-yi-d-s-i'}
+nax̱yidi {'u-n-g̱-yi-d-i', 'n-g̱-yi-d-i'}
+nax̱yisi {'n-g̱-yi-s-i', 'u-n-g̱-yi-s-i'}
+nax̱yida {'u-n-g̱-yi-d', 'n-g̱-yi-d'}
+nax̱yisa {'n-g̱-yi-s', 'u-n-g̱-yi-s'}
+nax̱yeey {'u-n-g̱-yi-i', 'n-g̱-yi-i'}
+nax̱yi {'n-g̱-yi', 'u-n-g̱-yi'}
+anax̱yidzi {'a-n-g̱-yi-d-s-i', 'a-u-n-g̱-yi-d-s-i'}
+anax̱yidi {'a-u-n-g̱-yi-d-i', 'a-n-g̱-yi-d-i'}
+anax̱yisi {'a-u-n-g̱-yi-s-i', 'a-n-g̱-yi-s-i'}
+anax̱yida {'a-u-n-g̱-yi-d', 'a-n-g̱-yi-d'}
+anax̱yisa {'a-n-g̱-yi-s', 'a-u-n-g̱-yi-s'}
+anax̱yeey {'a-n-g̱-yi-i', 'a-u-n-g̱-yi-i'}
+anax̱yi {'a-n-g̱-yi', 'a-u-n-g̱-yi'}
+kanax̱yidzi {'ka-n-g̱-yi-d-s-i', 'ka-u-n-g̱-yi-d-s-i'}
+kanax̱yidi {'ka-u-n-g̱-yi-d-i', 'ka-n-g̱-yi-d-i'}
+kanax̱yisi {'ka-n-g̱-yi-s-i', 'ka-u-n-g̱-yi-s-i'}
+kanax̱yida {'ka-u-n-g̱-yi-d', 'ka-n-g̱-yi-d'}
+kanax̱yisa {'ka-n-g̱-yi-s', 'ka-u-n-g̱-yi-s'}
+kanax̱yeey {'ka-n-g̱-yi-i', 'ka-u-n-g̱-yi-i'}
+kanax̱yi {'ka-u-n-g̱-yi', 'ka-n-g̱-yi'}
+x̱ʼanax̱yidzi {'x̱ʼe-u-n-g̱-yi-d-s-i', 'x̱ʼe-n-g̱-yi-d-s-i'}
+x̱ʼanax̱yidi {'x̱ʼe-n-g̱-yi-d-i', 'x̱ʼe-u-n-g̱-yi-d-i'}
+x̱ʼanax̱yisi {'x̱ʼe-n-g̱-yi-s-i', 'x̱ʼe-u-n-g̱-yi-s-i'}
+x̱ʼanax̱yida {'x̱ʼe-n-g̱-yi-d', 'x̱ʼe-u-n-g̱-yi-d'}
+x̱ʼanax̱yisa {'x̱ʼe-n-g̱-yi-s', 'x̱ʼe-u-n-g̱-yi-s'}
+x̱ʼanax̱yeey {'x̱ʼe-n-g̱-yi-i', 'x̱ʼe-u-n-g̱-yi-i'}
+x̱ʼanax̱yi {'x̱ʼe-n-g̱-yi', 'x̱ʼe-u-n-g̱-yi'}
+jinax̱yidzi {'ji-u-n-g̱-yi-d-s-i', 'ji-n-g̱-yi-d-s-i'}
+jinax̱yidi {'ji-n-g̱-yi-d-i', 'ji-u-n-g̱-yi-d-i'}
+jinax̱yisi {'ji-u-n-g̱-yi-s-i', 'ji-n-g̱-yi-s-i'}
+jinax̱yida {'ji-n-g̱-yi-d', 'ji-u-n-g̱-yi-d'}
+jinax̱yisa {'ji-u-n-g̱-yi-s', 'ji-n-g̱-yi-s'}
+jinax̱yeey {'ji-u-n-g̱-yi-i', 'ji-n-g̱-yi-i'}
+jinax̱yi {'ji-n-g̱-yi', 'ji-u-n-g̱-yi'}
+tunax̱yidzi {'tu-u-n-g̱-yi-d-s-i', 'tu-n-g̱-yi-d-s-i'}
+tunax̱yidi {'tu-n-g̱-yi-d-i', 'tu-u-n-g̱-yi-d-i'}
+tunax̱yisi {'tu-n-g̱-yi-s-i', 'tu-u-n-g̱-yi-s-i'}
+tunax̱yida {'tu-u-n-g̱-yi-d', 'tu-n-g̱-yi-d'}
+tunax̱yisa {'tu-u-n-g̱-yi-s', 'tu-n-g̱-yi-s'}
+tunax̱yeey {'tu-n-g̱-yi-i', 'tu-u-n-g̱-yi-i'}
+tunax̱yi {'tu-n-g̱-yi', 'tu-u-n-g̱-yi'}
+nax̱dudzi {'u-n-g̱-du-d-s-i', 'n-g̱-du-d-s-i'}
+nax̱dus {'u-n-g̱-du-d-s', 'n-g̱-du-d-s'}
+nax̱duwa {'n-g̱-du-i', 'u-n-g̱-du-i'}
+nax̱du {'n-g̱-du', 'u-n-g̱-du'}
+anax̱dudzi {'a-u-n-g̱-du-d-s-i', 'a-n-g̱-du-d-s-i'}
+anax̱dus {'a-u-n-g̱-du-d-s', 'a-n-g̱-du-d-s'}
+anax̱duwa {'a-n-g̱-du-i', 'a-u-n-g̱-du-i'}
+anax̱du {'a-u-n-g̱-du', 'a-n-g̱-du'}
+kanax̱dudzi {'ka-n-g̱-du-d-s-i', 'ka-u-n-g̱-du-d-s-i'}
+kanax̱dus {'ka-u-n-g̱-du-d-s', 'ka-n-g̱-du-d-s'}
+kanax̱duwa {'ka-n-g̱-du-i', 'ka-u-n-g̱-du-i'}
+kanax̱du {'ka-u-n-g̱-du', 'ka-n-g̱-du'}
+x̱ʼanax̱dudzi {'x̱ʼe-n-g̱-du-d-s-i', 'x̱ʼe-u-n-g̱-du-d-s-i'}
+x̱ʼanax̱dus {'x̱ʼe-u-n-g̱-du-d-s', 'x̱ʼe-n-g̱-du-d-s'}
+x̱ʼanax̱duwa {'x̱ʼe-u-n-g̱-du-i', 'x̱ʼe-n-g̱-du-i'}
+x̱ʼanax̱du {'x̱ʼe-n-g̱-du', 'x̱ʼe-u-n-g̱-du'}
+jinax̱dudzi {'ji-n-g̱-du-d-s-i', 'ji-u-n-g̱-du-d-s-i'}
+jinax̱dus {'ji-u-n-g̱-du-d-s', 'ji-n-g̱-du-d-s'}
+jinax̱duwa {'ji-n-g̱-du-i', 'ji-u-n-g̱-du-i'}
+jinax̱du {'ji-n-g̱-du', 'ji-u-n-g̱-du'}
+tunax̱dudzi {'tu-u-n-g̱-du-d-s-i', 'tu-n-g̱-du-d-s-i'}
+tunax̱dus {'tu-u-n-g̱-du-d-s', 'tu-n-g̱-du-d-s'}
+tunax̱duwa {'tu-u-n-g̱-du-i', 'tu-n-g̱-du-i'}
+tunax̱du {'tu-n-g̱-du', 'tu-u-n-g̱-du'}
+g̱ayi {'g̱-yi', 'u-g̱-yi'}
+g̱aax̱tudzi {'g̱-g̱-tu-d-s-i', 'u-g̱-g̱-tu-d-s-i'}
+g̱aax̱tudi {'u-g̱-g̱-tu-d-i', 'g̱-g̱-tu-d-i'}
+g̱aax̱tusi {'g̱-g̱-tu-s-i', 'u-g̱-g̱-tu-s-i'}
+g̱aax̱tuda {'u-g̱-g̱-tu-d', 'g̱-g̱-tu-d'}
+g̱aax̱toos {'u-g̱-g̱-tu-d-s', 'g̱-g̱-tu-d-s'}
+g̱aax̱tusa {'g̱-g̱-tu-s', 'u-g̱-g̱-tu-s'}
+g̱aax̱tuwa {'u-g̱-g̱-tu-i', 'g̱-g̱-tu-i'}
+g̱aax̱too {'g̱-g̱-tu', 'u-g̱-g̱-tu'}
+ag̱aax̱tudzi {'a-u-g̱-g̱-tu-d-s-i', 'a-g̱-g̱-tu-d-s-i'}
+ag̱aax̱tudi {'a-u-g̱-g̱-tu-d-i', 'a-g̱-g̱-tu-d-i'}
+ag̱aax̱tusi {'a-g̱-g̱-tu-s-i', 'a-u-g̱-g̱-tu-s-i'}
+ag̱aax̱tuda {'a-u-g̱-g̱-tu-d', 'a-g̱-g̱-tu-d'}
+ag̱aax̱toos {'a-g̱-g̱-tu-d-s', 'a-u-g̱-g̱-tu-d-s'}
+ag̱aax̱tusa {'a-u-g̱-g̱-tu-s', 'a-g̱-g̱-tu-s'}
+ag̱aax̱tuwa {'a-g̱-g̱-tu-i', 'a-u-g̱-g̱-tu-i'}
+ag̱aax̱too {'a-g̱-g̱-tu', 'a-u-g̱-g̱-tu'}
+kag̱aax̱tudzi {'ka-u-g̱-g̱-tu-d-s-i', 'ka-g̱-g̱-tu-d-s-i'}
+kag̱aax̱tudi {'ka-u-g̱-g̱-tu-d-i', 'ka-g̱-g̱-tu-d-i'}
+kag̱aax̱tusi {'ka-u-g̱-g̱-tu-s-i', 'ka-g̱-g̱-tu-s-i'}
+kag̱aax̱tuda {'ka-u-g̱-g̱-tu-d', 'ka-g̱-g̱-tu-d'}
+kag̱aax̱toos {'ka-g̱-g̱-tu-d-s', 'ka-u-g̱-g̱-tu-d-s'}
+kag̱aax̱tusa {'ka-u-g̱-g̱-tu-s', 'ka-g̱-g̱-tu-s'}
+kag̱aax̱tuwa {'ka-g̱-g̱-tu-i', 'ka-u-g̱-g̱-tu-i'}
+kag̱aax̱too {'ka-g̱-g̱-tu', 'ka-u-g̱-g̱-tu'}
+x̱ʼag̱aax̱tudzi {'x̱ʼe-u-g̱-g̱-tu-d-s-i', 'x̱ʼe-g̱-g̱-tu-d-s-i'}
+x̱ʼag̱aax̱tudi {'x̱ʼe-u-g̱-g̱-tu-d-i', 'x̱ʼe-g̱-g̱-tu-d-i'}
+x̱ʼag̱aax̱tusi {'x̱ʼe-u-g̱-g̱-tu-s-i', 'x̱ʼe-g̱-g̱-tu-s-i'}
+x̱ʼag̱aax̱tuda {'x̱ʼe-u-g̱-g̱-tu-d', 'x̱ʼe-g̱-g̱-tu-d'}
+x̱ʼag̱aax̱toos {'x̱ʼe-g̱-g̱-tu-d-s', 'x̱ʼe-u-g̱-g̱-tu-d-s'}
+x̱ʼag̱aax̱tusa {'x̱ʼe-u-g̱-g̱-tu-s', 'x̱ʼe-g̱-g̱-tu-s'}
+x̱ʼag̱aax̱tuwa {'x̱ʼe-u-g̱-g̱-tu-i', 'x̱ʼe-g̱-g̱-tu-i'}
+x̱ʼag̱aax̱too {'x̱ʼe-g̱-g̱-tu', 'x̱ʼe-u-g̱-g̱-tu'}
+jig̱aax̱tudzi {'ji-u-g̱-g̱-tu-d-s-i', 'ji-g̱-g̱-tu-d-s-i'}
+jig̱aax̱tudi {'ji-g̱-g̱-tu-d-i', 'ji-u-g̱-g̱-tu-d-i'}
+jig̱aax̱tusi {'ji-g̱-g̱-tu-s-i', 'ji-u-g̱-g̱-tu-s-i'}
+jig̱aax̱tuda {'ji-g̱-g̱-tu-d', 'ji-u-g̱-g̱-tu-d'}
+jig̱aax̱toos {'ji-g̱-g̱-tu-d-s', 'ji-u-g̱-g̱-tu-d-s'}
+jig̱aax̱tusa {'ji-g̱-g̱-tu-s', 'ji-u-g̱-g̱-tu-s'}
+jig̱aax̱tuwa {'ji-g̱-g̱-tu-i', 'ji-u-g̱-g̱-tu-i'}
+jig̱aax̱too {'ji-u-g̱-g̱-tu', 'ji-g̱-g̱-tu'}
+tug̱aax̱tudzi {'tu-u-g̱-g̱-tu-d-s-i', 'tu-g̱-g̱-tu-d-s-i'}
+tug̱aax̱tudi {'tu-u-g̱-g̱-tu-d-i', 'tu-g̱-g̱-tu-d-i'}
+tug̱aax̱tusi {'tu-u-g̱-g̱-tu-s-i', 'tu-g̱-g̱-tu-s-i'}
+tug̱aax̱tuda {'tu-u-g̱-g̱-tu-d', 'tu-g̱-g̱-tu-d'}
+tug̱aax̱toos {'tu-u-g̱-g̱-tu-d-s', 'tu-g̱-g̱-tu-d-s'}
+tug̱aax̱tusa {'tu-u-g̱-g̱-tu-s', 'tu-g̱-g̱-tu-s'}
+tug̱aax̱tuwa {'tu-g̱-g̱-tu-i', 'tu-u-g̱-g̱-tu-i'}
+tug̱aax̱too {'tu-g̱-g̱-tu', 'tu-u-g̱-g̱-tu'}
+g̱aag̱idzi {'u-g̱-g̱-i-d-s-i', 'g̱-g̱-i-d-s-i'}
+g̱aag̱idi {'g̱-g̱-i-d-i', 'u-g̱-g̱-i-d-i'}
+g̱aag̱isi {'g̱-g̱-i-s-i', 'u-g̱-g̱-i-s-i'}
+g̱aag̱ida {'g̱-g̱-i-d', 'u-g̱-g̱-i-d'}
+g̱aag̱ees {'g̱-g̱-i-d-s', 'u-g̱-g̱-i-d-s'}
+g̱aag̱isa {'g̱-g̱-i-s', 'u-g̱-g̱-i-s'}
+g̱aag̱iya {'g̱-g̱-i-i', 'u-g̱-g̱-i-i'}
+g̱aag̱ee {'g̱-g̱-i', 'u-g̱-g̱-i'}
+ag̱aag̱idzi {'a-u-g̱-g̱-i-d-s-i', 'a-g̱-g̱-i-d-s-i'}
+ag̱aag̱idi {'a-g̱-g̱-i-d-i', 'a-u-g̱-g̱-i-d-i'}
+ag̱aag̱isi {'a-g̱-g̱-i-s-i', 'a-u-g̱-g̱-i-s-i'}
+ag̱aag̱ida {'a-u-g̱-g̱-i-d', 'a-g̱-g̱-i-d'}
+ag̱aag̱ees {'a-u-g̱-g̱-i-d-s', 'a-g̱-g̱-i-d-s'}
+ag̱aag̱isa {'a-g̱-g̱-i-s', 'a-u-g̱-g̱-i-s'}
+ag̱aag̱iya {'a-u-g̱-g̱-i-i', 'a-g̱-g̱-i-i'}
+ag̱aag̱ee {'a-g̱-g̱-i', 'a-u-g̱-g̱-i'}
+kag̱aag̱idzi {'ka-u-g̱-g̱-i-d-s-i', 'ka-g̱-g̱-i-d-s-i'}
+kag̱aag̱idi {'ka-g̱-g̱-i-d-i', 'ka-u-g̱-g̱-i-d-i'}
+kag̱aag̱isi {'ka-g̱-g̱-i-s-i', 'ka-u-g̱-g̱-i-s-i'}
+kag̱aag̱ida {'ka-g̱-g̱-i-d', 'ka-u-g̱-g̱-i-d'}
+kag̱aag̱ees {'ka-u-g̱-g̱-i-d-s', 'ka-g̱-g̱-i-d-s'}
+kag̱aag̱isa {'ka-g̱-g̱-i-s', 'ka-u-g̱-g̱-i-s'}
+kag̱aag̱iya {'ka-u-g̱-g̱-i-i', 'ka-g̱-g̱-i-i'}
+kag̱aag̱ee {'ka-u-g̱-g̱-i', 'ka-g̱-g̱-i'}
+x̱ʼag̱aag̱idzi {'x̱ʼe-u-g̱-g̱-i-d-s-i', 'x̱ʼe-g̱-g̱-i-d-s-i'}
+x̱ʼag̱aag̱idi {'x̱ʼe-u-g̱-g̱-i-d-i', 'x̱ʼe-g̱-g̱-i-d-i'}
+x̱ʼag̱aag̱isi {'x̱ʼe-u-g̱-g̱-i-s-i', 'x̱ʼe-g̱-g̱-i-s-i'}
+x̱ʼag̱aag̱ida {'x̱ʼe-g̱-g̱-i-d', 'x̱ʼe-u-g̱-g̱-i-d'}
+x̱ʼag̱aag̱ees {'x̱ʼe-g̱-g̱-i-d-s', 'x̱ʼe-u-g̱-g̱-i-d-s'}
+x̱ʼag̱aag̱isa {'x̱ʼe-u-g̱-g̱-i-s', 'x̱ʼe-g̱-g̱-i-s'}
+x̱ʼag̱aag̱iya {'x̱ʼe-u-g̱-g̱-i-i', 'x̱ʼe-g̱-g̱-i-i'}
+x̱ʼag̱aag̱ee {'x̱ʼe-u-g̱-g̱-i', 'x̱ʼe-g̱-g̱-i'}
+jig̱aag̱idzi {'ji-g̱-g̱-i-d-s-i', 'ji-u-g̱-g̱-i-d-s-i'}
+jig̱aag̱idi {'ji-u-g̱-g̱-i-d-i', 'ji-g̱-g̱-i-d-i'}
+jig̱aag̱isi {'ji-g̱-g̱-i-s-i', 'ji-u-g̱-g̱-i-s-i'}
+jig̱aag̱ida {'ji-g̱-g̱-i-d', 'ji-u-g̱-g̱-i-d'}
+jig̱aag̱ees {'ji-u-g̱-g̱-i-d-s', 'ji-g̱-g̱-i-d-s'}
+jig̱aag̱isa {'ji-u-g̱-g̱-i-s', 'ji-g̱-g̱-i-s'}
+jig̱aag̱iya {'ji-u-g̱-g̱-i-i', 'ji-g̱-g̱-i-i'}
+jig̱aag̱ee {'ji-g̱-g̱-i', 'ji-u-g̱-g̱-i'}
+tug̱aag̱idzi {'tu-u-g̱-g̱-i-d-s-i', 'tu-g̱-g̱-i-d-s-i'}
+tug̱aag̱idi {'tu-g̱-g̱-i-d-i', 'tu-u-g̱-g̱-i-d-i'}
+tug̱aag̱isi {'tu-g̱-g̱-i-s-i', 'tu-u-g̱-g̱-i-s-i'}
+tug̱aag̱ida {'tu-g̱-g̱-i-d', 'tu-u-g̱-g̱-i-d'}
+tug̱aag̱ees {'tu-u-g̱-g̱-i-d-s', 'tu-g̱-g̱-i-d-s'}
+tug̱aag̱isa {'tu-u-g̱-g̱-i-s', 'tu-g̱-g̱-i-s'}
+tug̱aag̱iya {'tu-u-g̱-g̱-i-i', 'tu-g̱-g̱-i-i'}
+tug̱aag̱ee {'tu-g̱-g̱-i', 'tu-u-g̱-g̱-i'}
+g̱aax̱yidzi {'u-g̱-g̱-yi-d-s-i', 'g̱-g̱-yi-d-s-i'}
+g̱aax̱yidi {'g̱-g̱-yi-d-i', 'u-g̱-g̱-yi-d-i'}
+g̱aax̱yisi {'u-g̱-g̱-yi-s-i', 'g̱-g̱-yi-s-i'}
+g̱aax̱yida {'g̱-g̱-yi-d', 'u-g̱-g̱-yi-d'}
+g̱aax̱yis {'u-g̱-g̱-yi-d-s', 'g̱-g̱-yi-d-s'}
+g̱aax̱yisa {'g̱-g̱-yi-s', 'u-g̱-g̱-yi-s'}
+g̱aax̱yeey {'g̱-g̱-yi-i', 'u-g̱-g̱-yi-i'}
+g̱aax̱yi {'g̱-g̱-yi', 'u-g̱-g̱-yi'}
+ag̱aax̱yidzi {'a-g̱-g̱-yi-d-s-i', 'a-u-g̱-g̱-yi-d-s-i'}
+ag̱aax̱yidi {'a-u-g̱-g̱-yi-d-i', 'a-g̱-g̱-yi-d-i'}
+ag̱aax̱yisi {'a-u-g̱-g̱-yi-s-i', 'a-g̱-g̱-yi-s-i'}
+ag̱aax̱yida {'a-u-g̱-g̱-yi-d', 'a-g̱-g̱-yi-d'}
+ag̱aax̱yis {'a-u-g̱-g̱-yi-d-s', 'a-g̱-g̱-yi-d-s'}
+ag̱aax̱yisa {'a-u-g̱-g̱-yi-s', 'a-g̱-g̱-yi-s'}
+ag̱aax̱yeey {'a-u-g̱-g̱-yi-i', 'a-g̱-g̱-yi-i'}
+ag̱aax̱yi {'a-g̱-g̱-yi', 'a-u-g̱-g̱-yi'}
+kag̱aax̱yidzi {'ka-g̱-g̱-yi-d-s-i', 'ka-u-g̱-g̱-yi-d-s-i'}
+kag̱aax̱yidi {'ka-g̱-g̱-yi-d-i', 'ka-u-g̱-g̱-yi-d-i'}
+kag̱aax̱yisi {'ka-u-g̱-g̱-yi-s-i', 'ka-g̱-g̱-yi-s-i'}
+kag̱aax̱yida {'ka-u-g̱-g̱-yi-d', 'ka-g̱-g̱-yi-d'}
+kag̱aax̱yis {'ka-g̱-g̱-yi-d-s', 'ka-u-g̱-g̱-yi-d-s'}
+kag̱aax̱yisa {'ka-u-g̱-g̱-yi-s', 'ka-g̱-g̱-yi-s'}
+kag̱aax̱yeey {'ka-g̱-g̱-yi-i', 'ka-u-g̱-g̱-yi-i'}
+kag̱aax̱yi {'ka-g̱-g̱-yi', 'ka-u-g̱-g̱-yi'}
+x̱ʼag̱aax̱yidzi {'x̱ʼe-u-g̱-g̱-yi-d-s-i', 'x̱ʼe-g̱-g̱-yi-d-s-i'}
+x̱ʼag̱aax̱yidi {'x̱ʼe-u-g̱-g̱-yi-d-i', 'x̱ʼe-g̱-g̱-yi-d-i'}
+x̱ʼag̱aax̱yisi {'x̱ʼe-u-g̱-g̱-yi-s-i', 'x̱ʼe-g̱-g̱-yi-s-i'}
+x̱ʼag̱aax̱yida {'x̱ʼe-u-g̱-g̱-yi-d', 'x̱ʼe-g̱-g̱-yi-d'}
+x̱ʼag̱aax̱yis {'x̱ʼe-g̱-g̱-yi-d-s', 'x̱ʼe-u-g̱-g̱-yi-d-s'}
+x̱ʼag̱aax̱yisa {'x̱ʼe-g̱-g̱-yi-s', 'x̱ʼe-u-g̱-g̱-yi-s'}
+x̱ʼag̱aax̱yeey {'x̱ʼe-u-g̱-g̱-yi-i', 'x̱ʼe-g̱-g̱-yi-i'}
+x̱ʼag̱aax̱yi {'x̱ʼe-u-g̱-g̱-yi', 'x̱ʼe-g̱-g̱-yi'}
+jig̱aax̱yidzi {'ji-g̱-g̱-yi-d-s-i', 'ji-u-g̱-g̱-yi-d-s-i'}
+jig̱aax̱yidi {'ji-g̱-g̱-yi-d-i', 'ji-u-g̱-g̱-yi-d-i'}
+jig̱aax̱yisi {'ji-g̱-g̱-yi-s-i', 'ji-u-g̱-g̱-yi-s-i'}
+jig̱aax̱yida {'ji-u-g̱-g̱-yi-d', 'ji-g̱-g̱-yi-d'}
+jig̱aax̱yis {'ji-g̱-g̱-yi-d-s', 'ji-u-g̱-g̱-yi-d-s'}
+jig̱aax̱yisa {'ji-u-g̱-g̱-yi-s', 'ji-g̱-g̱-yi-s'}
+jig̱aax̱yeey {'ji-g̱-g̱-yi-i', 'ji-u-g̱-g̱-yi-i'}
+jig̱aax̱yi {'ji-g̱-g̱-yi', 'ji-u-g̱-g̱-yi'}
+tug̱aax̱yidzi {'tu-g̱-g̱-yi-d-s-i', 'tu-u-g̱-g̱-yi-d-s-i'}
+tug̱aax̱yidi {'tu-g̱-g̱-yi-d-i', 'tu-u-g̱-g̱-yi-d-i'}
+tug̱aax̱yisi {'tu-u-g̱-g̱-yi-s-i', 'tu-g̱-g̱-yi-s-i'}
+tug̱aax̱yida {'tu-u-g̱-g̱-yi-d', 'tu-g̱-g̱-yi-d'}
+tug̱aax̱yis {'tu-g̱-g̱-yi-d-s', 'tu-u-g̱-g̱-yi-d-s'}
+tug̱aax̱yisa {'tu-u-g̱-g̱-yi-s', 'tu-g̱-g̱-yi-s'}
+tug̱aax̱yeey {'tu-u-g̱-g̱-yi-i', 'tu-g̱-g̱-yi-i'}
+tug̱aax̱yi {'tu-u-g̱-g̱-yi', 'tu-g̱-g̱-yi'}
+g̱aax̱dudzi {'g̱-g̱-du-d-s-i', 'u-g̱-g̱-du-d-s-i'}
+g̱aax̱dus {'u-g̱-g̱-du-d-s', 'g̱-g̱-du-d-s'}
+g̱aax̱duwa {'u-g̱-g̱-du-i', 'g̱-g̱-du-i'}
+g̱aax̱du {'g̱-g̱-du', 'u-g̱-g̱-du'}
+ag̱aax̱dudzi {'a-g̱-g̱-du-d-s-i', 'a-u-g̱-g̱-du-d-s-i'}
+ag̱aax̱dus {'a-g̱-g̱-du-d-s', 'a-u-g̱-g̱-du-d-s'}
+ag̱aax̱duwa {'a-u-g̱-g̱-du-i', 'a-g̱-g̱-du-i'}
+ag̱aax̱du {'a-u-g̱-g̱-du', 'a-g̱-g̱-du'}
+kag̱aax̱dudzi {'ka-u-g̱-g̱-du-d-s-i', 'ka-g̱-g̱-du-d-s-i'}
+kag̱aax̱dus {'ka-u-g̱-g̱-du-d-s', 'ka-g̱-g̱-du-d-s'}
+kag̱aax̱duwa {'ka-g̱-g̱-du-i', 'ka-u-g̱-g̱-du-i'}
+kag̱aax̱du {'ka-u-g̱-g̱-du', 'ka-g̱-g̱-du'}
+x̱ʼag̱aax̱dudzi {'x̱ʼe-u-g̱-g̱-du-d-s-i', 'x̱ʼe-g̱-g̱-du-d-s-i'}
+x̱ʼag̱aax̱dus {'x̱ʼe-u-g̱-g̱-du-d-s', 'x̱ʼe-g̱-g̱-du-d-s'}
+x̱ʼag̱aax̱duwa {'x̱ʼe-u-g̱-g̱-du-i', 'x̱ʼe-g̱-g̱-du-i'}
+x̱ʼag̱aax̱du {'x̱ʼe-g̱-g̱-du', 'x̱ʼe-u-g̱-g̱-du'}
+jig̱aax̱dudzi {'ji-u-g̱-g̱-du-d-s-i', 'ji-g̱-g̱-du-d-s-i'}
+jig̱aax̱dus {'ji-g̱-g̱-du-d-s', 'ji-u-g̱-g̱-du-d-s'}
+jig̱aax̱duwa {'ji-u-g̱-g̱-du-i', 'ji-g̱-g̱-du-i'}
+jig̱aax̱du {'ji-u-g̱-g̱-du', 'ji-g̱-g̱-du'}
+tug̱aax̱dudzi {'tu-g̱-g̱-du-d-s-i', 'tu-u-g̱-g̱-du-d-s-i'}
+tug̱aax̱dus {'tu-g̱-g̱-du-d-s', 'tu-u-g̱-g̱-du-d-s'}
+tug̱aax̱duwa {'tu-u-g̱-g̱-du-i', 'tu-g̱-g̱-du-i'}
+tug̱aax̱du {'tu-g̱-g̱-du', 'tu-u-g̱-g̱-du'}
+gax̱dzi {'g-x̱-d-s-i', 'g-g̱-d-s-i'}
+gax̱di {'g-g̱-d-i', 'g-x̱-d-i'}
+gax̱si {'g-g̱-s-i', 'g-x̱-s-i'}
+gax̱da {'g-x̱-d', 'g-g̱-d'}
+gax̱sa {'g-x̱-s', 'g-g̱-s'}
+agax̱dzi {'a-g-g̱-d-s-i', 'a-g-x̱-d-s-i'}
+agax̱di {'a-g-g̱-d-i', 'a-g-x̱-d-i'}
+agax̱si {'a-g-g̱-s-i', 'a-g-x̱-s-i'}
+agax̱da {'a-g-x̱-d', 'a-g-g̱-d'}
+agax̱sa {'a-g-g̱-s', 'a-g-x̱-s'}
+kagax̱dzi {'ka-g-x̱-d-s-i', 'ka-g-g̱-d-s-i'}
+kagax̱di {'ka-g-x̱-d-i', 'ka-g-g̱-d-i'}
+kagax̱si {'ka-g-x̱-s-i', 'ka-g-g̱-s-i'}
+kagax̱da {'ka-g-g̱-d', 'ka-g-x̱-d'}
+kagax̱sa {'ka-g-g̱-s', 'ka-g-x̱-s'}
+x̱ʼagax̱dzi {'x̱ʼe-g-g̱-d-s-i', 'x̱ʼe-g-x̱-d-s-i'}
+x̱ʼagax̱di {'x̱ʼe-g-g̱-d-i', 'x̱ʼe-g-x̱-d-i'}
+x̱ʼagax̱si {'x̱ʼe-g-g̱-s-i', 'x̱ʼe-g-x̱-s-i'}
+x̱ʼagax̱da {'x̱ʼe-g-x̱-d', 'x̱ʼe-g-g̱-d'}
+x̱ʼagax̱sa {'x̱ʼe-g-g̱-s', 'x̱ʼe-g-x̱-s'}
+jigax̱dzi {'ji-g-g̱-d-s-i', 'ji-g-x̱-d-s-i'}
+jigax̱di {'ji-g-x̱-d-i', 'ji-g-g̱-d-i'}
+jigax̱si {'ji-g-g̱-s-i', 'ji-g-x̱-s-i'}
+jigax̱da {'ji-g-x̱-d', 'ji-g-g̱-d'}
+jigax̱sa {'ji-g-g̱-s', 'ji-g-x̱-s'}
+tugax̱dzi {'tu-g-x̱-d-s-i', 'tu-g-g̱-d-s-i'}
+tugax̱di {'tu-g-g̱-d-i', 'tu-g-x̱-d-i'}
+tugax̱si {'tu-g-g̱-s-i', 'tu-g-x̱-s-i'}
+tugax̱da {'tu-g-x̱-d', 'tu-g-g̱-d'}
+tugax̱sa {'tu-g-x̱-s', 'tu-g-g̱-s'}
+gatudzi {'g-tu-d-s-i', 'u-g-tu-d-s-i'}
+gatudi {'u-g-tu-d-i', 'g-tu-d-i'}
+gatusi {'g-tu-s-i', 'u-g-tu-s-i'}
+gatuda {'g-tu-d', 'u-g-tu-d'}
+gatoos {'g-tu-d-s', 'u-g-tu-d-s'}
+gatusa {'u-g-tu-s', 'g-tu-s'}
+gatuwa {'u-g-tu-i', 'g-tu-i'}
+gatoo {'g-tu', 'u-g-tu'}
+aktudzi {'a-g-tu-d-s-i', 'a-u-g-tu-d-s-i'}
+aktudi {'a-g-tu-d-i', 'a-u-g-tu-d-i'}
+aktusi {'a-u-g-tu-s-i', 'a-g-tu-s-i'}
+aktuda {'a-u-g-tu-d', 'a-g-tu-d'}
+aktoos {'a-g-tu-d-s', 'a-u-g-tu-d-s'}
+aktusa {'a-u-g-tu-s', 'a-g-tu-s'}
+aktuwa {'a-g-tu-i', 'a-u-g-tu-i'}
+aktoo {'a-u-g-tu', 'a-g-tu'}
+kaktudzi {'ka-u-g-tu-d-s-i', 'ka-g-tu-d-s-i'}
+kaktudi {'ka-g-tu-d-i', 'ka-u-g-tu-d-i'}
+kaktusi {'ka-u-g-tu-s-i', 'ka-g-tu-s-i'}
+kaktuda {'ka-u-g-tu-d', 'ka-g-tu-d'}
+kaktoos {'ka-u-g-tu-d-s', 'ka-g-tu-d-s'}
+kaktusa {'ka-u-g-tu-s', 'ka-g-tu-s'}
+kaktuwa {'ka-u-g-tu-i', 'ka-g-tu-i'}
+kaktoo {'ka-g-tu', 'ka-u-g-tu'}
+x̱ʼaktudzi {'x̱ʼe-u-g-tu-d-s-i', 'x̱ʼe-g-tu-d-s-i'}
+x̱ʼaktudi {'x̱ʼe-g-tu-d-i', 'x̱ʼe-u-g-tu-d-i'}
+x̱ʼaktusi {'x̱ʼe-u-g-tu-s-i', 'x̱ʼe-g-tu-s-i'}
+x̱ʼaktuda {'x̱ʼe-u-g-tu-d', 'x̱ʼe-g-tu-d'}
+x̱ʼaktoos {'x̱ʼe-u-g-tu-d-s', 'x̱ʼe-g-tu-d-s'}
+x̱ʼaktusa {'x̱ʼe-u-g-tu-s', 'x̱ʼe-g-tu-s'}
+x̱ʼaktuwa {'x̱ʼe-u-g-tu-i', 'x̱ʼe-g-tu-i'}
+x̱ʼaktoo {'x̱ʼe-u-g-tu', 'x̱ʼe-g-tu'}
+jiktudzi {'ji-u-g-tu-d-s-i', 'ji-g-tu-d-s-i'}
+jiktudi {'ji-u-g-tu-d-i', 'ji-g-tu-d-i'}
+jiktusi {'ji-u-g-tu-s-i', 'ji-g-tu-s-i'}
+jiktuda {'ji-g-tu-d', 'ji-u-g-tu-d'}
+jiktoos {'ji-g-tu-d-s', 'ji-u-g-tu-d-s'}
+jiktusa {'ji-u-g-tu-s', 'ji-g-tu-s'}
+jiktuwa {'ji-g-tu-i', 'ji-u-g-tu-i'}
+jiktoo {'ji-u-g-tu', 'ji-g-tu'}
+tuktudzi {'tu-u-g-tu-d-s-i', 'tu-g-tu-d-s-i'}
+tuktudi {'tu-g-tu-d-i', 'tu-u-g-tu-d-i'}
+tuktusi {'tu-g-tu-s-i', 'tu-u-g-tu-s-i'}
+tuktuda {'tu-u-g-tu-d', 'tu-g-tu-d'}
+tuktoos {'tu-g-tu-d-s', 'tu-u-g-tu-d-s'}
+tuktusa {'tu-g-tu-s', 'tu-u-g-tu-s'}
+tuktuwa {'tu-u-g-tu-i', 'tu-g-tu-i'}
+tuktoo {'tu-u-g-tu', 'tu-g-tu'}
+gidzi {'g-i-d-s-i', 'u-g-i-d-s-i'}
+gidi {'g-i-d-i', 'u-g-i-d-i'}
+gisi {'u-g-i-s-i', 'g-i-s-i'}
+gida {'u-g-i-d', 'g-i-d'}
+gees {'g-i-d-s', 'u-g-i-d-s'}
+gisa {'g-i-s', 'u-g-i-s'}
+giya {'u-g-i-i', 'g-i-i'}
+gee {'g-i', 'u-g-i'}
+agidzi {'a-g-i-d-s-i', 'a-u-g-i-d-s-i'}
+agidi {'a-u-g-i-d-i', 'a-g-i-d-i'}
+agisi {'a-g-i-s-i', 'a-u-g-i-s-i'}
+agida {'a-g-i-d', 'a-u-g-i-d'}
+agees {'a-g-i-d-s', 'a-u-g-i-d-s'}
+agisa {'a-u-g-i-s', 'a-g-i-s'}
+agiya {'a-u-g-i-i', 'a-g-i-i'}
+agee {'a-u-g-i', 'a-g-i'}
+kagidzi {'ka-u-g-i-d-s-i', 'ka-g-i-d-s-i'}
+kagidi {'ka-g-i-d-i', 'ka-u-g-i-d-i'}
+kagisi {'ka-g-i-s-i', 'ka-u-g-i-s-i'}
+kagida {'ka-g-i-d', 'ka-u-g-i-d'}
+kagees {'ka-g-i-d-s', 'ka-u-g-i-d-s'}
+kagisa {'ka-g-i-s', 'ka-u-g-i-s'}
+kagiya {'ka-u-g-i-i', 'ka-g-i-i'}
+kagee {'ka-u-g-i', 'ka-g-i'}
+x̱ʼagidzi {'x̱ʼe-g-i-d-s-i', 'x̱ʼe-u-g-i-d-s-i'}
+x̱ʼagidi {'x̱ʼe-u-g-i-d-i', 'x̱ʼe-g-i-d-i'}
+x̱ʼagisi {'x̱ʼe-g-i-s-i', 'x̱ʼe-u-g-i-s-i'}
+x̱ʼagida {'x̱ʼe-u-g-i-d', 'x̱ʼe-g-i-d'}
+x̱ʼagees {'x̱ʼe-u-g-i-d-s', 'x̱ʼe-g-i-d-s'}
+x̱ʼagisa {'x̱ʼe-u-g-i-s', 'x̱ʼe-g-i-s'}
+x̱ʼagiya {'x̱ʼe-g-i-i', 'x̱ʼe-u-g-i-i'}
+x̱ʼagee {'x̱ʼe-u-g-i', 'x̱ʼe-g-i'}
+jigidzi {'ji-g-i-d-s-i', 'ji-u-g-i-d-s-i'}
+jigidi {'ji-g-i-d-i', 'ji-u-g-i-d-i'}
+jigisi {'ji-u-g-i-s-i', 'ji-g-i-s-i'}
+jigida {'ji-u-g-i-d', 'ji-g-i-d'}
+jigees {'ji-u-g-i-d-s', 'ji-g-i-d-s'}
+jigisa {'ji-g-i-s', 'ji-u-g-i-s'}
+jigiya {'ji-u-g-i-i', 'ji-g-i-i'}
+jigee {'ji-u-g-i', 'ji-g-i'}
+tugidzi {'tu-u-g-i-d-s-i', 'tu-g-i-d-s-i'}
+tugidi {'tu-u-g-i-d-i', 'tu-g-i-d-i'}
+tugisi {'tu-u-g-i-s-i', 'tu-g-i-s-i'}
+tugida {'tu-u-g-i-d', 'tu-g-i-d'}
+tugees {'tu-g-i-d-s', 'tu-u-g-i-d-s'}
+tugisa {'tu-u-g-i-s', 'tu-g-i-s'}
+tugiya {'tu-g-i-i', 'tu-u-g-i-i'}
+tugee {'tu-u-g-i', 'tu-g-i'}
+gaydzi {'g-yi-d-s-i', 'u-g-yi-d-s-i'}
+gaydi {'u-g-yi-d-i', 'g-yi-d-i'}
+gaysi {'u-g-yi-s-i', 'g-yi-s-i'}
+gayda {'g-yi-d', 'u-g-yi-d'}
+gayis {'u-g-yi-d-s', 'g-yi-d-s'}
+gaysa {'u-g-yi-s', 'g-yi-s'}
+gayeey {'u-g-yi-i', 'g-yi-i'}
+gay {'u-g-yi', 'g-yi'}
+agaydzi {'a-g-yi-d-s-i', 'a-u-g-yi-d-s-i'}
+agaydi {'a-g-yi-d-i', 'a-u-g-yi-d-i'}
+agaysi {'a-g-yi-s-i', 'a-u-g-yi-s-i'}
+agayda {'a-u-g-yi-d', 'a-g-yi-d'}
+agayis {'a-u-g-yi-d-s', 'a-g-yi-d-s'}
+agaysa {'a-u-g-yi-s', 'a-g-yi-s'}
+agayeey {'a-u-g-yi-i', 'a-g-yi-i'}
+agay {'a-g-yi', 'a-u-g-yi'}
+kagaydzi {'ka-g-yi-d-s-i', 'ka-u-g-yi-d-s-i'}
+kagaydi {'ka-u-g-yi-d-i', 'ka-g-yi-d-i'}
+kagaysi {'ka-u-g-yi-s-i', 'ka-g-yi-s-i'}
+kagayda {'ka-u-g-yi-d', 'ka-g-yi-d'}
+kagayis {'ka-u-g-yi-d-s', 'ka-g-yi-d-s'}
+kagaysa {'ka-g-yi-s', 'ka-u-g-yi-s'}
+kagayeey {'ka-g-yi-i', 'ka-u-g-yi-i'}
+kagay {'ka-g-yi', 'ka-u-g-yi'}
+x̱ʼagaydzi {'x̱ʼe-u-g-yi-d-s-i', 'x̱ʼe-g-yi-d-s-i'}
+x̱ʼagaydi {'x̱ʼe-u-g-yi-d-i', 'x̱ʼe-g-yi-d-i'}
+x̱ʼagaysi {'x̱ʼe-u-g-yi-s-i', 'x̱ʼe-g-yi-s-i'}
+x̱ʼagayda {'x̱ʼe-g-yi-d', 'x̱ʼe-u-g-yi-d'}
+x̱ʼagayis {'x̱ʼe-u-g-yi-d-s', 'x̱ʼe-g-yi-d-s'}
+x̱ʼagaysa {'x̱ʼe-u-g-yi-s', 'x̱ʼe-g-yi-s'}
+x̱ʼagayeey {'x̱ʼe-u-g-yi-i', 'x̱ʼe-g-yi-i'}
+x̱ʼagay {'x̱ʼe-g-yi', 'x̱ʼe-u-g-yi'}
+jigaydzi {'ji-u-g-yi-d-s-i', 'ji-g-yi-d-s-i'}
+jigaydi {'ji-g-yi-d-i', 'ji-u-g-yi-d-i'}
+jigaysi {'ji-g-yi-s-i', 'ji-u-g-yi-s-i'}
+jigayda {'ji-g-yi-d', 'ji-u-g-yi-d'}
+jigayis {'ji-g-yi-d-s', 'ji-u-g-yi-d-s'}
+jigaysa {'ji-g-yi-s', 'ji-u-g-yi-s'}
+jigayeey {'ji-u-g-yi-i', 'ji-g-yi-i'}
+jigay {'ji-g-yi', 'ji-u-g-yi'}
+tugaydzi {'tu-g-yi-d-s-i', 'tu-u-g-yi-d-s-i'}
+tugaydi {'tu-u-g-yi-d-i', 'tu-g-yi-d-i'}
+tugaysi {'tu-g-yi-s-i', 'tu-u-g-yi-s-i'}
+tugayda {'tu-u-g-yi-d', 'tu-g-yi-d'}
+tugayis {'tu-u-g-yi-d-s', 'tu-g-yi-d-s'}
+tugaysa {'tu-u-g-yi-s', 'tu-g-yi-s'}
+tugayeey {'tu-u-g-yi-i', 'tu-g-yi-i'}
+tugay {'tu-u-g-yi', 'tu-g-yi'}
+gadudzi {'u-g-du-d-s-i', 'g-du-d-s-i'}
+gadus {'g-du-d-s', 'u-g-du-d-s'}
+gaduwa {'u-g-du-i', 'g-du-i'}
+gadu {'u-g-du', 'g-du'}
+akdudzi {'a-u-g-du-d-s-i', 'a-g-du-d-s-i'}
+akdus {'a-u-g-du-d-s', 'a-g-du-d-s'}
+akduwa {'a-g-du-i', 'a-u-g-du-i'}
+akdu {'a-u-g-du', 'a-g-du'}
+kakdudzi {'ka-u-g-du-d-s-i', 'ka-g-du-d-s-i'}
+kakdus {'ka-u-g-du-d-s', 'ka-g-du-d-s'}
+kakduwa {'ka-g-du-i', 'ka-u-g-du-i'}
+kakdu {'ka-u-g-du', 'ka-g-du'}
+x̱ʼakdudzi {'x̱ʼe-g-du-d-s-i', 'x̱ʼe-u-g-du-d-s-i'}
+x̱ʼakdus {'x̱ʼe-u-g-du-d-s', 'x̱ʼe-g-du-d-s'}
+x̱ʼakduwa {'x̱ʼe-g-du-i', 'x̱ʼe-u-g-du-i'}
+x̱ʼakdu {'x̱ʼe-g-du', 'x̱ʼe-u-g-du'}
+jikdudzi {'ji-u-g-du-d-s-i', 'ji-g-du-d-s-i'}
+jikdus {'ji-g-du-d-s', 'ji-u-g-du-d-s'}
+jikduwa {'ji-u-g-du-i', 'ji-g-du-i'}
+jikdu {'ji-g-du', 'ji-u-g-du'}
+tukdudzi {'tu-u-g-du-d-s-i', 'tu-g-du-d-s-i'}
+tukdus {'tu-u-g-du-d-s', 'tu-g-du-d-s'}
+tukduwa {'tu-u-g-du-i', 'tu-g-du-i'}
+tukdu {'tu-g-du', 'tu-u-g-du'}
+goos {'u-g-s', 'u-g-d-s'}
+agoos {'a-u-g-d-s', 'a-u-g-s'}
+kagoos {'ka-u-g-d-s', 'ka-u-g-s'}
+x̱ʼagoos {'x̱ʼe-u-g-s', 'x̱ʼe-u-g-d-s'}
+jigoos {'ji-u-g-d-s', 'ji-u-g-s'}
+tugoos {'tu-u-g-d-s', 'tu-u-g-s'}
+goox̱dzi {'u-g-x̱-d-s-i', 'u-g-g̱-d-s-i'}
+goox̱di {'u-g-x̱-d-i', 'u-g-g̱-d-i'}
+goox̱si {'u-g-g̱-s-i', 'u-g-x̱-s-i'}
+goox̱da {'u-g-x̱-d', 'u-g-g̱-d'}
+goox̱sa {'u-g-x̱-s', 'u-g-g̱-s'}
+agoox̱dzi {'a-u-g-g̱-d-s-i', 'a-u-g-x̱-d-s-i'}
+agoox̱di {'a-u-g-x̱-d-i', 'a-u-g-g̱-d-i'}
+agoox̱si {'a-u-g-x̱-s-i', 'a-u-g-g̱-s-i'}
+agoox̱da {'a-u-g-g̱-d', 'a-u-g-x̱-d'}
+agoox̱sa {'a-u-g-x̱-s', 'a-u-g-g̱-s'}
+kagoox̱dzi {'ka-u-g-x̱-d-s-i', 'ka-u-g-g̱-d-s-i'}
+kagoox̱di {'ka-u-g-x̱-d-i', 'ka-u-g-g̱-d-i'}
+kagoox̱si {'ka-u-g-x̱-s-i', 'ka-u-g-g̱-s-i'}
+kagoox̱da {'ka-u-g-g̱-d', 'ka-u-g-x̱-d'}
+kagoox̱sa {'ka-u-g-x̱-s', 'ka-u-g-g̱-s'}
+x̱ʼagoox̱dzi {'x̱ʼe-u-g-g̱-d-s-i', 'x̱ʼe-u-g-x̱-d-s-i'}
+x̱ʼagoox̱di {'x̱ʼe-u-g-g̱-d-i', 'x̱ʼe-u-g-x̱-d-i'}
+x̱ʼagoox̱si {'x̱ʼe-u-g-x̱-s-i', 'x̱ʼe-u-g-g̱-s-i'}
+x̱ʼagoox̱da {'x̱ʼe-u-g-x̱-d', 'x̱ʼe-u-g-g̱-d'}
+x̱ʼagoox̱sa {'x̱ʼe-u-g-g̱-s', 'x̱ʼe-u-g-x̱-s'}
+jigoox̱dzi {'ji-u-g-x̱-d-s-i', 'ji-u-g-g̱-d-s-i'}
+jigoox̱di {'ji-u-g-g̱-d-i', 'ji-u-g-x̱-d-i'}
+jigoox̱si {'ji-u-g-g̱-s-i', 'ji-u-g-x̱-s-i'}
+jigoox̱da {'ji-u-g-g̱-d', 'ji-u-g-x̱-d'}
+jigoox̱sa {'ji-u-g-x̱-s', 'ji-u-g-g̱-s'}
+tugoox̱dzi {'tu-u-g-x̱-d-s-i', 'tu-u-g-g̱-d-s-i'}
+tugoox̱di {'tu-u-g-g̱-d-i', 'tu-u-g-x̱-d-i'}
+tugoox̱si {'tu-u-g-x̱-s-i', 'tu-u-g-g̱-s-i'}
+tugoox̱da {'tu-u-g-g̱-d', 'tu-u-g-x̱-d'}
+tugoox̱sa {'tu-u-g-g̱-s', 'tu-u-g-x̱-s'}
+gax̱tudzi {'g-g̱-tu-d-s-i', 'u-g-g̱-tu-d-s-i'}
+gax̱tudi {'u-g-g̱-tu-d-i', 'g-g̱-tu-d-i'}
+gax̱tusi {'g-g̱-tu-s-i', 'u-g-g̱-tu-s-i'}
+gax̱tuda {'g-g̱-tu-d', 'u-g-g̱-tu-d', 'w-g-g̱-tu-d'}
+gax̱toos {'w-g-g̱-tu-d-s', 'g-g̱-tu-d-s', 'u-g-g̱-tu-d-s'}
+gax̱tusa {'w-g-g̱-tu-s', 'u-g-g̱-tu-s', 'g-g̱-tu-s'}
+gax̱tuwa {'u-g-g̱-tu-i', 'g-g̱-tu-i'}
+gax̱too {'u-g-g̱-tu', 'w-g-g̱-tu', 'g-g̱-tu'}
+agax̱tudzi {'a-u-g-g̱-tu-d-s-i', 'a-g-g̱-tu-d-s-i'}
+agax̱tudi {'a-g-g̱-tu-d-i', 'a-u-g-g̱-tu-d-i'}
+agax̱tusi {'a-u-g-g̱-tu-s-i', 'a-g-g̱-tu-s-i'}
+agax̱tuda {'a-g-g̱-tu-d', 'a-w-g-g̱-tu-d', 'a-u-g-g̱-tu-d'}
+agax̱toos {'a-w-g-g̱-tu-d-s', 'a-g-g̱-tu-d-s', 'a-u-g-g̱-tu-d-s'}
+agax̱tusa {'a-u-g-g̱-tu-s', 'a-w-g-g̱-tu-s', 'a-g-g̱-tu-s'}
+agax̱tuwa {'a-g-g̱-tu-i', 'a-u-g-g̱-tu-i'}
+agax̱too {'a-w-g-g̱-tu', 'a-g-g̱-tu', 'a-u-g-g̱-tu'}
+kagax̱tudzi {'ka-g-g̱-tu-d-s-i', 'ka-u-g-g̱-tu-d-s-i'}
+kagax̱tudi {'ka-g-g̱-tu-d-i', 'ka-u-g-g̱-tu-d-i'}
+kagax̱tusi {'ka-g-g̱-tu-s-i', 'ka-u-g-g̱-tu-s-i'}
+kagax̱tuda {'ka-w-g-g̱-tu-d', 'ka-u-g-g̱-tu-d', 'ka-g-g̱-tu-d'}
+kagax̱toos {'ka-u-g-g̱-tu-d-s', 'ka-w-g-g̱-tu-d-s', 'ka-g-g̱-tu-d-s'}
+kagax̱tusa {'ka-g-g̱-tu-s', 'ka-u-g-g̱-tu-s', 'ka-w-g-g̱-tu-s'}
+kagax̱tuwa {'ka-u-g-g̱-tu-i', 'ka-g-g̱-tu-i'}
+kagax̱too {'ka-g-g̱-tu', 'ka-w-g-g̱-tu', 'ka-u-g-g̱-tu'}
+x̱ʼagax̱tudzi {'x̱ʼe-u-g-g̱-tu-d-s-i', 'x̱ʼe-g-g̱-tu-d-s-i'}
+x̱ʼagax̱tudi {'x̱ʼe-g-g̱-tu-d-i', 'x̱ʼe-u-g-g̱-tu-d-i'}
+x̱ʼagax̱tusi {'x̱ʼe-g-g̱-tu-s-i', 'x̱ʼe-u-g-g̱-tu-s-i'}
+x̱ʼagax̱tuda {'x̱ʼe-u-g-g̱-tu-d', 'x̱ʼe-w-g-g̱-tu-d', 'x̱ʼe-g-g̱-tu-d'}
+x̱ʼagax̱toos {'x̱ʼe-g-g̱-tu-d-s', 'x̱ʼe-u-g-g̱-tu-d-s', 'x̱ʼe-w-g-g̱-tu-d-s'}
+x̱ʼagax̱tusa {'x̱ʼe-g-g̱-tu-s', 'x̱ʼe-u-g-g̱-tu-s', 'x̱ʼe-w-g-g̱-tu-s'}
+x̱ʼagax̱tuwa {'x̱ʼe-g-g̱-tu-i', 'x̱ʼe-u-g-g̱-tu-i'}
+x̱ʼagax̱too {'x̱ʼe-w-g-g̱-tu', 'x̱ʼe-u-g-g̱-tu', 'x̱ʼe-g-g̱-tu'}
+jigax̱tudzi {'ji-g-g̱-tu-d-s-i', 'ji-u-g-g̱-tu-d-s-i'}
+jigax̱tudi {'ji-u-g-g̱-tu-d-i', 'ji-g-g̱-tu-d-i'}
+jigax̱tusi {'ji-g-g̱-tu-s-i', 'ji-u-g-g̱-tu-s-i'}
+jigax̱tuda {'ji-w-g-g̱-tu-d', 'ji-g-g̱-tu-d', 'ji-u-g-g̱-tu-d'}
+jigax̱toos {'ji-g-g̱-tu-d-s', 'ji-w-g-g̱-tu-d-s', 'ji-u-g-g̱-tu-d-s'}
+jigax̱tusa {'ji-g-g̱-tu-s', 'ji-u-g-g̱-tu-s', 'ji-w-g-g̱-tu-s'}
+jigax̱tuwa {'ji-u-g-g̱-tu-i', 'ji-g-g̱-tu-i'}
+jigax̱too {'ji-u-g-g̱-tu', 'ji-w-g-g̱-tu', 'ji-g-g̱-tu'}
+tugax̱tudzi {'tu-g-g̱-tu-d-s-i', 'tu-u-g-g̱-tu-d-s-i'}
+tugax̱tudi {'tu-g-g̱-tu-d-i', 'tu-u-g-g̱-tu-d-i'}
+tugax̱tusi {'tu-g-g̱-tu-s-i', 'tu-u-g-g̱-tu-s-i'}
+tugax̱tuda {'tu-w-g-g̱-tu-d', 'tu-g-g̱-tu-d', 'tu-u-g-g̱-tu-d'}
+tugax̱toos {'tu-g-g̱-tu-d-s', 'tu-w-g-g̱-tu-d-s', 'tu-u-g-g̱-tu-d-s'}
+tugax̱tusa {'tu-g-g̱-tu-s', 'tu-u-g-g̱-tu-s', 'tu-w-g-g̱-tu-s'}
+tugax̱tuwa {'tu-u-g-g̱-tu-i', 'tu-g-g̱-tu-i'}
+tugax̱too {'tu-w-g-g̱-tu', 'tu-u-g-g̱-tu', 'tu-g-g̱-tu'}
+gag̱idzi {'g-g̱-i-d-s-i', 'u-g-g̱-i-d-s-i'}
+gag̱idi {'u-g-g̱-i-d-i', 'g-g̱-i-d-i'}
+gag̱isi {'g-g̱-i-s-i', 'u-g-g̱-i-s-i'}
+gag̱ida {'u-g-g̱-i-d', 'w-g-g̱-i-d', 'g-g̱-i-d'}
+gag̱ees {'w-g-g̱-i-d-s', 'u-g-g̱-i-d-s', 'g-g̱-i-d-s'}
+gag̱isa {'u-g-g̱-i-s', 'g-g̱-i-s', 'w-g-g̱-i-s'}
+gag̱iya {'g-g̱-i-i', 'u-g-g̱-i-i'}
+gag̱ee {'u-g-g̱-i', 'g-g̱-i', 'w-g-g̱-i'}
+akg̱idzi {'a-g-g̱-i-d-s-i', 'a-u-g-g̱-i-d-s-i'}
+akg̱idi {'a-u-g-g̱-i-d-i', 'a-g-g̱-i-d-i'}
+akg̱isi {'a-g-g̱-i-s-i', 'a-u-g-g̱-i-s-i'}
+akg̱ida {'a-u-g-g̱-i-d', 'a-w-g-g̱-i-d', 'a-g-g̱-i-d'}
+akg̱ees {'a-w-g-g̱-i-d-s', 'a-g-g̱-i-d-s', 'a-u-g-g̱-i-d-s'}
+akg̱isa {'a-w-g-g̱-i-s', 'a-u-g-g̱-i-s', 'a-g-g̱-i-s'}
+akg̱iya {'a-g-g̱-i-i', 'a-u-g-g̱-i-i'}
+akg̱ee {'a-w-g-g̱-i', 'a-u-g-g̱-i', 'a-g-g̱-i'}
+kakg̱idzi {'ka-u-g-g̱-i-d-s-i', 'ka-g-g̱-i-d-s-i'}
+kakg̱idi {'ka-g-g̱-i-d-i', 'ka-u-g-g̱-i-d-i'}
+kakg̱isi {'ka-g-g̱-i-s-i', 'ka-u-g-g̱-i-s-i'}
+kakg̱ida {'ka-u-g-g̱-i-d', 'ka-w-g-g̱-i-d', 'ka-g-g̱-i-d'}
+kakg̱ees {'ka-w-g-g̱-i-d-s', 'ka-u-g-g̱-i-d-s', 'ka-g-g̱-i-d-s'}
+kakg̱isa {'ka-g-g̱-i-s', 'ka-u-g-g̱-i-s', 'ka-w-g-g̱-i-s'}
+kakg̱iya {'ka-g-g̱-i-i', 'ka-u-g-g̱-i-i'}
+kakg̱ee {'ka-u-g-g̱-i', 'ka-g-g̱-i', 'ka-w-g-g̱-i'}
+x̱ʼakg̱idzi {'x̱ʼe-g-g̱-i-d-s-i', 'x̱ʼe-u-g-g̱-i-d-s-i'}
+x̱ʼakg̱idi {'x̱ʼe-g-g̱-i-d-i', 'x̱ʼe-u-g-g̱-i-d-i'}
+x̱ʼakg̱isi {'x̱ʼe-u-g-g̱-i-s-i', 'x̱ʼe-g-g̱-i-s-i'}
+x̱ʼakg̱ida {'x̱ʼe-w-g-g̱-i-d', 'x̱ʼe-g-g̱-i-d', 'x̱ʼe-u-g-g̱-i-d'}
+x̱ʼakg̱ees {'x̱ʼe-g-g̱-i-d-s', 'x̱ʼe-u-g-g̱-i-d-s', 'x̱ʼe-w-g-g̱-i-d-s'}
+x̱ʼakg̱isa {'x̱ʼe-u-g-g̱-i-s', 'x̱ʼe-g-g̱-i-s', 'x̱ʼe-w-g-g̱-i-s'}
+x̱ʼakg̱iya {'x̱ʼe-u-g-g̱-i-i', 'x̱ʼe-g-g̱-i-i'}
+x̱ʼakg̱ee {'x̱ʼe-g-g̱-i', 'x̱ʼe-w-g-g̱-i', 'x̱ʼe-u-g-g̱-i'}
+jikg̱idzi {'ji-g-g̱-i-d-s-i', 'ji-u-g-g̱-i-d-s-i'}
+jikg̱idi {'ji-g-g̱-i-d-i', 'ji-u-g-g̱-i-d-i'}
+jikg̱isi {'ji-g-g̱-i-s-i', 'ji-u-g-g̱-i-s-i'}
+jikg̱ida {'ji-u-g-g̱-i-d', 'ji-w-g-g̱-i-d', 'ji-g-g̱-i-d'}
+jikg̱ees {'ji-g-g̱-i-d-s', 'ji-u-g-g̱-i-d-s', 'ji-w-g-g̱-i-d-s'}
+jikg̱isa {'ji-u-g-g̱-i-s', 'ji-g-g̱-i-s', 'ji-w-g-g̱-i-s'}
+jikg̱iya {'ji-u-g-g̱-i-i', 'ji-g-g̱-i-i'}
+jikg̱ee {'ji-g-g̱-i', 'ji-u-g-g̱-i', 'ji-w-g-g̱-i'}
+tukg̱idzi {'tu-u-g-g̱-i-d-s-i', 'tu-g-g̱-i-d-s-i'}
+tukg̱idi {'tu-u-g-g̱-i-d-i', 'tu-g-g̱-i-d-i'}
+tukg̱isi {'tu-u-g-g̱-i-s-i', 'tu-g-g̱-i-s-i'}
+tukg̱ida {'tu-u-g-g̱-i-d', 'tu-w-g-g̱-i-d', 'tu-g-g̱-i-d'}
+tukg̱ees {'tu-u-g-g̱-i-d-s', 'tu-g-g̱-i-d-s', 'tu-w-g-g̱-i-d-s'}
+tukg̱isa {'tu-u-g-g̱-i-s', 'tu-g-g̱-i-s', 'tu-w-g-g̱-i-s'}
+tukg̱iya {'tu-g-g̱-i-i', 'tu-u-g-g̱-i-i'}
+tukg̱ee {'tu-w-g-g̱-i', 'tu-g-g̱-i', 'tu-u-g-g̱-i'}
+gax̱yidzi {'u-g-g̱-yi-d-s-i', 'g-g̱-yi-d-s-i'}
+gax̱yidi {'u-g-g̱-yi-d-i', 'g-g̱-yi-d-i'}
+gax̱yisi {'u-g-g̱-yi-s-i', 'g-g̱-yi-s-i'}
+gax̱yida {'u-g-g̱-yi-d', 'w-g-g̱-yi-d', 'g-g̱-yi-d'}
+gax̱yis {'u-g-g̱-yi-d-s', 'g-g̱-yi-d-s'}
+gax̱yisa {'w-g-g̱-yi-s', 'g-g̱-yi-s', 'u-g-g̱-yi-s'}
+gax̱yeey {'g-g̱-yi-i', 'u-g-g̱-yi-i'}
+gax̱yi {'g-g̱-yi', 'u-g-g̱-yi'}
+agax̱yidzi {'a-u-g-g̱-yi-d-s-i', 'a-g-g̱-yi-d-s-i'}
+agax̱yidi {'a-g-g̱-yi-d-i', 'a-u-g-g̱-yi-d-i'}
+agax̱yisi {'a-u-g-g̱-yi-s-i', 'a-g-g̱-yi-s-i'}
+agax̱yida {'a-g-g̱-yi-d', 'a-u-g-g̱-yi-d', 'a-w-g-g̱-yi-d'}
+agax̱yis {'a-u-g-g̱-yi-d-s', 'a-g-g̱-yi-d-s'}
+agax̱yisa {'a-u-g-g̱-yi-s', 'a-w-g-g̱-yi-s', 'a-g-g̱-yi-s'}
+agax̱yeey {'a-g-g̱-yi-i', 'a-u-g-g̱-yi-i'}
+agax̱yi {'a-g-g̱-yi', 'a-u-g-g̱-yi'}
+kagax̱yidzi {'ka-u-g-g̱-yi-d-s-i', 'ka-g-g̱-yi-d-s-i'}
+kagax̱yidi {'ka-g-g̱-yi-d-i', 'ka-u-g-g̱-yi-d-i'}
+kagax̱yisi {'ka-g-g̱-yi-s-i', 'ka-u-g-g̱-yi-s-i'}
+kagax̱yida {'ka-u-g-g̱-yi-d', 'ka-g-g̱-yi-d', 'ka-w-g-g̱-yi-d'}
+kagax̱yis {'ka-g-g̱-yi-d-s', 'ka-u-g-g̱-yi-d-s'}
+kagax̱yisa {'ka-g-g̱-yi-s', 'ka-u-g-g̱-yi-s', 'ka-w-g-g̱-yi-s'}
+kagax̱yeey {'ka-u-g-g̱-yi-i', 'ka-g-g̱-yi-i'}
+kagax̱yi {'ka-g-g̱-yi', 'ka-u-g-g̱-yi'}
+x̱ʼagax̱yidzi {'x̱ʼe-u-g-g̱-yi-d-s-i', 'x̱ʼe-g-g̱-yi-d-s-i'}
+x̱ʼagax̱yidi {'x̱ʼe-g-g̱-yi-d-i', 'x̱ʼe-u-g-g̱-yi-d-i'}
+x̱ʼagax̱yisi {'x̱ʼe-g-g̱-yi-s-i', 'x̱ʼe-u-g-g̱-yi-s-i'}
+x̱ʼagax̱yida {'x̱ʼe-w-g-g̱-yi-d', 'x̱ʼe-g-g̱-yi-d', 'x̱ʼe-u-g-g̱-yi-d'}
+x̱ʼagax̱yis {'x̱ʼe-g-g̱-yi-d-s', 'x̱ʼe-u-g-g̱-yi-d-s'}
+x̱ʼagax̱yisa {'x̱ʼe-g-g̱-yi-s', 'x̱ʼe-w-g-g̱-yi-s', 'x̱ʼe-u-g-g̱-yi-s'}
+x̱ʼagax̱yeey {'x̱ʼe-u-g-g̱-yi-i', 'x̱ʼe-g-g̱-yi-i'}
+x̱ʼagax̱yi {'x̱ʼe-g-g̱-yi', 'x̱ʼe-u-g-g̱-yi'}
+jigax̱yidzi {'ji-g-g̱-yi-d-s-i', 'ji-u-g-g̱-yi-d-s-i'}
+jigax̱yidi {'ji-u-g-g̱-yi-d-i', 'ji-g-g̱-yi-d-i'}
+jigax̱yisi {'ji-g-g̱-yi-s-i', 'ji-u-g-g̱-yi-s-i'}
+jigax̱yida {'ji-w-g-g̱-yi-d', 'ji-g-g̱-yi-d', 'ji-u-g-g̱-yi-d'}
+jigax̱yis {'ji-u-g-g̱-yi-d-s', 'ji-g-g̱-yi-d-s'}
+jigax̱yisa {'ji-w-g-g̱-yi-s', 'ji-u-g-g̱-yi-s', 'ji-g-g̱-yi-s'}
+jigax̱yeey {'ji-u-g-g̱-yi-i', 'ji-g-g̱-yi-i'}
+jigax̱yi {'ji-g-g̱-yi', 'ji-u-g-g̱-yi'}
+tugax̱yidzi {'tu-g-g̱-yi-d-s-i', 'tu-u-g-g̱-yi-d-s-i'}
+tugax̱yidi {'tu-u-g-g̱-yi-d-i', 'tu-g-g̱-yi-d-i'}
+tugax̱yisi {'tu-g-g̱-yi-s-i', 'tu-u-g-g̱-yi-s-i'}
+tugax̱yida {'tu-u-g-g̱-yi-d', 'tu-g-g̱-yi-d', 'tu-w-g-g̱-yi-d'}
+tugax̱yis {'tu-u-g-g̱-yi-d-s', 'tu-g-g̱-yi-d-s'}
+tugax̱yisa {'tu-w-g-g̱-yi-s', 'tu-u-g-g̱-yi-s', 'tu-g-g̱-yi-s'}
+tugax̱yeey {'tu-u-g-g̱-yi-i', 'tu-g-g̱-yi-i'}
+tugax̱yi {'tu-g-g̱-yi', 'tu-u-g-g̱-yi'}
+gax̱dudzi {'g-g̱-du-d-s-i', 'u-g-g̱-du-d-s-i'}
+gax̱dus {'g-g̱-du-d-s', 'w-g-g̱-du-d-s', 'u-g-g̱-du-d-s'}
+gax̱duwa {'g-g̱-du-i', 'u-g-g̱-du-i'}
+gax̱du {'u-g-g̱-du', 'g-g̱-du', 'w-g-g̱-du'}
+agax̱dudzi {'a-g-g̱-du-d-s-i', 'a-u-g-g̱-du-d-s-i'}
+agax̱dus {'a-u-g-g̱-du-d-s', 'a-g-g̱-du-d-s', 'a-w-g-g̱-du-d-s'}
+agax̱duwa {'a-u-g-g̱-du-i', 'a-g-g̱-du-i'}
+agax̱du {'a-w-g-g̱-du', 'a-u-g-g̱-du', 'a-g-g̱-du'}
+kagax̱dudzi {'ka-g-g̱-du-d-s-i', 'ka-u-g-g̱-du-d-s-i'}
+kagax̱dus {'ka-g-g̱-du-d-s', 'ka-w-g-g̱-du-d-s', 'ka-u-g-g̱-du-d-s'}
+kagax̱duwa {'ka-u-g-g̱-du-i', 'ka-g-g̱-du-i'}
+kagax̱du {'ka-u-g-g̱-du', 'ka-g-g̱-du', 'ka-w-g-g̱-du'}
+x̱ʼagax̱dudzi {'x̱ʼe-u-g-g̱-du-d-s-i', 'x̱ʼe-g-g̱-du-d-s-i'}
+x̱ʼagax̱dus {'x̱ʼe-u-g-g̱-du-d-s', 'x̱ʼe-g-g̱-du-d-s', 'x̱ʼe-w-g-g̱-du-d-s'}
+x̱ʼagax̱duwa {'x̱ʼe-u-g-g̱-du-i', 'x̱ʼe-g-g̱-du-i'}
+x̱ʼagax̱du {'x̱ʼe-u-g-g̱-du', 'x̱ʼe-w-g-g̱-du', 'x̱ʼe-g-g̱-du'}
+jigax̱dudzi {'ji-u-g-g̱-du-d-s-i', 'ji-g-g̱-du-d-s-i'}
+jigax̱dus {'ji-g-g̱-du-d-s', 'ji-u-g-g̱-du-d-s', 'ji-w-g-g̱-du-d-s'}
+jigax̱duwa {'ji-g-g̱-du-i', 'ji-u-g-g̱-du-i'}
+jigax̱du {'ji-w-g-g̱-du', 'ji-g-g̱-du', 'ji-u-g-g̱-du'}
+tugax̱dudzi {'tu-u-g-g̱-du-d-s-i', 'tu-g-g̱-du-d-s-i'}
+tugax̱dus {'tu-g-g̱-du-d-s', 'tu-u-g-g̱-du-d-s'}
+tugax̱duwa {'tu-u-g-g̱-du-i', 'tu-g-g̱-du-i'}
+tugax̱du {'tu-g-g̱-du', 'tu-u-g-g̱-du'}
+akg̱wa {'a-w-g-g̱', 'a-u-g-g̱'}
+kakg̱wa {'ka-u-g-g̱', 'ka-w-g-g̱'}
+akḵwada {'a-w-g-g̱-x̱-d', 'a-u-g-g̱-x̱-d'}
+akḵwas {'a-w-g-g̱-x̱-d-s', 'a-u-g-g̱-x̱-d-s'}
+akḵwasa {'a-u-g-g̱-x̱-s', 'a-w-g-g̱-x̱-s'}
+akḵwa {'a-w-g-g̱-x̱', 'a-u-g-g̱-x̱'}
+kakḵwada {'ka-w-g-g̱-x̱-d', 'ka-u-g-g̱-x̱-d'}
+kakḵwas {'ka-u-g-g̱-x̱-d-s', 'ka-w-g-g̱-x̱-d-s'}
+kakḵwasa {'ka-w-g-g̱-x̱-s', 'ka-u-g-g̱-x̱-s'}
+kakḵwa {'ka-w-g-g̱-x̱', 'ka-u-g-g̱-x̱'}
+x̱ʼakḵwada {'x̱ʼe-u-g-g̱-x̱-d', 'x̱ʼe-w-g-g̱-x̱-d'}
+x̱ʼakḵwas {'x̱ʼe-w-g-g̱-x̱-d-s', 'x̱ʼe-u-g-g̱-x̱-d-s'}
+x̱ʼakḵwasa {'x̱ʼe-u-g-g̱-x̱-s', 'x̱ʼe-w-g-g̱-x̱-s'}
+x̱ʼakḵwa {'x̱ʼe-w-g-g̱-x̱', 'x̱ʼe-u-g-g̱-x̱'}
+jikḵwada {'ji-w-g-g̱-x̱-d', 'ji-u-g-g̱-x̱-d'}
+jikḵwas {'ji-w-g-g̱-x̱-d-s', 'ji-u-g-g̱-x̱-d-s'}
+jikḵwasa {'ji-u-g-g̱-x̱-s', 'ji-w-g-g̱-x̱-s'}
+jikḵwa {'ji-u-g-g̱-x̱', 'ji-w-g-g̱-x̱'}
+tukḵwada {'tu-w-g-g̱-x̱-d', 'tu-u-g-g̱-x̱-d'}
+tukḵwas {'tu-w-g-g̱-x̱-d-s', 'tu-u-g-g̱-x̱-d-s'}
+tukḵwasa {'tu-u-g-g̱-x̱-s', 'tu-w-g-g̱-x̱-s'}
+tukḵwa {'tu-u-g-g̱-x̱', 'tu-w-g-g̱-x̱'}
+wus {'wu-s', 'wu-d-s'}
+awus {'a-wu-d-s', 'a-wu-s'}
+kawus {'ka-wu-s', 'ka-wu-d-s'}
+x̱ʼawus {'x̱ʼe-wu-d-s', 'x̱ʼe-wu-s'}
+jiwus {'ji-wu-s', 'ji-wu-d-s'}
+tuwus {'tu-wu-s', 'tu-wu-d-s'}
+733
+914
+1061
+1061
+1111
