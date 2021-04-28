@@ -122,7 +122,6 @@ for filename in files:
 def p(letter, word):
     return (letter_to_tag[letter], word)
 
-
 rewrites = []
 
 def remove_epenthesis():
@@ -132,11 +131,13 @@ def remove_epenthesis():
         ([p("E", "a")],                                 []),
         ([p("E", "a")],                                 []),
         ([p("E", "o")],                                 []),
+        ([p("E", "i")],                                 []),
     ])
 
-def xw2wux():
+def xw2wux():  # covers both irrealis and aspect
     rewrites.extend([
         ([p("S", "x̱"), p("A", "w")],                    [p("A", "wu"), p("S", "x̱")]),
+        ([p("S", "x̱"), p("R", "w")],                    [p("R", "u"), p("S", "x̱")]),
     ])
 
 def make_RuAg():
@@ -260,14 +261,35 @@ def subject_x():
         ([p("A", "g̱"), p("S", "x̱")],                    [p("M", "g̱"), p("S", "x̱")]),  # (G)
     ])
 
+
 def aspect_wu():
     rewrites.extend([
         ([p("Q", "a"), p("S", "i")],                    [p("Q", "a"), p("A", "wu"), p("S", "i")]),
         ([p("Q", "ka"), p("S", "i")],                   [p("Q", "ka"), p("A", "wu"), p("S", "i")]),
         ([p("Q", "x̱ʼa"), p("S", "i")],                  [p("Q", "x̱ʼe"), p("A", "wu"), p("S", "i")]),
+        ([p("Q", "x̱ʼe"), p("S", "ee")],                 [p("Q", "x̱ʼe"), p("A", "wu"), p("S", "i")]),
         ([p("Q", "ji"), p("S", "i")],                   [p("Q", "ji"), p("A", "wu"), p("S", "i")]),
         ([p("Q", "tu"), p("S", "i")],                   [p("Q", "tu"), p("A", "wu"), p("S", "i")]),
         ([p("A", "e"), p("S", "e")],                    [p("Q", "a"), p("A", "wu"), p("S", "i")]),
+    ])
+
+def irrealis_u():
+    rewrites.extend([
+        ([p("Q", "a")],                                 [p("Q", "a"), p("R", "u")]),
+        ([p("Q", "ka")],                                [p("Q", "ka"), p("R", "u")]),
+        ([p("Q", "x̱ʼa")],                               [p("Q", "x̱ʼe"), p("R", "u")]),
+        ([p("Q", "ji")],                                [p("Q", "ji"), p("R", "u")]),
+        ([p("Q", "tu")],                                [p("Q", "tu"), p("R", "u")]),
+    ])
+
+def aspect_wu2irrealis_u():
+    rewrites.extend([
+        ([p("Q", "a"), p("A", "wu"), p("S", "i")],      [p("Q", "a"), p("R", "u"), p("S", "i")]),
+        ([p("Q", "ka"), p("A", "wu"), p("S", "i")],     [p("Q", "ka"), p("R", "u"), p("S", "i")]),
+        ([p("Q", "x̱ʼe"), p("A", "wu"), p("S", "i")],    [p("Q", "x̱ʼe"), p("R", "u"), p("S", "i")]),
+        ([p("Q", "ji"), p("A", "wu"), p("S", "i")],     [p("Q", "ji"), p("R", "u"), p("S", "i")]),
+        ([p("Q", "tu"), p("A", "wu"), p("S", "i")],     [p("Q", "tu"), p("R", "u"), p("S", "i")]),
+        ([p("Q", "a"), p("A", "wu"), p("S", "i")],      [p("Q", "a"), p("R", "u"), p("S", "i")]),
     ])
 
 def An2RuAn():
@@ -296,9 +318,7 @@ def remove_double_irrealis():
 
 def remove_irrealis():
     rewrites.extend([
-        ([p("R", "u"), p("A", "n")],                    [p("A", "n")]),
-        ([p("R", "u"), p("A", "g")],                    [p("A", "g")]),
-        ([p("R", "u"), p("A", "g̱")],                    [p("A", "g̱")]),
+        ([p("R", "u")],                                 []),
     ])
 
 def Mg2RuMg():
@@ -316,8 +336,46 @@ def MgSx2AgSx():  # partial inverse to subject_x()?
         ([p("M", "g̱"), p("S", "x̱")],                    [p("A", "g̱"), p("S", "x̱")]), # Undo (G)
     ])
 
+def irreg_utuudu():
+    rewrites.extend([
+        ([p("S", "tu")],                                [p("R", "u"), p("S", "tu")]),
+        ([p("S", "too")],                               [p("R", "u"), p("S", "tu")]),
+        ([p("S", "du")],                                [p("R", "u"), p("S", "du")]),
+    ])
+
+def irreg_utuudu_inv():  # irregular, I think
+    rewrites.extend([
+        ([p("R", "u"), p("S", "tu")],                   [p("S", "tu")]),
+        ([p("R", "u"), p("S", "du")],                   [p("S", "du")]),
+    ])
+
+def irreg_disjuncts():
+    rewrites.extend([
+        ([p("Q", "e")],                                 [p("Q", "a")]),
+        ([p("Q", "k")],                                 [p("Q", "ka")]),
+        ([p("Q", "x̱ʼ")],                                [p("Q", "x̱ʼe")]),
+        ([p("Q", "j")],                                 [p("Q", "ji")]),
+        ([p("Q", "t")],                                 [p("Q", "tu")]),
+    ])
+
+def irrealis_subject():
+    rewrites.extend([
+        ([p("S", "i")],                                 [p("R", "u"), p("S", "i")]),
+        ([p("S", "ee")],                                [p("R", "u"), p("S", "ee")]),
+        ([p("S", "yeey")],                              [p("R", "u"), p("S", "yeey")]),
+        ([p("S", "yi")],                                [p("R", "u"), p("S", "yi")]),
+        ([p("S", "yee")],                               [p("R", "u"), p("S", "yee")]),
+    ])
+
+def disjunct_u():  # probably a mistake
+    rewrites.extend([
+        ([p("S", "i")],                                 [p("Q", "u"), p("S", "i")]),
+    ])
+
+
 # actual sequence of rewrites
 remove_epenthesis()
+irreg_disjuncts()
 xw2wux()
 make_RuAg()
 gw2ug()
@@ -329,6 +387,8 @@ make_AgMg()
 gg2wgg()
 make_wggx()
 make_ggx()
+s2ds()  # trying this
+s2ds_inv()
 make_ugg()
 make_uggx()
 go2ug()
@@ -347,12 +407,23 @@ aspect_n()
 s2ds()
 gg2wgg_inv()
 remove_double_irrealis()
-remove_irrealis()
+irrealis_u()
+remove_double_irrealis()
 Mg2RuMg()
 s2ds_inv()
 Mg2RuMg_inv()
 MgSx2AgSx()
 s2ds()
+remove_irrealis()
+aspect_wu2irrealis_u()
+s2ds_inv()
+irreg_utuudu()
+s2ds()
+irrealis_subject()
+s2ds_inv()
+remove_irrealis()  # should not be needed
+disjunct_u()
+
 
 def pair_list_to_string(pair_list):
     ret_val = ""
@@ -413,5 +484,5 @@ for (k,v) in observed_to_hidden.items():
     #print(k, "\t", list(x.to_string() for x in v))
 for (k,v) in hidden_to_observed.items():
     pass
-    #print(k.print_verbose(), print(), actual_to_rewritten[v].print_verbose(), v.to_string(False), sep="    ")
+    print(k.print_verbose(), print(), actual_to_rewritten[v].print_verbose(), v.to_string(False), sep="    ")
     #print(k.to_string(True), actual_to_rewritten[v].to_string(True), v.to_string(False), sep="    ")
