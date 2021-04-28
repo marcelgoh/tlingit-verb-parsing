@@ -119,207 +119,240 @@ for filename in files:
                             print(hidden.to_string())
                         hidden_to_observed[hidden] = observed
 
-def pair(letter, word):
+def p(letter, word):
     return (letter_to_tag[letter], word)
 
 
-actual = [
-    [pair("E", "a")],  # (1) -- remove epenthesis
-    [pair("E", "a")],
-    [pair("E", "a")],
-    [pair("E", "a")],
-    [pair("E", "o")],
-    [pair("S", "x̱"), pair("A", "w")],
-    # Irrealis w/u
-    [pair("A", "k"), pair("R", "w")],
-    [pair("M", "g̱"), pair("R", "w")],  # (H)
-    [pair("F", "s")],  # (C)
-    [pair("R", "u"), pair("M", "g̱")],  # Undo (H)
-    [pair("D", "d"), pair("F", "s")],  # Undo (C)
-    # [pair("A", "g̱")],
-    [pair("A", "g̱"), pair("R", "w")],
-    # Modal g̱
-    [pair("M", "x̱")],
-    [pair("A", "k"), pair("M", "g̱")],
-    [pair("A", "g"), pair("M", "g̱")],  # (A)
-    [pair("A", "g"), pair("R", "u"), pair("M", "g̱")],
-    [pair("A", "k"), pair("S", "ḵ"), pair("R", "w")],
-    [pair("A", "g"), pair("M", "g̱"), pair("R", "w")],
-    [pair("A", "k"), pair("R", "u"), pair("S", "ḵ")],
-    [pair("A", "k"), pair("S", "ḵ")],
-    [pair("A", "g"), pair("S", "ḵ")],
-    [pair("A", "ḵ"), pair("S", "ḵ")],
-    [pair("A", "ḵ"), pair("R", "w"), pair("S", "ḵ")],
-    [pair("A", "g̱"), pair("R", "w"), pair("M", "g̱")],
-    [pair("A", "g"), pair("R", "o"), pair("S", "ḵ")],
-    [pair("A", "g"), pair("R", "o")],
-    [pair("A", "g̱"), pair("M", "g̱")],
-    # Subject du
-    [pair("A", "k"), pair("S", "du")],
-    [pair("A", "g"), pair("S", "du")],
-    [pair("A", "x̱"), pair("S", "du")],
-    [pair("A", "g̱"), pair("S", "du")],
-    # Subject i
-    [pair("S", "y")],
-    [pair("A", "g"), pair("S", "i")],
-    [pair("A", "g"), pair("S", "ee")],
-    [pair("A", "g"), pair("S", "yi")],
-    [pair("A", "g"), pair("S", "yee")],
-    [pair("A", "x̱"), pair("S", "yi")],
-    [pair("A", "x̱"), pair("S", "ye")],
-    [pair("A", "g̱"), pair("S", "yi")],
-    [pair("A", "g̱"), pair("S", "ye")],
-    [pair("A", "g̱"), pair("S", "i")],
-    [pair("A", "g̱"), pair("S", "ee")],
-    # Subject tu
-    [pair("A", "k"), pair("S", "tu")],
-    [pair("A", "k"), pair("S", "too")],
-    [pair("A", "g"), pair("S", "tu")],
-    [pair("A", "g"), pair("S", "too")],  # (D)
-    [pair("A", "x̱"), pair("S", "too")],
-    [pair("A", "x̱"), pair("S", "tu")],
-    [pair("A", "g̱"), pair("S", "tu")],
-    [pair("A", "g̱"), pair("S", "too")],
-    # Subject x̱
-    [pair("S", "ḵ"), pair("R", "w")],
-    [pair("S", "ḵ")],
-    [pair("A", "g̱"), pair("S", "x̱")], # (G)
-    # [pair("R", "e"), pair("S", "ḵ")],
-    # [pair("R", "o"), pair("S", "ḵ")],
-    # [pair("R", "i"), pair("S", "ḵ")],
-    # [pair("S", "ḵ"), pair("R", "w")],
-    # Aspect wu
-    [pair("Q", "a"), pair("S", "i")],
-    [pair("Q", "ka"), pair("S", "i")],
-    [pair("Q", "x̱ʼa"), pair("S", "i")],
-    [pair("Q", "ji"), pair("S", "i")],
-    [pair("Q", "tu"), pair("S", "i")],
-    [pair("A", "e"), pair("S", "e")],
-    # Aspect n
-    [pair("F", "s")],  # (C)
-    [pair("D", "d"), pair("F", "s")],  # Undo (C)
-    [pair("A", "n")],
-    [pair("A", "n"), pair("A", "g̱")],
-    [pair("F", "s")],  # (C)
-    [pair("D", "d"), pair("F", "s")],  # Undo (C)
-    [pair("A", "n"), pair("S", "yi")],
-    [pair("A", "n"), pair("S", "du")],
-    # ClassifierD
-    [pair("F", "s")],  # (C)
-    # Undo errors
-    [pair("R", "w"), pair("A", "g"), pair("M", "g̱")],  # Undo (A)
-    [pair("R", "o"), pair("R", "u")],  # Undo irrealis
-    [pair("R", "u"), pair("R", "u")],
-    [pair("R", "e"), pair("R", "u")],
-    [pair("R", "i"), pair("R", "u")],
-    [pair("R", "u"), pair("A", "n")],
-    [pair("R", "u"), pair("A", "g")],
-    [pair("R", "u"), pair("A", "g̱")],
-    [pair("M", "g̱")],  # (F)
-    [pair("D", "d"), pair("F", "s")],  # Undo (C)
-    [pair("R", "u"), pair("M", "g̱")],  # (F)
-    [pair("M", "g̱"), pair("S", "x̱")],  # Undo (G)
-    [pair("F", "s")],  # (C)
-]
-rewritten = [
-    [],
-    [],
-    [],
-    [],
-    [],
-    [pair("A", "wu"), pair("S", "x̱")],
-    # Irrealis w/u
-    [pair("R", "u"), pair("A", "g")],
-    [pair("R", "u"), pair("M", "g̱")],  # (H)
-    [pair("D", "d"), pair("F", "s")],  # (C)
-    [pair("M", "g̱"), pair("R", "w")],  # Undo (H)
-    [pair("F", "s")],  # Undo (C)
-    # [pair("R", "u"), pair("A", "g̱")],
-    [pair("R", "u"), pair("A", "g̱")],
-    # Modal g̱
-    [pair("M", "g̱")],
-    [pair("A", "g"), pair("M", "g̱")],
-    [pair("R", "w"), pair("A", "g"), pair("M", "g̱")],  # (A)
-    [pair("R", "w"), pair("A", "g"), pair("M", "g̱")],
-    [pair("R", "w"), pair("A", "g"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("A", "g"), pair("M", "g̱")],
-    [pair("R", "w"), pair("A", "g"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("A", "g"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("A", "g"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("A", "g̱"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("R", "u"), pair("A", "g̱"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("R", "u"), pair("A", "g̱"), pair("M", "g̱")],
-    [pair("R", "u"), pair("A", "g"), pair("M", "g̱"), pair("S", "x̱")],
-    [pair("R", "u"), pair("A", "g")],
-    [pair("R", "u"), pair("A", "g̱"), pair("M", "g̱")],
-    # Subject du
-    [pair("R", "u"), pair("A", "g"), pair("S", "du")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "du")],  # (B)
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "du")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "du")],
-    # Subject i
-    [pair("S", "i")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "i")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "i")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "yi")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "yi")],  # (E)
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "yi")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "yi")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "yi")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "yi")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "yi")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "yi")],
-    # Subject tu
-    [pair("R", "u"), pair("A", "g"), pair("S", "tu")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "tu")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "tu")],
-    [pair("R", "u"), pair("A", "g"), pair("S", "tu")],  # (D)
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "tu")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "tu")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "tu")],
-    [pair("R", "u"), pair("A", "g̱"), pair("S", "tu")],
-    # Subject x̱
-    [pair("R", "u"), pair("S", "ḵ")],
-    [pair("A", "g̱"), pair("S", "x̱")],
-    [pair("M", "g̱"), pair("S", "x̱")],  # (G)
-    # [pair("R", "u"), pair("A", "g̱"), pair("S", "x̱")],
-    # [pair("R", "u"), pair("A", "g̱"), pair("S", "x̱")],
-    # [pair("R", "u"), pair("A", "g̱"), pair("S", "x̱")],
-    # [pair("R", "u"), pair("A", "g̱"), pair("S", "x̱")],
-    # Aspect wu
-    [pair("Q", "a"), pair("A", "wu"), pair("S", "i")],
-    [pair("Q", "ka"), pair("A", "wu"), pair("S", "i")],
-    [pair("Q", "x̱ʼe"), pair("A", "wu"), pair("S", "i")],
-    [pair("Q", "ji"), pair("A", "wu"), pair("S", "i")],
-    [pair("Q", "tu"), pair("A", "wu"), pair("S", "i")],
-    [pair("Q", "a"), pair("A", "wu"), pair("S", "i")],
-    # Aspect n
-    [pair("D", "d"), pair("F", "s")],  # (C)
-    [pair("F", "s")],  # Undo (C)
-    [pair("R", "u"), pair("A", "n")],
-    [pair("A", "n"), pair("M", "g̱")],
-    [pair("D", "d"), pair("F", "s")],  # (C)
-    [pair("F", "s")],  # Undo (C)
-    [pair("A", "n"), pair("M", "g̱"), pair("S", "yi")],
-    [pair("A", "n"), pair("M", "g̱"), pair("S", "du")],
-    # ClassifierD
-    [pair("D", "d"), pair("F", "s")],  # (C)
-    # Undo errors
-    [pair("A", "g"), pair("M", "g̱")],  # Undo (A)
-    [pair("R", "u")],  # Undo irrealis
-    [pair("R", "u")],
-    [pair("R", "u")],
-    [pair("R", "u")],
-    [pair("A", "n")],
-    [pair("A", "g")],
-    [pair("A", "g̱")],
-    [pair("R", "u"), pair("M", "g̱")],  # (F)
-    [pair("F", "s")],  # Undo (C)
-    [pair("M", "g̱")],  # Undo (F)
-    [pair("A", "g̱"), pair("S", "x̱")], # Undo (G)
-    [pair("D", "d"), pair("F", "s")],  # (C)
-    # Irrealis-subject
-]
+rewrites = []
+
+def remove_epenthesis():
+    rewrites.extend([
+        ([p("E", "a")],                                 []),
+        ([p("E", "a")],                                 []),
+        ([p("E", "a")],                                 []),
+        ([p("E", "a")],                                 []),
+        ([p("E", "o")],                                 []),
+    ])
+
+def xw2wux():
+    rewrites.extend([
+        ([p("S", "x̱"), p("A", "w")],                    [p("A", "wu"), p("S", "x̱")]),
+    ])
+
+def make_RuAg():
+    rewrites.extend([
+        ([p("A", "k"), p("R", "w")],                    [p("R", "u"), p("A", "g")]),
+        ([p("A", "g̱"), p("R", "w")],                    [p("R", "u"), p("A", "g̱")]),
+    ])
+
+def s2ds():
+    rewrites.extend([
+        ([p("F", "s")],                                 [p("D", "d"), p("F", "s")]),  # (C)
+    ])
+
+def s2ds_inv():
+    rewrites.extend([
+        ([p("D", "d"), p("F", "s")],                    [p("F", "s")]),  # Undo (C)
+    ])
+
+def gw2ug():
+    rewrites.extend([
+        ([p("M", "g̱"), p("R", "w")],                    [p("R", "u"), p("M", "g̱")]),  # (H)
+    ])
+
+def gw2ug_inv():
+    rewrites.extend([
+        ([p("R", "u"), p("M", "g̱")],                    [p("M", "g̱"), p("R", "w")]),  # Undo (H)
+    ])
+
+def Mx2Mg():
+    rewrites.extend([
+        ([p("M", "x̱")],                                 [p("M", "g̱")]),
+    ])
+
+def make_AgMg():
+    rewrites.extend([
+        ([p("A", "g"), p("M", "g̱"), p("R", "w")],       [p("A", "g"), p("M", "g̱")]),
+        ([p("A", "k"), p("M", "g̱")],                    [p("A", "g"), p("M", "g̱")]),
+        ([p("A", "g"), p("M", "g̱"), p("R", "w")],       [p("A", "g"), p("M", "g̱")]),
+        ([p("A", "g"), p("R", "u"), p("M", "g̱")],       [p("A", "g"), p("M", "g̱")]),
+    ])
+
+def gg2wgg():  # invertible??
+    rewrites.extend([
+        ([p("A", "g"), p("M", "g̱")],                    [p("R", "w"), p("A", "g"), p("M", "g̱")]),  # (A)
+    ])
+
+def gg2wgg_inv():
+    rewrites.extend([
+        ([p("R", "w"), p("A", "g"), p("M", "g̱")],       [p("A", "g"), p("M", "g̱")]),  # Undo (A)
+    ])
+
+def make_wggx():
+    rewrites.extend([
+        ([p("A", "k"), p("S", "ḵ"), p("R", "w")],       [p("R", "w"), p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
+        ([p("A", "k"), p("R", "u"), p("S", "ḵ")],       [p("R", "w"), p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
+    ])
+
+def make_ggx():
+    rewrites.extend([
+        ([p("A", "k"), p("S", "ḵ")],                    [p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
+        ([p("A", "g"), p("S", "ḵ")],                    [p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
+        ([p("A", "ḵ"), p("S", "ḵ")],                    [p("A", "g̱"), p("M", "g̱"), p("S", "x̱")]),
+    ])
+
+def make_ugg():
+    rewrites.extend([
+        ([p("A", "g̱"), p("M", "g̱")],                    [p("R", "u"), p("A", "g̱"), p("M", "g̱")]),
+        ([p("A", "g̱"), p("R", "w"), p("M", "g̱")],       [p("R", "u"), p("A", "g̱"), p("M", "g̱")]),
+    ])
+
+def make_uggx():
+    rewrites.extend([
+        ([p("A", "ḵ"), p("R", "w"), p("S", "ḵ")],       [p("R", "u"), p("A", "g̱"), p("M", "g̱"), p("S", "x̱")]),
+        ([p("A", "g"), p("R", "o"), p("S", "ḵ")],       [p("R", "u"), p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
+    ])
+
+def go2ug():
+    rewrites.extend([
+        ([p("A", "g"), p("R", "o")],                    [p("R", "u"), p("A", "g")]),
+    ])
+
+def make_ugdu():
+    rewrites.extend([
+        ([p("A", "k"), p("S", "du")],                   [p("R", "u"), p("A", "g"), p("S", "du")]),
+        ([p("A", "g"), p("S", "du")],                   [p("R", "u"), p("A", "g"), p("S", "du")]),  # (B)
+        ([p("A", "x̱"), p("S", "du")],                   [p("R", "u"), p("A", "g̱"), p("S", "du")]),
+        ([p("A", "g̱"), p("S", "du")],                   [p("R", "u"), p("A", "g̱"), p("S", "du")]),
+    ])
+
+def make_ugyi():
+    rewrites.extend([
+        ([p("S", "y")],                                 [p("S", "i")]),
+        ([p("A", "g"), p("S", "i")],                    [p("R", "u"), p("A", "g"), p("S", "i")]),
+        ([p("A", "g"), p("S", "ee")],                   [p("R", "u"), p("A", "g"), p("S", "i")]),
+        ([p("A", "g"), p("S", "yi")],                   [p("R", "u"), p("A", "g"), p("S", "yi")]),
+        ([p("A", "g"), p("S", "yee")],                  [p("R", "u"), p("A", "g"), p("S", "yi")]),  # (E)
+        ([p("A", "x̱"), p("S", "yi")],                   [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
+        ([p("A", "x̱"), p("S", "ye")],                   [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
+        ([p("A", "g̱"), p("S", "yi")],                   [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
+        ([p("A", "g̱"), p("S", "ye")],                   [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
+        ([p("A", "g̱"), p("S", "i")],                    [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
+        ([p("A", "g̱"), p("S", "ee")],                   [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
+    ])
+
+def make_ugtu():
+    rewrites.extend([
+        ([p("A", "k"), p("S", "tu")],                   [p("R", "u"), p("A", "g"), p("S", "tu")]),
+        ([p("A", "k"), p("S", "too")],                  [p("R", "u"), p("A", "g"), p("S", "tu")]),
+        ([p("A", "g"), p("S", "tu")],                   [p("R", "u"), p("A", "g"), p("S", "tu")]),
+        ([p("A", "g"), p("S", "too")],                  [p("R", "u"), p("A", "g"), p("S", "tu")]),  # (D)
+        ([p("A", "x̱"), p("S", "too")],                  [p("R", "u"), p("A", "g̱"), p("S", "tu")]),
+        ([p("A", "x̱"), p("S", "tu")],                   [p("R", "u"), p("A", "g̱"), p("S", "tu")]),
+        ([p("A", "g̱"), p("S", "tu")],                   [p("R", "u"), p("A", "g̱"), p("S", "tu")]),
+        ([p("A", "g̱"), p("S", "too")],                  [p("R", "u"), p("A", "g̱"), p("S", "tu")]),
+    ])
+
+def subject_x():
+    rewrites.extend([
+        ([p("S", "ḵ"), p("R", "w")],                    [p("R", "u"), p("S", "ḵ")]),
+        ([p("S", "ḵ")],                                 [p("A", "g̱"), p("S", "x̱")]),
+        ([p("A", "g̱"), p("S", "x̱")],                    [p("M", "g̱"), p("S", "x̱")]),  # (G)
+    ])
+
+def aspect_wu():
+    rewrites.extend([
+        ([p("Q", "a"), p("S", "i")],                    [p("Q", "a"), p("A", "wu"), p("S", "i")]),
+        ([p("Q", "ka"), p("S", "i")],                   [p("Q", "ka"), p("A", "wu"), p("S", "i")]),
+        ([p("Q", "x̱ʼa"), p("S", "i")],                  [p("Q", "x̱ʼe"), p("A", "wu"), p("S", "i")]),
+        ([p("Q", "ji"), p("S", "i")],                   [p("Q", "ji"), p("A", "wu"), p("S", "i")]),
+        ([p("Q", "tu"), p("S", "i")],                   [p("Q", "tu"), p("A", "wu"), p("S", "i")]),
+        ([p("A", "e"), p("S", "e")],                    [p("Q", "a"), p("A", "wu"), p("S", "i")]),
+    ])
+
+def An2RuAn():
+    rewrites.extend([
+        ([p("A", "n")],                                 [p("R", "u"), p("A", "n")]),
+    ])
+
+def AnAg2AnMg():
+    rewrites.extend([
+        ([p("A", "n"), p("A", "g̱")],                    [p("A", "n"), p("M", "g̱")]),
+    ])
+
+def aspect_n():
+    rewrites.extend([
+        ([p("A", "n"), p("S", "yi")],                   [p("A", "n"), p("M", "g̱"), p("S", "yi")]),
+        ([p("A", "n"), p("S", "du")],                   [p("A", "n"), p("M", "g̱"), p("S", "du")]),
+    ])
+
+def remove_double_irrealis():
+    rewrites.extend([
+        ([p("R", "o"), p("R", "u")],                    [p("R", "u")]),  # Undo irrealis
+        ([p("R", "u"), p("R", "u")],                    [p("R", "u")]),
+        ([p("R", "e"), p("R", "u")],                    [p("R", "u")]),
+        ([p("R", "i"), p("R", "u")],                    [p("R", "u")]),
+    ])
+
+def remove_irrealis():
+    rewrites.extend([
+        ([p("R", "u"), p("A", "n")],                    [p("A", "n")]),
+        ([p("R", "u"), p("A", "g")],                    [p("A", "g")]),
+        ([p("R", "u"), p("A", "g̱")],                    [p("A", "g̱")]),
+    ])
+
+def Mg2RuMg():
+    rewrites.extend([
+        ([p("M", "g̱")],                                 [p("R", "u"), p("M", "g̱")]),  # (F)
+    ])
+
+def Mg2RuMg_inv():
+    rewrites.extend([
+        ([p("R", "u"), p("M", "g̱")],                    [p("M", "g̱")]),  # Undo (F)
+    ])
+
+def MgSx2AgSx():  # partial inverse to subject_x()?
+    rewrites.extend([
+        ([p("M", "g̱"), p("S", "x̱")],                    [p("A", "g̱"), p("S", "x̱")]), # Undo (G)
+    ])
+
+# actual sequence of rewrites
+remove_epenthesis()
+xw2wux()
+make_RuAg()
+gw2ug()
+s2ds()
+gw2ug_inv()
+s2ds_inv()
+Mx2Mg()
+make_AgMg()
+gg2wgg()
+make_wggx()
+make_ggx()
+make_ugg()
+make_uggx()
+go2ug()
+make_ugdu()
+make_ugyi()
+make_ugtu()
+subject_x()
+aspect_wu()
+s2ds()
+s2ds_inv()
+An2RuAn()
+AnAg2AnMg()
+s2ds()
+s2ds_inv()
+aspect_n()
+s2ds()
+gg2wgg_inv()
+remove_double_irrealis()
+remove_irrealis()
+Mg2RuMg()
+s2ds_inv()
+Mg2RuMg_inv()
+MgSx2AgSx()
+s2ds()
 
 def pair_list_to_string(pair_list):
     ret_val = ""
@@ -329,6 +362,12 @@ def pair_list_to_string(pair_list):
 
 actual_to_rewritten = {}
 for k in hidden_to_observed.keys():
+    #print("Underlying:", k.to_string(),"\t", "Observed: ",hidden_to_observed[k].to_string())
+    #if k.same_tags(hidden_to_observed[k]):
+    #    print("\tUnderlying:")
+    #    k.print_verbose()
+    #    print("\tObserved:")
+    #    hidden_to_observed[k].print_verbose()
     actual_to_rewritten[hidden_to_observed[k]] = copy.deepcopy(hidden_to_observed[k])
 # count = 0
 # 
@@ -362,17 +401,17 @@ def remove_matching_tags():
 
 remove_matching_tags()
 print("So far:", len(observed_to_hidden), "\t", "Rest:", len(hidden_to_observed))
-for i in range(len(actual)):
+for i in range(len(rewrites)):
     for (k,v) in actual_to_rewritten.items():
-        actual_to_rewritten[k] = v.replace_sublist(actual[i], rewritten[i])
-    print(pair_list_to_string(actual[i]), "->", pair_list_to_string(rewritten[i]), ": removed", end=" ")
+        actual_to_rewritten[k] = v.replace_sublist(rewrites[i][0], rewrites[i][1])
+    print(pair_list_to_string(rewrites[i][0]), "->", pair_list_to_string(rewrites[i][1]), ": removed", end=" ")
     remove_matching_tags()
     print("So far:", len(observed_to_hidden), "\t", "Rest:", len(hidden_to_observed))
 
 for (k,v) in observed_to_hidden.items():
     pass
-    # print(k, "\t", list(x.to_string() for x in v))
+    #print(k, "\t", list(x.to_string() for x in v))
 for (k,v) in hidden_to_observed.items():
     pass
-    # print(k.print_verbose(), print(), actual_to_rewritten[v].print_verbose(), v.to_string(False), sep="    ")
-    # print(k.to_string(True), actual_to_rewritten[v].to_string(True), v.to_string(False), sep="    ")
+    #print(k.print_verbose(), print(), actual_to_rewritten[v].print_verbose(), v.to_string(False), sep="    ")
+    #print(k.to_string(True), actual_to_rewritten[v].to_string(True), v.to_string(False), sep="    ")
