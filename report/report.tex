@@ -10,14 +10,20 @@
 \def\F#1{F({\tt #1})}
 \def\I#1{I({\tt #1})}
 \def\E#1{E({\tt #1})}
+\def\k{\underline{k}}
 \def\g{\underline{g}}
 \def\x{\underline{x}}
+\def\rule#1 {\medskip\numitem{#1}\medskip\noindent}  % give a newline after
+\def\firstrule#1 {\medskip\numitem{#1}\smallskip}  % give a newline after
+\def\middlerule#1 {\numitem{#1}\smallskip}  % give a newline after
+\def\lastrule#1 {\numitem{#1}\medskip\noindent}  % give a newline after
+\def\tinyskip{\vskip1pt\indent}
 
 \newcount\listcount
 \def\resetnum{\global\listcount=1}
 \def\numitem{\item{\romannumeral\listcount)}\global\advance\listcount by 1}
 
-\maketitle{Finding regularity in Tlingit verb prefixes}{}{Marcel K. Goh}{30 April 2021}
+\maketitle{Finding regularity in Tlingit verb prefixes}{}{Marcel K. Goh}{}
 
 \floattext5 \ninebf Abstract. \ninepoint
 [Put an abstract here. Possibly think of a better title; the one above is something I came up in
@@ -33,7 +39,7 @@ issues. Lure the reader in.
 Mention related work, etc. References I will use are~\ref{corpus},
 \ref{prefixes}, \ref{navajo2008}, \ref{tsuutina2017}, and \ref{viterbi}, and some others as well.]
 
-\advsect Hidden and observed states
+\advsect Sequences of states
 
 [Formalise the problem. Describe how the format of~\ref{prefixes} allows the tables to be decomposed
 into a dictionary that maps
@@ -53,7 +59,7 @@ The data found in~\ref{prefixes}
 is labelled, in the sense that every string has been partitioned into substrings,
 each tagged with the type of prefix they represent. These tags are important to our program, so we will list
 all of them here.
-\medskip\resetnum
+\medskip\resetnum\parindent=25pt
 \numitem A {\it disjunct prefix} is tagged with $Q$. This may be a qualifier prefix, an incorporated noun
 prefix, or an object prefix.
 \smallskip
@@ -76,47 +82,194 @@ are more or less analogous in the other two cases.
 \numitem The stative {\it {\tt i}-prefix} is given the $I$ tag.
 \smallskip
 \numitem {\it Epenthesis} is indicated by the $E$ tag.
-\medskip
+\medskip\global\parindent=20pt
 Our program makes crucial use of these tags to detect when a sequence of observed prefixes corresponds exactly
 to a sequence of morphemes. We denote by $A^*$ the set of all words formed from letters in the orthography, and
 if the nine tags above are viewed as functions, we can let $B$ be the union of images of $A^*\setminus\{\eps\}$
-under each of the nine functions above (an example of an element of $B$ is $\S{yi}$). Note that we never tag
-the empty string $\eps$. Next, we consider the be the set of all nonempty sequences of elements of $B$,
+under each of the nine functions above. We will call the elements of $B$ {\it states}; an example is $\S{yi}$.
+Note that we never tag
+the empty string $\eps$. Next, we consider the be the set of all nonempty sequences of states,
 denoted $B^+$; for instance, the sequence $\Q{ka}\S{\x}\D{d}\I{i}$ is an element of this set.
-$B^+$ is a semigroup under
-the operation of concatenation and can be made into a monoid $S$ by artificially adjoining an (untagged)
-element $\eps$. This identity element will be important later when we start defining rewrite rules as functions
+We will let $S = B^+\cup \{\eps\}$, where $\eps$ is not tagged.
+This identity element will be important later when we start defining rewrite rules as functions
 from $S$ to itself.
 
 \medskip\boldlabel Hidden and observed sequences.
 Although the data that the program uses is formatted as a table, it is simpler to think of it as a map (or
 dictionary) from a set $H\subseteq S$ of sequences of underlying morphemes to a set $K\subseteq S$
-of actual observed sequences of prefixes.
+of actual observed sequences of prefixes. When sequences of tags are the same, it is clear which prefixes
+are represented by each part of the verb. For example, one of the entries in the dictionary is
+$$\Q{ji}\A{wu}\S{du}\D{d}\F{s}\I{i}\mapsto\Q{ji}\A{m}\S{du}\D{d}\F{z}\I{i}$$
+and it is clear which substrings of the actual verb correspond to respective prefixes. We will say that such
+an entry is {\it resolved} and {\it unresolved} otherwise. An example of an unresolved entry is
+$$\Q{du}\R{w}\A{g}\M{\g}\S{du}\mapsto \Q{du}\A{g}\E{a}\M{\x}\S{du},$$
+where the correspondence between states is not immediately obvious.
+Looking at more entries in the dictionary, we see that the transformation
+$$\A{g}\E{a}\M{\underline{x}} \to \R{w}\A{g}\M{\underline{g}}$$
+occurs a fair few times, so we might consider applying this transformation to every string in the dictionary
+and see if it causes more entries to be resolved. This suggests a semi-computational approach to finding regularity
+in the charts, for if we can cook up a relatively small set of transformations that seem to underlie
+all of the phonological and morphological irregularity in the Tlingit verb, we can use a computer program to
+verify if chart is covered by the rules.
 
 \advsect Rewrite rules
 
-[The meat and potatoes of the paper. In this section I will describe all of the rewrite rules that my program
-uses to match sequences of prefixes to sequences of underlying morphemes. A step-by-step sequence of rewrite
-rules (dozens of them) will be elaborated, but it will also be fruitful to study what they mean individually
-and combinatorially. For example, sometimes we will apply and then undo the same rule multiple times to
-test it in combination with many other rules. Discuss the exponential blowup of such a scheme (for example,
-if there are only 10 rewrites we can try on a particular sequence of prefixes, there are already $2^{10} = 1024$
-different combinations we must try. Luckily, for any given word, there are not too many rewrites to try --- at
-least, that I have seen so far. (My program is not yet done.)]
+For $x,y\in S$, $x\neq\eps$, we formally define a
+{\it transformation} $x\to y$ to be a function from $S$ to itself that
+replaces the {\it first} instance of $x$ in a word $w\in S$ with $y$. A {\it rewrite rule} is a finite sequence
+of transformations. Although transformations are formally functions and functions are applied from right to left,
+we will apply transformations in a rewrite rule from
+left to right, to preserve the sanity of the (presumably English-speaking) reader. So
+if $T_1$, $T_2$, and $T_3$ are transformations,
+the rewrite rule $f:S\to S$ given by $f = T_1 \circ T_2 \circ T_3$ will be written $T_3, T_2, T_1$. This section
+will enumerate the twenty-eight rewrite rules that we will use to resolve every entry in the dictionary obtained
+from the charts~\ref{prefixes}.
 
-The following list describes a sequence of rewrite rules that the program applies, in order, to try to resolve
-every sequence of prefixes. For $x,y\in S$, $x\neq\eps$, a
-{\it rewrite rule} $x\to y$ can be viewed as a function from $S$ to itself that
-replaces every instance of $x$ in a word $w\in S$ with $y$.
+\medskip\boldlabel Epenthesis and irregular disjuncts.
+With the luxury of having tagged data,
+an obvious thing to do is to remove all instances of epenthesis in the dictionary, since, more or less by definition,
+epenthesis
+has no underlying meaning. So we would like a rule along the lines of
+$\E{*}\to \eps$ repeated infinitely many times, where the star stands for any possible string, but this does
+not satisfy our requirements for a well-defined rewrite rule. Thankfully, in our data
+the only letters that are ever epenthesised are {\tt a}, {\tt i}, and {\tt o}. In the case of {\tt a},
+there are at most four instances of epenthesis in a given word, and in the other two cases there is at most
+one instance, so the rewrite rule
+\resetnum\parindent=34pt
+\rule{$\E{a}\to \eps, \E{a}\to \eps,\E{a}\to \eps,\E{a}\to \eps, \E{i}\to \eps, \E{o}\to \eps$}
+successfully eliminates all epenthesis from the dictionary. Another rewrite rule that simply cleans up the data
+is the regularisation of certain irregular disjuncts:
+\rule{$\Q{e}\to \Q{a},\Q{k}\to \Q{ka},\Q{\x'}\to \Q{\x'e},\Q{j}\to \Q{ji},\Q{t}\to \Q{tu}$}
 
-\medskip\resetnum
-\numitem $\E{*}\to \eps$.
-\medskip
-The first rule removes all epenthesis from all strings in the data. This is something that we have the luxury
-of doing because of our tagged data, and this step already resolves $45\%$ of all the entries found in the tables.
-$$\Q{du}\R{w}\A{g}\M{\underline{g}}\S{du}\mapsto \Q{du}\A{g}\E{a}\M{\underline{x}}\S{du}$$
-$$\A{g}\E{a}\M{\underline{x}} \to \R{w}\A{g}\M{\underline{g}}$$
-$$\sum_{k=1}^{30} k!{30\choose k} \approx 7.21\times 10^{32}$$
+\medskip\boldlabel Labialised velars and uvulars.
+When a velar or uvular stop or fricative is followed by a {\tt w}, the underlying form often has a {\tt wu}
+or {\tt u} (or variants thereof) {\it preceding} the consonant. These represent the perfective aspect and
+irrealis mood, respectively. In the case of the subject $\x$, the two cases are handled by the rule
+\rule{$\S{\x}\A{w}\to \A{wu}\S{\x}, \S{\x}\R{w}\to \R{u}\S{\x}, \S{\k}\R{w}\to \R{u}\S{\k}$.}
+Note that we didn't change $\S{\k}$ to $\S{\x}$ in the third transformation; this will be done later.
+In the case that the consonant indicates aspect or modality, the {\tt w} can only indicate the irrealis mood:
+\firstrule{$\A{k}\R{w}\to \R{u}\A{g}, \A{\g}\R{w}\to \R{u}\A{\g}$}
+\lastrule{$\M{\g}\R{w}\to \R{u}\M{\g}$}
+
+\medskip\boldlabel Elision. It is quite difficult to deal with elision using rewrite rules, since one has to
+guess where the missing state should be inserted. An example of this annoyance is the systematic
+elision of the {\tt d}- prefix when it is followed by the {\tt s}- prefix. A solitary {\tt s}- prefix is indicated
+by $\F{s}\E{a}$, but since it is convenient to delete epenthesis early in the rewriting process, we are left
+with a situation where $\F{s}$ may stand for either $\D{d}\F{s}$ or $\F{s}$. Thus we have the rule
+\rule{$\F{s}\to \D{d}\F{s}$,}
+as well as its ``inverse'' $\D{d}\F{s}\to \F{s}$. Ambiguity due to elision
+also occurs with the prefixes $\R{u}$ and $\A{wu}$.
+We will defer a more general discussion of resolving this ambiguity by ``chaining'' rewrites to the next section.
+
+\medskip\boldlabel Modality prefix. The modality prefix $\M{\g}$ causes various shuffling of prefixes, when it
+coincides with the aspect prefix $A{g}$ and its variants. The first thing to do is to simplify the problem a bit
+by modifying the following two strings (but not their tags):
+\rule{$\M{\x}\to \M{\g}, \A{k}\M{\g}\to \A{g}\M{\g}$}
+This rule will not cause the further resolution of any entries, but reduces the number of transformations we need
+in the following few rules. The first of these is a rule that removes an irrealis prefix in the vicinity.
+\rule{$\A{g}\M{\g}\R{w}\to \A{g}\M{\g}, \A{g}\R{w}\M{\g} \to \A{g}\M{\g}$}
+This prefix may need to be added back later, but it will precede the aspect prefix:
+\rule{$\A{g}\M{\g}\to \R{w}\A{g}\M{\g}, \A{\g}\M{\g}\to \R{w}\A{\g}\M{\g}$}
+Next, we have two ``cleanup'' rules that handle the mess that happens when the modality prefix clashes with
+a $\S{\x}$ prefix:
+\firstrule{$\A{k}\S{\k}\R{w}\to \R{w}\A{g}\M{\g}\S{\x}, \A{k}\R{u}\S{\k}\to \R{u}\A{g}\M{\g}\S{\x},$\tinyskip
+$\A{k}\R{w}\S{\k}\to \R{w}\A{\g}\M{\g}\S{\x}$}
+\lastrule{$\A{k}\S{\k}\to \A{g}\M{\g}\S{\x}, \A{g}\S{\k}\to \A{g}\M{\g}\S{\x},
+\A{\k}\S{\k}\to \A{\g}\M{\g}\S{\x}$}
+
+\medskip\boldlabel Velar aspect prefixes. The next few rules handle the irrealis prefix in the vicinity of
+a velar aspect prefix. In most cases the irrealis is elided, so we must guess where it originally stood.
+First we have the rule
+\rule{$\A{g}\R{o}\to \R{u}\A{g}$,}
+and to make our life easier, we will also regularise some of the subject prefixes:
+\rule{$\S{y}\to \S{i}, \S{ee}\to \S{i}, \S{yee}\to\S{yi}, \S{ye}\to\S{yi}, \S{too}\to\S{tu}, \S{\k}\to
+\A{\g}\S{\x}$}
+This allows us to systematically add $\R{u}$ before the aspect prefix:
+\firstrule{$\A{k}\S{du}\to \R{u}\A{g}\S{du}, \A{g}\S{du}\to \R{u}\A{g}\S{du},$\tinyskip
+$\A{\x}\S{du}\to \R{u}\A{\g}\S{du}, \A{\g}\S{du}\to \R{u}\A{\g}\S{du}$}
+\middlerule{$\A{g}\S{i}\to \R{u}\A{g}\S{i}$}
+\middlerule{$\A{g}\S{yi}\to \R{u}\A{g}\S{yi},
+\A{\x}\S{yi}\to \R{u}\A{\g}\S{yi},\A{\g}\S{yi}\to \R{u}\A{\g}\S{yi},$\tinyskip
+$ \A{\g}\S{i}\to \R{u}\A{\g}\S{yi}, \A{\g}\S{ee}\to \R{u}\A{\g}\S{yi}$}
+\lastrule{$\A{k}\S{tu}\to \R{u}\A{g}\S{tu},\A{g}\S{tu}\to \R{u}\A{g}\S{tu},$\tinyskip
+$\A{\x}\S{tu}\to \R{u}\A{\g}\S{tu},\A{\g}\S{tu}\to \R{u}\A{\g}\S{tu},$}
+Lastly, because the $\tt \g\x$ pattern performs double duty to indicate both aspect and modality, we will need
+to a rule to switch from aspect prefixes to modality prefixes:
+\rule{$\A{\g}\S{\x}\to \M{\g}\S{\x}$}
+
+\medbreak\boldlabel Perfective aspect. The perfective aspect is elided before $\S{i}$,
+so we can resolve a bunch of entries
+with the rule
+\rule{$\Q{a}\S{i}\to \Q{a}\A{wu}\S{i}, \Q{ka}\S{i}\to \Q{ka}\A{wu}\S{i},\Q{\x'a}\S{i}\to \Q{\x'e}\A{wu}\S{i},$
+\tinyskip
+$\Q{ji}\S{i}\to \Q{ji}\A{wu}\S{i}, \Q{tu}\S{i}\to \Q{tu}\A{wu}\S{i},\A{e}\S{e}\to \Q{a}\A{wu}\S{i}$.}
+The last of these transformations handles only a single odd case.
+
+\medskip\boldlabel Aspect {\tt n}- prefix. A couple of problems arise with the irrealis and modality prefixes
+in the vicinity of the $\A{n}$ prefix. First, we guess the existence of an irrealis prefix with
+\rule{$\A{n} \to \R{u}\A{n}$,}
+then we insert a missing modality prefix with the transformations
+\rule{$\A{n}\S{yi}\to \A{n}\M{\g}\S{yi},\A{n}\S{du}\to \A{n}\M{\g}\S{du}$.}
+
+\medskip\boldlabel Irrealis cleanup. The last few rules have to do with the pesky irrealis prefix, and are ever
+so slightly more ``destructive''. First, we have the rule
+\rule{$\Q{a}\to \Q{a}\R{u}, \Q{ka}\to \Q{ka}\R{u}, \Q{\x'a}\to \Q{\x'e}\R{u},$\tinyskip
+$\Q{ji}\to \Q{ji}\R{u}, \Q{tu}\to \Q{tu}\R{u}$,}
+which dishes out irrealis prefixes wholesale. To counter the possible doubling of irrealis prefixes in the
+previous rule, we have the rule
+\rule{$\R{e}\R{u}\to \R{u},\R{i}\R{u}\to \R{u},\R{o}\R{u}\to \R{u},\R{u}\R{u}\to \R{u}$,}
+which also takes the opportunity to delete any funky renditions of this prefix. We also try adding
+irrealis prefixes before the modality prefix:
+\rule{$\M{\g}\to \R{u}\M{\g}$}
+Some of these rules undoubtedly make a big mess of things, so we will include a rule that deletes an irrealis
+prefix, no questions asked:
+\rule{$\R{u}\to \eps$}
+We include a rule
+\rule{$\Q{a}\A{wu}\S{i}\to\Q{a}\R{u}\S{i},\Q{ka}\A{wu}\S{i}\to\Q{ka}\R{u}\S{i},$\tinyskip
+$\Q{\x'e}\A{wu}\S{i}\to\Q{\x'e}\R{u}\S{i},\Q{ji}\A{wu}\S{i}\to\Q{ji}\R{u}\S{i},$\tinyskip
+$\Q{tu}\A{wu}\S{i}\to\Q{tu}\R{u}\S{i}$}
+that repurposes the pattern we created in rule (xix), and for subjects prefixes not preceded by a {\tt wu-},
+we have the rule
+\rule{$\S{tu}\to \R{u}\S{tu},\S{du}\to \R{u}\S{du},\S{i}\to \R{u}\S{i},$\tinyskip
+$\S{yeey}\to \R{u}\S{yeey},\S{yi}\to \R{u}\S{yi}$.}
+
+\medskip\boldlabel A final oddity. There are two entries that require the creation
+of a $\Q{u}$ disjunct prefix, so our last rule is
+\rule{$\S{i}\to \Q{u}\S{i}$.}\global\parindent=20pt
+
+\advsect An explicit sequence of rewrites
+
+In the previous section we described twenty-eight rewrite rules and the claim is that these rules are enough
+to resolve every entry in the charts found in~\ref{prefixes}. Given an entry, a na\"\i ve way to check which rules
+apply is to simply try every combination. However, because multiple rewrites may be needed and because
+composition of rewrite rules is not commutative ($f\circ g = g\circ f$ does not hold in general), for every $k$
+rewrites we would like to apply, there are $k!$ orderings that may all produce different results.
+So {\it a priori} there are
+$$\sum_{k=1}^{28} k!{28\choose k} \approx 8.29\times 10^{29}$$
+possibilities to check. Assuming each check takes a billionth of a second (which is rather optimistic), running
+through all of these possibilities will take several orders of magnitude longer than the current age of the
+universe to terminate. Of course, there are numerous ways one might be able to reduce these possibilities and
+make enumeration work, but we will take a different approach.
+
+A function $f : S\to S$ is said to be {\it invertible} if there exists a function $f^{-1}:S\to S$ such that
+$(f^{-1}\circ f) = 1_S$, the identity function on S. The following negative result
+shows that nontrivial transformations are not invertible.
+
+\proclaim Lemma A. Let $S$ be the set of all sequences of tagged strings as defined above. Let $T: S\to S$
+be a transformation such that for all $w\in S$, $f(w)$ is obtained by
+replacing the first occurrence of $x\in S$ in $w$ with $y\in S$. Then
+$T$ is invertible if and only if $T$ is the identity transformation (which occurs precisely when $x=y$).
+
+\proof If $T$ is the identity $1_S$, then we may take $T^{-1} = 1_S$. For the ``only if'' direction, suppose
+that $T$ is not the identity transformation; that is, $x$ is a nonempty string and $y\neq x$. We note that
+$T(x) = T(y) = y$, so that $T$ is not injective and cannot have a well-defined inverse.\slug
+
+Since individual transformations are not invertible and every rewrite rule is a composition of transformations,
+rewrite rules are not invertible in general. However, many rewrite rules $f$ we defined above are ``invertible
+enough'' for our purposes, in the sense that for a very restricted set $S'\subseteq S$ (for instance, let
+$S'$ be the set of entries in the dictionary at a certain point in time),
+there exists another rewrite rule $f\circ f^{-1} \circ f = f$; that is, applying $f$ and $f^{-1}$ in succession
+on the entire dictionary eventually causes it to oscillate between two different states.
 
 \advsect Analysis of rewrite rules
 
@@ -146,9 +299,6 @@ the nicely formatted verbs found in the prefix charts.]
 
 \section References
 
-[I have a convoluted Bash script that alphabetises, numbers, and outputs TeX for references. I know this
-is not the preferred linguistics style, but I will keep it this way unless you would specificially like it
-changed, since I don't currently have the time to modify my Bash script.]
 \medskip
 
 \bye
