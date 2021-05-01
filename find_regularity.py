@@ -124,6 +124,8 @@ def p(letter, word):
 
 rewrites = []
 
+functions = []
+
 def remove_epenthesis():  # (i)
     rewrites.extend([
         ([p("E", "a")],                                 []),
@@ -133,6 +135,7 @@ def remove_epenthesis():  # (i)
         ([p("E", "o")],                                 []),
         ([p("E", "i")],                                 []),
     ])
+    functions.append(1)
 
 def irreg_disjuncts():  # (ii)
     rewrites.extend([
@@ -142,6 +145,7 @@ def irreg_disjuncts():  # (ii)
         ([p("Q", "j")],                                 [p("Q", "ji")]),
         ([p("Q", "t")],                                 [p("Q", "tu")]),
     ])
+    functions.append(2)
 
 def xw2wux():  # (iii) covers both irrealis and aspect
     rewrites.extend([
@@ -149,38 +153,46 @@ def xw2wux():  # (iii) covers both irrealis and aspect
         ([p("S", "x̱"), p("R", "w")],                    [p("R", "u"), p("S", "x̱")]),
         ([p("S", "ḵ"), p("R", "w")],                    [p("R", "u"), p("S", "ḵ")]),
     ])
+    functions.append(3)
 
 def make_RuAg():  # (iv)
     rewrites.extend([
         ([p("A", "k"), p("R", "w")],                    [p("R", "u"), p("A", "g")]),
         ([p("A", "g̱"), p("R", "w")],                    [p("R", "u"), p("A", "g̱")]),
     ])
+    functions.append(4)
 
 def gw2ug():  # (v)
     rewrites.extend([
         ([p("M", "g̱"), p("R", "w")],                    [p("R", "u"), p("M", "g̱")]),  # (H)
     ])
+    functions.append(5)
 
 def gw2ug_inv():  # (v)^-1
     rewrites.extend([
         ([p("R", "u"), p("M", "g̱")],                    [p("M", "g̱"), p("R", "w")]),  # Undo (H)
     ])
+    functions.append(-5)
 
 def s2ds():  # (vi)
     rewrites.extend([
         ([p("F", "s")],                                 [p("D", "d"), p("F", "s")]),  # (C)
     ])
+    functions.append(6)
 
 def s2ds_inv():  # (vi)^-1
     rewrites.extend([
         ([p("D", "d"), p("F", "s")],                    [p("F", "s")]),  # Undo (C)
     ])
+    functions.append(-6)
 
 def Mx2Mg():  # (vii)
     rewrites.extend([
         ([p("M", "x̱")],                                 [p("M", "g̱")]),
         ([p("A", "k"), p("M", "g̱")],                    [p("A", "g"), p("M", "g̱")]),
     ])
+    functions.append(7)
+
 
 def make_AgMg():  # (viii)
     rewrites.extend([
@@ -188,18 +200,21 @@ def make_AgMg():  # (viii)
         ([p("A", "g"), p("R", "u"), p("M", "g̱")],       [p("A", "g"), p("M", "g̱")]),
         ([p("A", "g̱"), p("R", "w"), p("M", "g̱")],       [p("A", "g̱"), p("M", "g̱")]),
     ])
+    functions.append(8)
 
 def gg2wgg():  # (ix) invertible??
     rewrites.extend([
         ([p("A", "g"), p("M", "g̱")],                    [p("R", "w"), p("A", "g"), p("M", "g̱")]),  # (A)
         ([p("A", "g̱"), p("M", "g̱")],                    [p("R", "u"), p("A", "g̱"), p("M", "g̱")]),
     ])
+    functions.append(9)
 
 def gg2wgg_inv():  # (ix)^-1
     rewrites.extend([
         ([p("R", "u"), p("A", "g̱"), p("M", "g̱")],       [p("A", "g̱"), p("M", "g̱")]),  # Undo (A)
         ([p("R", "w"), p("A", "g"), p("M", "g̱")],       [p("A", "g"), p("M", "g̱")]),  # Undo (A)
     ])
+    functions.append(-9)
 
 def make_wggx():  # (x)
     rewrites.extend([
@@ -207,6 +222,7 @@ def make_wggx():  # (x)
         ([p("A", "k"), p("R", "u"), p("S", "ḵ")],       [p("R", "u"), p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
         ([p("A", "ḵ"), p("R", "w"), p("S", "ḵ")],       [p("R", "w"), p("A", "g̱"), p("M", "g̱"), p("S", "x̱")]),
     ])
+    functions.append(10)
 
 def make_ggx():  # (xi)
     rewrites.extend([
@@ -214,11 +230,13 @@ def make_ggx():  # (xi)
         ([p("A", "g"), p("S", "ḵ")],                    [p("A", "g"), p("M", "g̱"), p("S", "x̱")]),
         ([p("A", "ḵ"), p("S", "ḵ")],                    [p("A", "g̱"), p("M", "g̱"), p("S", "x̱")]),
     ])
+    functions.append(11)
 
 def go2ug():  # (xii)
     rewrites.extend([
         ([p("A", "g"), p("R", "o")],                    [p("R", "u"), p("A", "g")]),
     ])
+    functions.append(12)
 
 def irreg_subj():  # (xiii)
     rewrites.extend([
@@ -229,6 +247,7 @@ def irreg_subj():  # (xiii)
         ([p("S", "too")],                               [p("S", "tu")]),
         ([p("S", "ḵ")],                                 [p("A", "g̱"), p("S", "x̱")]),
     ])
+    functions.append(13)
 
 def make_ugdu():  # (xiv)
     rewrites.extend([
@@ -237,11 +256,13 @@ def make_ugdu():  # (xiv)
         ([p("A", "x̱"), p("S", "du")],                   [p("R", "u"), p("A", "g̱"), p("S", "du")]),
         ([p("A", "g̱"), p("S", "du")],                   [p("R", "u"), p("A", "g̱"), p("S", "du")]),
     ])
+    functions.append(14)
 
 def make_ugi():  # (xv)
     rewrites.extend([
         ([p("A", "g"), p("S", "i")],                    [p("R", "u"), p("A", "g"), p("S", "i")]),
     ])
+    functions.append(15)
 
 def make_ugyi():  # (xvi)
     rewrites.extend([
@@ -251,6 +272,7 @@ def make_ugyi():  # (xvi)
         ([p("A", "g̱"), p("S", "i")],                    [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
         ([p("A", "g̱"), p("S", "ee")],                   [p("R", "u"), p("A", "g̱"), p("S", "yi")]),
     ])
+    functions.append(16)
 
 def make_ugtu():  # (xvii)
     rewrites.extend([
@@ -259,16 +281,19 @@ def make_ugtu():  # (xvii)
         ([p("A", "x̱"), p("S", "tu")],                   [p("R", "u"), p("A", "g̱"), p("S", "tu")]),
         ([p("A", "g̱"), p("S", "tu")],                   [p("R", "u"), p("A", "g̱"), p("S", "tu")]),
     ])
+    functions.append(17)
 
 def subject_x():  # (xviii)
     rewrites.extend([
         ([p("A", "g̱"), p("S", "x̱")],                    [p("M", "g̱"), p("S", "x̱")]),  # (G)
     ])
+    functions.append(18)
 
 def subject_x_inv():  # (xviii)^-1
     rewrites.extend([
         ([p("M", "g̱"), p("S", "x̱")],                    [p("A", "g̱"), p("S", "x̱")]),
     ])
+    functions.append(-18)
 
 def aspect_wu():  # (xix)
     rewrites.extend([
@@ -279,17 +304,20 @@ def aspect_wu():  # (xix)
         ([p("Q", "tu"), p("S", "i")],                   [p("Q", "tu"), p("A", "wu"), p("S", "i")]),
         ([p("A", "e"), p("S", "e")],                    [p("Q", "a"), p("A", "wu"), p("S", "i")]),
     ])
+    functions.append(19)
 
 def An2RuAn():  # (xx)
     rewrites.extend([
         ([p("A", "n")],                                 [p("R", "u"), p("A", "n")]),
     ])
+    functions.append(20)
 
 def aspect_n():  # (xxi)  # number
     rewrites.extend([
         ([p("A", "n"), p("S", "yi")],                   [p("A", "n"), p("M", "g̱"), p("S", "yi")]),
         ([p("A", "n"), p("S", "du")],                   [p("A", "n"), p("M", "g̱"), p("S", "du")]),
     ])
+    functions.append(21)
 
 def irrealis_u():  # (xxii)
     rewrites.extend([
@@ -299,6 +327,7 @@ def irrealis_u():  # (xxii)
         ([p("Q", "ji")],                                [p("Q", "ji"), p("R", "u")]),
         ([p("Q", "tu")],                                [p("Q", "tu"), p("R", "u")]),
     ])
+    functions.append(22)
 
 def remove_double_irrealis():  # (xxiii)
     rewrites.extend([
@@ -307,21 +336,25 @@ def remove_double_irrealis():  # (xxiii)
         ([p("R", "e"), p("R", "u")],                    [p("R", "u")]),
         ([p("R", "i"), p("R", "u")],                    [p("R", "u")]),
     ])
+    functions.append(23)
 
 def Mg2RuMg():  # (xxiv)
     rewrites.extend([
         ([p("M", "g̱")],                                 [p("R", "u"), p("M", "g̱")]),  # (F)
     ])
+    functions.append(24)
 
 def Mg2RuMg_inv():  # (xxiv)^-1
     rewrites.extend([
         ([p("R", "u"), p("M", "g̱")],                    [p("M", "g̱")]),  # Undo (F)
     ])
+    functions.append(-24)
 
 def remove_irrealis():  # (xxv)
     rewrites.extend([
         ([p("R", "u")],                                 []),
     ])
+    functions.append(25)
 
 def aspect_wu2irrealis_u():  # (xxvi)
     rewrites.extend([
@@ -331,6 +364,7 @@ def aspect_wu2irrealis_u():  # (xxvi)
         ([p("Q", "ji"), p("A", "wu"), p("S", "i")],     [p("Q", "ji"), p("R", "u"), p("S", "i")]),
         ([p("Q", "tu"), p("A", "wu"), p("S", "i")],     [p("Q", "tu"), p("R", "u"), p("S", "i")]),
     ])
+    functions.append(26)
 
 def irrealis_subject():  # (xxvii)
     rewrites.extend([
@@ -340,11 +374,13 @@ def irrealis_subject():  # (xxvii)
         ([p("S", "yeey")],                              [p("R", "u"), p("S", "yeey")]),
         ([p("S", "yi")],                                [p("R", "u"), p("S", "yi")]),
     ])
+    functions.append(27)
 
 def disjunct_u():  # (xxviii) probably a mistake
     rewrites.extend([
         ([p("S", "i")],                                 [p("Q", "u"), p("S", "i")]),
     ])
+    functions.append(28)
 
 # actual sequence of rewrites
 remove_epenthesis()  # (i)
@@ -383,7 +419,7 @@ remove_double_irrealis()  # (xxiii)
 Mg2RuMg()  # (xxiv)
 s2ds_inv() # (vi)^-1
 Mg2RuMg_inv()  # (xxiv)^-1
-subject_x_inv()  # (xviii)
+subject_x_inv()  # (xviii)^-1
 s2ds()  # (vi)
 remove_irrealis()  # (xxv)
 aspect_wu2irrealis_u()  # (xxvi) -- chains with (xix)

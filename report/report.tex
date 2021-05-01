@@ -18,6 +18,8 @@
 \def\middlerule#1 {\numitem{#1}\smallskip}  % give a newline after
 \def\lastrule#1 {\numitem{#1}\medskip\noindent}  % give a newline after
 \def\tinyskip{\vskip1pt\indent}
+\def\Gets{\Leftarrow}
+\def\listR{{\tt R}}
 
 \newcount\listcount
 \def\resetnum{\global\listcount=1}
@@ -26,27 +28,39 @@
 \maketitle{Finding regularity in Tlingit verb prefixes}{}{Marcel K. Goh}{}
 
 \floattext5 \ninebf Abstract. \ninepoint
-[Put an abstract here. Possibly think of a better title; the one above is something I came up in
-five seconds that more or less describes the mumbo-jumbo my program produces. A more ambitious program
-would have resulted in a title of ``Automatic segmentation and glossing of Tlingit verbs''. But alas my program
-does no such thing.]
+We describe the results of a semi-computational search for regularity in the Tlingit verb prefix charts
+found in~\ref{prefixes}. We present a set of
+twenty-eight rewrite rules that underlie phonological and morphological changes in the verb, and give
+an explicit sequence of rewrite rules that resolves every entry in the charts.
 
 \advsect Introduction
 
-[Probably an intro paragraph describing the Tlingit language
-as a whole, where it fits into language families, and the current linguistic situation. Briefly mention dialectal
-issues. Lure the reader in.
-Mention related work, etc. References I will use are~\ref{corpus},
-\ref{prefixes}, \ref{navajo2008}, \ref{tsuutina2017}, and \ref{viterbi}, and some others as well.]
+{\tensc The Tlingit language} is a Na-Dene language spoken in Alaska, British Columbia, and Yukon. It is
+an endangered language, with fewer than 200 living native speakers. As in many other Na-Dene
+languages, Tlingit verbs have complex internal structures that pack a lot of meaning into relatively
+few syllables, when contrasted with verbs in other languages, or even Tlingit nouns~\ref{syntax2019}.
+At face value, the Tlingit verb looks like a single word, but when translated to English, a single verb may
+correspond to a whole sentence. This is because information such as subject, aspect, mood, etc.\ which are
+indicated by entire words in English, are instead
+indicated by verb prefixes in Tlingit. In particular, they undergo various
+phonological and morphological changes. For example, the perfective aspect {\tt wu}- may appear under the guise
+of {\tt u}- or {\tt w}-, depending on the phonological context. In this paper, we describe a semi-computational
+attempt to find patterns in these transformations and develop rules that allow one to decompose an inflected
+verb into sequences of underlying prefixes.
+
+Computational linguistic research has largely steered clear of the Na-Dene languages, for reasons that we will
+not attempt to speculate at here. Exceptions are~\ref{navajo2008}, which presents a computational parsing tool
+for the Navajo verb, and~\ref{tsuutina2017}, which models the verbs of Tsuut'ina. Both of these projects used
+finite-state methods that are bidirectional, meaning they can both parse and generate verbs. The program we
+present in this paper is not a parser, and in fact does not produce any usable output at all. Instead, the program
+simply reports when regularity is found, allowing one to test the robustness of various rewrite rules.
 
 \advsect Sequences of states
 
-[Formalise the problem. Describe how the format of~\ref{prefixes} allows the tables to be decomposed
-into a dictionary that maps
-sequences of underlying morphemes to sequences of actual observed prefixes. We study the inverse problem.
-Given a sequence of prefixes, how do we identify the original morphemes that they represent?
-Describe what the tags mean and how
-they will help us check when our rewrite approach has succeeded.]
+This section will characterise the verb charts~\ref{prefixes} as a function from sequences of underlying morphemes
+to sequences of observed prefixes. The main problem this paper addresses is an inverse one. Given a sequence
+of prefixes, is it possible to exploit various patterns in the data to
+determine the sequence(s) of underlying morphemes that it represents?
 
 \medskip
 \boldlabel Strings and tags.
@@ -58,28 +72,31 @@ to this convention, we use $\eps$ to denote the identity element (the empty stri
 The data found in~\ref{prefixes}
 is labelled, in the sense that every string has been partitioned into substrings,
 each tagged with the type of prefix they represent. These tags are important to our program, so we will list
-all of them here.
+all of them here. We have included page references to~\ref{syntax2019}, where these prefixes are described
+in detail.
 \medskip\resetnum\parindent=25pt
-\numitem A {\it disjunct prefix} is tagged with $Q$. This may be a qualifier prefix, an incorporated noun
+\numitem A {\it disjunct prefix} (p.\ 8) is tagged with $Q$. This may be a qualifier prefix, an incorporated noun
 prefix, or an object prefix.
 \smallskip
-\numitem The {\it irrealis prefix} is tagged with $R$. The only two possibilities here are $\R u$ and $\R w$.
+\numitem The {\it irrealis prefix} (p.\ 633)
+is tagged with $R$. The only two possibilities here are $\R u$ and $\R w$.
 \smallskip
-\numitem {\it Aspect prefixes} are tagged with $A$. An example is the perfective prefix, which can either
-be $\A{wu}$ or $\A u$.
+\numitem {\it Aspect prefixes} are tagged with $A$. An example is the perfective prefix (p.\ 541),
+which can either be $\A{wu}$ or $\A u$.
 \smallskip
-\numitem The {\it modality prefix} is tagged with $M$. The underlying form is always $\M\g$.
+\numitem The {\it modality prefix} (p.\ 496) is tagged with $M$. The underlying form is always $\M\g$.
 \smallskip
 \numitem {\it Subject prefixes} are tagged with $S$.
 \smallskip
-\numitem The passive, antipassive, or middle voice is indicated by a {\it {\tt d}- prefix},
+\numitem The passive (p.\ 402),
+antipassive (p.\ 379), or middle (p.\ 415) voice is indicated by a {\it {\tt d}- prefix},
 which is tagged with $D$.
 \smallskip
 \numitem Any of the {\it {\tt s}-, {\tt l}-, or {\tt sh}- prefixes} are classified under the $F$ tag, and
-we only deal with the {\tt s} case, though it is noted in~\ref{prefixes} that the phonological patterns
+we only deal with the {\tt s} case (p.\ 239), though it is noted in~\ref{prefixes} that the phonological patterns
 are more or less analogous in the other two cases.
 \smallskip
-\numitem The stative {\it {\tt i}-prefix} is given the $I$ tag.
+\numitem The stative {\it {\tt i}-prefix} (p.\ 179) is given the $I$ tag.
 \smallskip
 \numitem {\it Epenthesis} is indicated by the $E$ tag.
 \medskip\global\parindent=20pt
@@ -96,21 +113,21 @@ from $S$ to itself.
 
 \medskip\boldlabel Hidden and observed sequences.
 Although the data that the program uses is formatted as a table, it is simpler to think of it as a map (or
-dictionary) from a set $H\subseteq S$ of sequences of underlying morphemes to a set $K\subseteq S$
+dictionary) from a set of sequences of underlying morphemes to a set
 of actual observed sequences of prefixes. When sequences of tags are the same, it is clear which prefixes
 are represented by each part of the verb. For example, one of the entries in the dictionary is
-$$\Q{ji}\A{wu}\S{du}\D{d}\F{s}\I{i}\mapsto\Q{ji}\A{m}\S{du}\D{d}\F{z}\I{i}$$
+$$\Q{ji}\A{wu}\S{du}\D{d}\F{s}\I{i}\mapsto\Q{ji}\A{m}\S{du}\D{d}\F{z}\I{i}\adveq$$
 and it is clear which substrings of the actual verb correspond to respective prefixes. We will say that such
 an entry is {\it resolved} and {\it unresolved} otherwise. An example of an unresolved entry is
-$$\Q{du}\R{w}\A{g}\M{\g}\S{du}\mapsto \Q{du}\A{g}\E{a}\M{\x}\S{du},$$
+$$\Q{du}\R{w}\A{g}\M{\g}\S{du}\mapsto \Q{du}\A{g}\E{a}\M{\x}\S{du},\adveq$$
 where the correspondence between states is not immediately obvious.
 Looking at more entries in the dictionary, we see that the transformation
-$$\A{g}\E{a}\M{\underline{x}} \to \R{w}\A{g}\M{\underline{g}}$$
+$$\A{g}\E{a}\M{\underline{x}} \to \R{w}\A{g}\M{\underline{g}}\adveq$$
 occurs a fair few times, so we might consider applying this transformation to every string in the dictionary
 and see if it causes more entries to be resolved. This suggests a semi-computational approach to finding regularity
 in the charts, for if we can cook up a relatively small set of transformations that seem to underlie
 all of the phonological and morphological irregularity in the Tlingit verb, we can use a computer program to
-verify if chart is covered by the rules.
+verify if the entirety of the charts can be covered by the rules.
 
 \advsect Rewrite rules
 
@@ -144,7 +161,7 @@ is the regularisation of certain irregular disjuncts:
 \medskip\boldlabel Labialised velars and uvulars.
 When a velar or uvular stop or fricative is followed by a {\tt w}, the underlying form often has a {\tt wu}
 or {\tt u} (or variants thereof) {\it preceding} the consonant. These represent the perfective aspect and
-irrealis mood, respectively. In the case of the subject $\x$, the two cases are handled by the rule
+irrealis mood, respectively. In the case of the subject ${\tt \x}$, the two cases are handled by the rule
 \rule{$\S{\x}\A{w}\to \A{wu}\S{\x}, \S{\x}\R{w}\to \R{u}\S{\x}, \S{\k}\R{w}\to \R{u}\S{\k}$.}
 Note that we didn't change $\S{\k}$ to $\S{\x}$ in the third transformation; this will be done later.
 In the case that the consonant indicates aspect or modality, the {\tt w} can only indicate the irrealis mood:
@@ -157,12 +174,14 @@ elision of the {\tt d}- prefix when it is followed by the {\tt s}- prefix. A sol
 by $\F{s}\E{a}$, but since it is convenient to delete epenthesis early in the rewriting process, we are left
 with a situation where $\F{s}$ may stand for either $\D{d}\F{s}$ or $\F{s}$. Thus we have the rule
 \rule{$\F{s}\to \D{d}\F{s}$,}
-as well as its ``inverse'' $\D{d}\F{s}\to \F{s}$. Ambiguity due to elision
+as well as its ``inverse'' $\D{d}\F{s}\to \F{s}$. (Another approach to this problem would be to introduce a dummy
+state, call it $\vdash$, marking the end of a sequence, and then transforming $\F{s}\E{a}$ into $\F{s}$ and
+$\F{s}\vdash$ into $\D{d}\F{s}$.) Ambiguity due to elision
 also occurs with the prefixes $\R{u}$ and $\A{wu}$.
 We will defer a more general discussion of resolving this ambiguity by ``chaining'' rewrites to the next section.
 
 \medskip\boldlabel Modality prefix. The modality prefix $\M{\g}$ causes various shuffling of prefixes, when it
-coincides with the aspect prefix $A{g}$ and its variants. The first thing to do is to simplify the problem a bit
+coincides with the aspect prefix $\A{g}$ and its variants. The first thing to do is to simplify the problem a bit
 by modifying the following two strings (but not their tags):
 \rule{$\M{\x}\to \M{\g}, \A{k}\M{\g}\to \A{g}\M{\g}$}
 This rule will not cause the further resolution of any entries, but reduces the number of transformations we need
@@ -228,12 +247,12 @@ We include a rule
 \rule{$\Q{a}\A{wu}\S{i}\to\Q{a}\R{u}\S{i},\Q{ka}\A{wu}\S{i}\to\Q{ka}\R{u}\S{i},$\tinyskip
 $\Q{\x'e}\A{wu}\S{i}\to\Q{\x'e}\R{u}\S{i},\Q{ji}\A{wu}\S{i}\to\Q{ji}\R{u}\S{i},$\tinyskip
 $\Q{tu}\A{wu}\S{i}\to\Q{tu}\R{u}\S{i}$}
-that repurposes the pattern we created in rule (xix), and for subjects prefixes not preceded by a {\tt wu-},
+that repurposes the pattern we created in rule (xix), and for subject prefixes not preceded by a {\tt wu-},
 we have the rule
 \rule{$\S{tu}\to \R{u}\S{tu},\S{du}\to \R{u}\S{du},\S{i}\to \R{u}\S{i},$\tinyskip
 $\S{yeey}\to \R{u}\S{yeey},\S{yi}\to \R{u}\S{yi}$.}
 
-\medskip\boldlabel A final oddity. There are two entries that require the creation
+\boldlabel A final oddity. There are two entries that require the creation
 of a $\Q{u}$ disjunct prefix, so our last rule is
 \rule{$\S{i}\to \Q{u}\S{i}$.}\global\parindent=20pt
 
@@ -242,10 +261,11 @@ of a $\Q{u}$ disjunct prefix, so our last rule is
 In the previous section we described twenty-eight rewrite rules and the claim is that these rules are enough
 to resolve every entry in the charts found in~\ref{prefixes}. Given an entry, a na\"\i ve way to check which rules
 apply is to simply try every combination. However, because multiple rewrites may be needed and because
-composition of rewrite rules is not commutative ($f\circ g = g\circ f$ does not hold in general), for every $k$
-rewrites we would like to apply, there are $k!$ orderings that may all produce different results.
+composition of rewrite rules is not commutative (the identity
+$f\circ g = g\circ f$ does not hold in general), for every $k$
+rewrites we would like to apply, there are $k!$ distinct orderings that may each produce a different result.
 So {\it a priori} there are
-$$\sum_{k=1}^{28} k!{28\choose k} \approx 8.29\times 10^{29}$$
+$$\sum_{k=1}^{28} k!{28\choose k} \approx 8.29\times 10^{29}\adveq$$
 possibilities to check. Assuming each check takes a billionth of a second (which is rather optimistic), running
 through all of these possibilities will take several orders of magnitude longer than the current age of the
 universe to terminate. Of course, there are numerous ways one might be able to reduce these possibilities and
@@ -265,40 +285,151 @@ that $T$ is not the identity transformation; that is, $x$ is a nonempty string a
 $T(x) = T(y) = y$, so that $T$ is not injective and cannot have a well-defined inverse.\slug
 
 Since individual transformations are not invertible and every rewrite rule is a composition of transformations,
-rewrite rules are not invertible in general. However, many rewrite rules $f$ we defined above are ``invertible
-enough'' for our purposes, in the sense that for a very restricted set $S'\subseteq S$ (for instance, let
-$S'$ be the set of entries in the dictionary at a certain point in time),
-there exists another rewrite rule $f\circ f^{-1} \circ f = f$; that is, applying $f$ and $f^{-1}$ in succession
-on the entire dictionary eventually causes it to oscillate between two different states.
+nontrivial rewrite rules are not invertible. However, many rewrite rules $f$ we defined above are ``invertible
+enough'' for our purposes, in the sense that for a convenient set $S'\subseteq S$ (for instance,
+$S'$ might be the set of entries in the dictionary at a certain point in time),
+there exists another rewrite rule $f^{-1}$ such that
+$(f\circ f^{-1} \circ f)(w) = f(w)$ for all $w$ in $S'$; that is, applying $f$ and $f^{-1}$ in succession
+on the entire set eventually causes it to oscillate between two different sets. For example, consider the
+function $f_6$ given in rule (vi) that replaces $\F{s}$ with $\D{d}\F{s}$. Because no entry in the dictionary
+contains more than one instance of $\F{s}$, applying $f_6$ causes every $\F{s}$ to be preceded by $\D{d}$.
+Applying the rule $\D{d}\F{s}\to \F{s}$ does not return the dictionary to its original state, because now the
+sequence $\D{d}\F{s}$ has completely disappeared. But now applying $f$ and $f^{-1}$ in succession will
+cause the entries to oscillate between only two possible distinct dictionaries.
+For a rewrite rule $f$ that consists of a single transformation $x\to y$, it will
+be convenient to call the transformation $y\to x$ its {\it pseudoinverse} and write $f^{-1}$, where it is understood
+that $f$ is only invertible in the very restricted sense outlined above. The pseudoinverse of a rewrite rule
+$x_1\to y_1,\ldots, x_n\to y_n$ is the rewrite rule $y_n\to x_n, \ldots, y_1\to x_1$.
 
-\advsect Analysis of rewrite rules
+The algorithm we use to resolve entries in the dictionary runs as follows.
 
-[In this section, I want to analyse what the global sequence of rewrites actually means for individual strings.
-It is expected that for a given string $w$, most rewrites do not actually affect $w$ directly, though
-in certain cases we may have to try and undo the same rewrite multiple times to try different combinations.
-It might also be interesting to see distributional data related to this (but I will have to code it up first).]
+\algbegin Algorithm R (Find regularity). Given a dictionary $D:S\to S$ and
+a nonempty ordered list ${\tt R}$ of rewrite rules, this algorithm tests if the rewrite rules in the
+list $\listR$
+successfully resolve every entry in the dictionary $D$. We use the notation $x\Gets\listR$ to indicate removing
+the first element of the list $\listR$ and assigning it to the variable $x$.
+\goodbreak
+\algstep R1. [Apply rewrite.] Set $f\Gets\listR$. For every key-value pair $(k,v)$ in $D$, apply the function $f$
+to $v$.
+\algstep R2. [Resolved?] For every key-value pair $(k,v)\in D$, check if the entry is resolved; that is,
+verify if there are the same number of states in each sequence and if the tags of respective states match. If
+so, remove $(k,v)$ from $D$.
+\algstep R3. [Done?] If $\listR$ is nonempty, return to step R1. Otherwise, output ``successful'' if $D$ is empty,
+``unsuccessful'' if $D$ is nonempty, and terminate.\slug
 
-\advsect Grammar induction
+It remains to describe the list of rewrites $\listR$ that, in our experiment, successfully resolved every entry
+in the dictionary. We will write $f_k$ to indicate the function represented by rule $k$ (in Roman numerals) in
+the previous section; so rule (xix) corresponds to $f_{19}$. As before, the notation $1_S$ indicates the identity
+function on the set $S$. In list notation, the sequence of forty-five rewrites
+is
+\newcount\sequence
+\sequence=\eqcount
+$$\eqalign{
+1_S,f_1,f_2,f_3,f_4,f_5,f_6,{f_5}^{-1},{f_6}^{-1},
+f_7, f_8, f_9, f_{10}, f_{11}, f_6, f_6{-1}, f_{12}, f_{13}, f_{14}, f_{15}, f_{16}, f_{17},f_{18}, f_{19},\cr
+f_6, {f_6}_{-1}, f_{20},
+f_6, {f_6}^{-1}, f_{21}, {f_9}^{-1}, f_{22}, f_{23}, f_{24}, {f_6}^{-1} {f_{24}}^{-1}, {f_{18}}^{-1}
+f_6, f_{25}, f_{26}, f_{27}, {f_6}^{-1}, f_{25}, f_{28}.\cr
+}\adveq$$
 
-[May not actually include, depending on how robust the above results actually are. If I end up not
-doing this section, it will merge with the next section.
-I was thinking of including a section about the general problem of grammar induction in formal language
-theory and artificial intelligence.
-My program does not come anywhere close to proper grammar induction, but I would
-like to make comparisons, because the goals are largely aligned with ours. Our data just happens to be at
-a smaller-scale and it also comes pre-tagged. In some sense, the way our data is set up makes the problem
-a lot easier than the general problem of grammar induction. However, if we want to extend the program to
-``real-world'' data such as verbs found in the text corpus, then we might have to fall back on tried-and-tested
-approaches found in the literature (which may stumble because of the paucity of our data).]
+\midinsert
+\vskip-10pt
+$$\vcenter{\vbox{
+\ninepoint
+\centerline{\smallheader Table 1}
+\medskip
+\centerline{EFFECT OF SUCCESSIVE APPLICATIONS OF REWRITE RULES ON THE ENTIRE DICTIONARY}
+}}$$
+\vskip-5pt
+$$\vcenter{\vbox{
+\ninepoint
+\hrule
+\medskip
+\tabskip=.7em plus.2em minus .5em
+\halign{
+   $\hfil#$   &  \hfil# & \hfil# & \hfil#\cr
+   \hbox{Rewrite rule}\hfil&Inverse entries\hfil & Unresolved entries\hfil & Entries resolved in this step\hfil\cr
+   \noalign{\medskip}
+   \noalign{\hrule}
+   \noalign{\medskip}
+   1_S & 575 & 4040 & 733\cr
+   f_1 & 1756 & 2626 & 1414\cr
+   f_2 & 1756 & 2626 & 0\cr
+   f_3 & 1798 & 2528 & 98\cr
+   f_4 & 1829 & 2497 & 31\cr
+   f_5 & 1829 & 2490 & 7\cr
+   f_6 & 2110 & 2107 & 383\cr
+   {f_5}^{-1} & 2110 & 2107 & 0\cr
+   {f_6}^{-1} & 2110 & 2107 & 0\cr
+   f_7 & 2110 & 2107 & 0\cr
+   f_8 & 2110 & 2107 & 0\cr
+   f_9 & 2137 & 1737 & 370\cr
+   f_{10} & 2182 & 1677 & 60\cr
+   f_{11} & 2301 & 1558 & 119\cr
+   f_6 & 2338 & 1451 & 107\cr
+   {f_6}^{-1} & 2338 & 1451 & 0\cr
+   f_{12} & 2414 & 1345 & 106\cr
+   f_{13} & 2498 & 1261 & 84\cr
+   f_{14} & 2498 & 1225 & 36\cr
+   f_{15} & 2498 & 1147 & 78\cr
+   f_{16} & 2498 & 1057 & 90\cr
+   f_{17} & 2498 & 973 & 84\cr
+   f_{18} & 2589 & 822 & 151\cr
+   f_{19} & 2589 & 770 & 52\cr
+   f_6 & 2621 & 709 & 61\cr
+   {f_6}^{-1} & 2621 & 709 & 0\cr
+   f_{20} & 2621 & 421 & 288\cr
+   f_6 & 2621 & 379 & 42\cr
+   {f_6}^{-1} & 2621 & 379 & 0\cr
+   f_{21} & 2621 & 379 & 0\cr
+   f_6 & 2621 & 373 & 6\cr
+   {f_9}^{-1} & 2621 & 373 & 0\cr
+   f_{22} & 2621 & 205 & 168\cr
+   f_{23} & 2621 & 205 & 0\cr
+   f_{24} & 2621 & 183 & 22\cr
+   {f_6}^{-1} & 2621 & 165 & 18\cr
+   {f_{24}}^{-1} & 2621 & 135 & 30\cr
+   {f_{18}}^{-1} & 2621 & 135 & 0\cr
+   f_6 & 2621 & 128 & 7\cr
+   f_{25} & 2621 & 92 & 36\cr
+   f_{26} & 2621 & 54 & 38\cr
+   f_{27} & 2621 & 26 & 28\cr
+   {f_6}^{-1} & 2621 & 18 & 8\cr
+   f_{25} & 2621 & 2 & 16\cr
+   f_{28} & 2621 & 0 & 2\cr
+ \noalign{\medskip}
+ \noalign{\hrule}
+    }
+}}$$
+\endinsert
+
+Table 1, which appears at the end of this paper,
+shows the number of entries resolved by each rewrite rule. Note that the same rule is often
+applied and inverted multiple times to test different combinations. In particular, the pattern
+$f_i f_j {f_i}^{-1} {f_j}^{-1}$ tests all four combinations of ${f_i}^{\pm 1}$ and ${f_j}^{\pm 1}$. This
+mechanism allows us to resolve some ambiguities in the surface forms.
+Although there are 4773 entries in the original
+dictionary, there are only 2621 distinct surface forms, so there are plenty of instances of the same
+inflected form corresponding to multiple possible underlying forms. We make no claim that~\refeq{\the\sequence}
+is the shortest sequence of rewrite rules that resolves the entire dictionary, and we suspect that many
+changes could be made to the rewrite rules that would decrease the number of transformations needed significantly.
 
 \advsect Further directions
 
-[Related to the grammar induction section. Reveal all of the shortcomings of our na\"\i ve program and
-discuss what can be done to extend the algorithm to work on the verbs found in the corpus, not just
-the nicely formatted verbs found in the prefix charts.]
+We presented a very restricted algorithm that tests for regularity in Tlingit verb charts. In principle, the
+information that our program supplies regarding the twenty-eight rewrite rules could be used by a {\it bona
+fide} computational parser in the future. In particular, it would be interesting to see if one could perform
+a similar exercise using strings that have not yet been tagged, perhaps using
+contextual information surrounding particular substrings. Another approach would be probabilistic, perhaps
+employing the well-known Viterbi parsing algorithm~\ref{viterbi} and using
+``real-world'' data from a text corpus (e.g.~\ref{corpus}) to statistically guess the underlying forms of inflected
+verbs.
+
+\section Acknowledgements
+
+The author would like to thank Prof.\ James Crippen for his continuous feedback throughout the semester on this draft,
+as well as Emi Baylor for numerous valuable discussions.
 
 \section References
-
-\medskip
 
 \bye
